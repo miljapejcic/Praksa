@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import router from './router/index.js'
 import {BootstrapVue, IconsPlugin} from 'bootstrap-vue'
 
 // import VueRouter from 'vue-router'
@@ -21,6 +22,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 new Vue({
   el:'#app',
+  router,
   render: h => h(App),
   // router: router
 }).$mount('#app')

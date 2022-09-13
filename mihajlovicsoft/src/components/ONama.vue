@@ -1,6 +1,6 @@
 <template>
   <div class="container about">
-    <div class="title"><b>O nama</b></div>
+    <div class="title">O nama</div>
     <div class="content-hor">
       <div class="opis">
         <b>Mihajlović Soft</b> je kompanija koja se od 1991. godine bavi izradom
@@ -54,12 +54,14 @@ export default {
 .about {
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
 }
 .title {
   color: #fd0101;
   text-transform: uppercase;
   font-family: "GlacialIndifferenceRegular";
   font-size: 30px;
+  font-weight: bold;
 }
 
 .content-hor {
@@ -71,7 +73,7 @@ export default {
 
 .opis {
   /* font-family: "GlacialIndifferenceRegular"; */
-  padding: 40px 20px;
+  padding: 40px 0px;
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 300;
   font-size: 18px;
@@ -150,6 +152,6 @@ export default {
 }
 
 .client-item p {
-    padding: 0px 40px;
+  padding: 0px 40px;
 }
 </style>

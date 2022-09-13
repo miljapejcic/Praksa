@@ -20,37 +20,37 @@ const router = new Router({
             component: Home
         },
         {
-            path:'/Proizvodi',
+            path: '/Proizvodi',
             name: 'Proizvodi',
             component: Proizvodi
         },
         {
-            path:'/Proizvodi/PCKase',
+            path: '/Proizvodi/PCKase',
             name: 'PCKase',
             component: PCKase
         },
         {
-            path:'/Proizvodi/GasPump',
+            path: '/Proizvodi/GasPump',
             name: 'GasPump',
             component: GasPump
         },
         {
-            path:'/Proizvodi/ObracunPlata',
+            path: '/Proizvodi/ObracunPlata',
             name: 'ObracunPlata',
             component: ObracunPlata
         },
         {
-            path:'/Proizvodi/Knjigovodstvo',
+            path: '/Proizvodi/Knjigovodstvo',
             name: 'Knjigovodstvo',
             component: Knjigovodstvo
         },
         {
-            path:'/Proizvodi/Hoteli',
+            path: '/Proizvodi/Hoteli',
             name: 'Hoteli',
             component: Hoteli
         },
         {
-            path:'/Proizvodi/SpecificneApp',
+            path: '/Proizvodi/SpecificneApp',
             name: 'SpecificneApp',
             component: SpecificneApp
         }

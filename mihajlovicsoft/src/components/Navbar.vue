@@ -109,6 +109,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin-top: -60px;
+  margin-bottom: 20px;
 }
 
 header {

@@ -87,8 +87,8 @@ export default {
 .navibg {
   background-image: linear-gradient(
     180deg,
-    rgba(136, 136, 136, 0.224),
-    rgba(255, 255, 255, 0.689)
+    rgba(136, 136, 136, 0),
+    rgba(255, 255, 255, 0.564)
   );
   z-index: 99999;
 }

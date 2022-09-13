@@ -8,16 +8,22 @@
         />
       </div>
     </header>
+<<<<<<< Updated upstream
     <div class="row">
         <ProizvodiHome>
             
         </ProizvodiHome>
     </div>
 </div>
+=======
+    <ONama />
+  </div>
+>>>>>>> Stashed changes
 </template>
 
 <script>
 import Navbar from "@/components/Navbar";
+<<<<<<< Updated upstream
 import ProizvodiHome from "@/components/ProizvodiHome"
 
 export default {
@@ -27,6 +33,17 @@ export default {
         ProizvodiHome
     }
 }
+=======
+import ONama from "@/components/ONama";
+
+export default {
+  name: "Home",
+  components: {
+    Navbar,
+    ONama,
+  },
+};
+>>>>>>> Stashed changes
 </script>
 
 <style scoped>

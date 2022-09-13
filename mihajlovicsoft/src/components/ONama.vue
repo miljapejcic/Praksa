@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="container about">
     <div class="title"><b>O nama</b></div>
     <div class="content-hor">
       <div class="opis">
@@ -15,26 +15,30 @@
         i softverskog inženjerstva.
       </div>
       <div class="slike">
-        <img src="../assets/slika1.jpg" />
-        <img src="../assets/slika2.jpg" />
-        <img src="../assets/slika3.jpg" />
+        <!-- <div class="slika1"> -->
+        <img src="../assets/slika1.jpg" class="slika1" />
+        <!-- </div> -->
+        <!-- <div class="slika2" class="slika2"> -->
+        <img src="../assets/slika2.jpg" class="slika2" />
+        <!-- </div> -->
+        <!-- <div class="slika3"> -->
+        <img src="../assets/slika3.jpg" class="slika3" />
+        <!-- </div> -->
       </div>
     </div>
-    <div class="content-hor">
-      <ul class="clients">
-        <li class="client-item">
-          <img src="../assets/mslogo.png" />
-          <br />zvanični Microsoft Certified Partner
-        </li>
-        <li class="client-item">
-          <img src="../assets/kasperskylogo.png" />
-          <br />autorizovani distributeri Kaspersky Anti-Virus palete programa
-        </li>
-        <li class="client-item">
-          <img src="../assets/nicatlogo.png" />
-          <br />član Klastera Ni-CAT
-        </li>
-      </ul>
+    <div class="clients">
+      <div class="col client-item">
+        <img src="../assets/mslogo.png" />
+        <p>zvanični Microsoft Certified Partner</p>
+      </div>
+      <div class="col client-item">
+        <img src="../assets/kasperskylogo.png" />
+        <p>autorizovani distributeri Kaspersky Anti-Virus palete programa</p>
+      </div>
+      <div class="col client-item">
+        <img src="../assets/nicatlogo.png" />
+        <p>član Klastera Ni-CAT</p>
+      </div>
     </div>
   </div>
 </template>
@@ -47,6 +51,10 @@ export default {
 </script>
 
 <style scoped>
+.about {
+  display: flex;
+  flex-direction: column;
+}
 .title {
   color: #fd0101;
   text-transform: uppercase;
@@ -54,9 +62,94 @@ export default {
   font-size: 30px;
 }
 
+.content-hor {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
 .opis {
   /* font-family: "GlacialIndifferenceRegular"; */
-  font-family: "Open Sans";
+  padding: 40px 20px;
+  font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 300;
+  font-size: 18px;
+  text-align: justify;
+  max-width: 100%;
+}
+
+.slike img {
+  position: relative;
+  max-width: 400px;
+  padding: 10px;
+}
+
+.slike {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 1200px) {
+  .slike {
+    position: relative;
+    margin-left: 50px;
+    z-index: -1;
+  }
+
+  .slike img {
+    position: absolute;
+    max-width: 300px;
+  }
+
+  .slika1 {
+    top: 20px;
+    left: 50px;
+  }
+
+  .slika2 {
+    top: 160px;
+    left: 280px;
+    z-index: 1;
+  }
+
+  .slika3 {
+    top: 225px;
+    left: 10px;
+  }
+
+  .opis {
+    max-width: 700px;
+    padding: 40px 40px;
+    margin-bottom: 60px;
+  }
+}
+
+.clients {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 50px;
+  margin: 10px 0px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-top: 50px;
+}
+
+.client-item {
+  margin: 0px 10px;
+  text-align: center;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 300;
+}
+
+.clients img {
+  max-width: 200px;
+}
+
+.client-item p {
+    padding: 0px 40px;
 }
 </style>

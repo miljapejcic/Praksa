@@ -9,16 +9,23 @@
             Vaš pouzdan partner već 30 godina
         </div>
     </header>
+    <div class="row">
+        <ProizvodiHome>
+            
+        </ProizvodiHome>
+    </div>
 </div>
 </template>
 
 <script>
 import Navbar from "@/components/Navbar";
+import ProizvodiHome from "@/components/ProizvodiHome"
 
 export default {
     name: "Home",
     components: {
         Navbar,
+        ProizvodiHome
     }
 }
 </script>

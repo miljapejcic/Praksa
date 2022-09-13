@@ -13,9 +13,9 @@ import SpecificneApp from '../views/PCKase.vue'
 Vue.use(Router)
 
 const router = new Router({
-    routes:[
+    routes: [
         {
-            path:'/',
+            path: '/',
             name: 'Home',
             component: Home
         },
@@ -55,7 +55,7 @@ const router = new Router({
             component: SpecificneApp
         }
     ],
-    mode:'history'
+    mode: 'history'
 })
 
 export default router

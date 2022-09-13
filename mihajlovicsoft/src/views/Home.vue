@@ -1,13 +1,12 @@
 <template>
-<div id="home">
+  <div id="home">
     <header>
-    <Navbar />
-        <!-- <a href="https://create.vista.com/unlimited/stock-photos/151410560/stock-photo-keyboard-with-office-supplies/">Photo by IgorTishenko</a> -->
-
-        <!-- <a href="https://create.vista.com/unlimited/stock-photos/151410578/stock-photo-keyboard-with-office-supplies/">Photo by IgorTishenko</a> -->
-        <div class="title">
-            Vaš pouzdan partner već 30 godina
-        </div>
+      <Navbar />
+      <div class="titlebox">
+        Vaš pouzdan partner već <i>30 godina</i> <br /><img
+          src="../assets/logoslova.png"
+        />
+      </div>
     </header>
     <div class="row">
         <ProizvodiHome>
@@ -32,13 +31,18 @@ export default {
 
 <style scoped>
 #home {
-    display: flex;
-    flex-direction: column;
-    margin-top: -60px;
+  display: flex;
+  flex-direction: column;
+  margin-top: -60px;
 }
 
 header {
-  background-image: url(../assets/header.jpeg);
+  background-image: linear-gradient(
+      70deg,
+      rgba(255, 255, 255, 0.229),
+      rgba(238, 238, 238, 0.213)
+    ),
+    url(../assets/final.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -46,8 +50,29 @@ header {
   width: 100%;
 }
 
-.title {
-    text-align: center;
-    float: center;
+.titlebox {
+  position: absolute;
+  padding: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-image: linear-gradient(
+    70deg,
+    rgba(255, 255, 255, 0.33),
+    rgba(238, 238, 238, 0.381)
+  );
+  font-size: 5vmin;
+  line-height: 32px;
+  /* font-family: "GlacialIndifferenceRegular"; */
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
+.titlebox img {
+  padding: 5px;
+  width: 65%;
+  /* min-width: 200px; */
+  width: 65vmin;
 }
 </style>

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-12 justify-content-center h1 text-danger naslov">
-                NAŠI PROIZVODI i USLUGE
+                NAŠI PROIZVODI I USLUGE
             </div>
         </div>
         <div class="row">
@@ -98,7 +98,7 @@
 border:1px solid rgba(255, 0, 0, 0.2);
 border-radius:3px;
 padding:4%;
-font-family: 'Be Vietnam Pro', sans-serif;
+font-family: "GlacialIndifferenceRegular";
 }
 
 .paragraf{
@@ -115,7 +115,7 @@ font-family: 'Be Vietnam Pro', sans-serif;
     justify-content: center;
 }
 .naslov{
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: "GlacialIndifferenceRegular";
     font-weight: 900;
 }
 </style>

@@ -3,15 +3,16 @@
     <div class="title"><b>O nama</b></div>
     <div class="content-hor">
       <div class="opis">
-        Mihajlović Soft je kompanija koja se od 1991. godine bavi izradom
+        <b>Mihajlović Soft</b> je kompanija koja se od 1991. godine bavi izradom
         softvera u cilju omogućavanja bržeg rada i pojednostavljivanja procesa
         poslovanja našim korisnicima. Pored računarskog konsaltinga, prodaje
         računarske opreme, projektovanja i uvođenja informacionih sistema i
-        računarskih mreža, naš primarni pravac delovanja je zadovoljenje potreba
-        i zahteva klijenata u smislu izrade odgovarajućih aplikativnih i drugih
-        ITC rešenja zasnovanih na vodećim svetskim tehnlogijama i standardima.
-        Sedište kompanije se nalazi u Nišu, najvećem gradu na jugu Srbije, sa
-        dugom tradicijom u oblasti elektronike i softverskog inženjerstva.
+        računarskih mreža, naš primarni pravac delovanja je
+        <i>zadovoljenje potreba i zahteva klijenata</i> u smislu izrade
+        odgovarajućih aplikativnih i drugih ITC rešenja zasnovanih na vodećim
+        svetskim tehnlogijama i standardima. Sedište kompanije se nalazi u Nišu,
+        najvećem gradu na jugu Srbije, sa dugom tradicijom u oblasti elektronike
+        i softverskog inženjerstva.
       </div>
       <div class="slike">
         <img src="../assets/slika1.jpg" />
@@ -50,6 +51,12 @@ export default {
   color: #fd0101;
   text-transform: uppercase;
   font-family: "GlacialIndifferenceRegular";
+  font-size: 30px;
+}
 
+.opis {
+  /* font-family: "GlacialIndifferenceRegular"; */
+  font-family: "Open Sans";
+  font-weight: 300;
 }
 </style>

@@ -1,55 +1,66 @@
 <template>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg shadow-5-strong navibg">
-    <!-- Container wrapper -->
-    <div class="container-fluid">
-      <!-- Navbar brand -->
-      <a class="navbar-brand" href="#"
-        ><img
-          src="../assets/logo.png"
-          class="d-inline-block align-top logo"
-          alt="logo"
-      /></a>
+  <div class="home">
+    <header>
+      <nav class="navbar navbar-expand-lg shadow-5-strong navibg">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Navbar brand -->
+          <a class="navbar-brand" href="#"
+            ><img
+              src="../assets/logo.png"
+              class="d-inline-block align-top logo"
+              alt="logo"
+          /></a>
 
-      <!-- Toggle button -->
-      <button
-        class="navbar-toggler navtoggle"
-        type="button"
-        data-mdb-toggle="collapse"
-        data-mdb-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler navtoggle"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
 
-      <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- Left links -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 content">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Početna</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Proizvodi i usluge</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">O nama</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Kontakt</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Postani deo našeg tima</a>
-          </li>
-        </ul>
-        <!-- Left links -->
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 content">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Početna</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Proizvodi i usluge</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O nama</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kontakt</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Postani deo našeg tima</a>
+              </li>
+            </ul>
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+      <div class="titlebox">
+        Vaš pouzdan partner već <i>30 godina</i> <br /><img
+          src="../assets/logoslova.png"
+        />
       </div>
-      <!-- Collapsible wrapper -->
-    </div>
-    <!-- Container wrapper -->
-  </nav>
+    </header>
+  </div>
   <!-- Navbar -->
 </template>
 
@@ -91,5 +102,52 @@ export default {
     rgba(255, 255, 255, 0.564)
   );
   z-index: 99999;
+  /* margin-top: -60px; */
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  margin-top: -60px;
+}
+
+header {
+  background-image: linear-gradient(
+      70deg,
+      rgba(255, 255, 255, 0.229),
+      rgba(238, 238, 238, 0.213)
+    ),
+    url(../assets/final.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 620px;
+  width: 100%;
+}
+
+.titlebox {
+  position: absolute;
+  padding: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-image: linear-gradient(
+    70deg,
+    rgba(255, 255, 255, 0.33),
+    rgba(238, 238, 238, 0.381)
+  );
+  font-size: 5vmin;
+  line-height: 32px;
+  /* font-family: "GlacialIndifferenceRegular"; */
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
+.titlebox img {
+  padding: 5px;
+  width: 65%;
+  /* min-width: 200px; */
+  width: 65vmin;
 }
 </style>

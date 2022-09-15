@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import Home from '../views/Home.vue'
 import Proizvodi from '../views/Proizvodi.vue'
 import Potkategorije from '../views/Potkategorije.vue'
+import ONama from '../views/ONama.vue'
 
 Vue.use(Router)
 
@@ -23,6 +24,11 @@ const router = new Router({
             path: '/Proizvodi/Potkategorije/:pid',
             name: 'Potkategorije',
             component: Potkategorije
+        },
+        {
+            path: '/ONama',
+            name: 'ONama',
+            component: ONama
         }
     ],
     mode: 'history'

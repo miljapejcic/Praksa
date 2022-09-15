@@ -1,6 +1,5 @@
 <template>
-  <!-- <div> -->
-  <div id="home">
+  <div class="homepage">
     <Navbar />
     <div class="row pt-2">
       <ProizvodiHome />

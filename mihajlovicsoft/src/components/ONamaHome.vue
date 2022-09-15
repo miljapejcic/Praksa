@@ -18,15 +18,9 @@
         >
       </div>
       <div class="col-xl-6 slike">
-        <!-- <div class="slika1"> -->
         <img src="../assets/slika1.jpg" class="slika1" />
-        <!-- </div> -->
-        <!-- <div class="slika2" class="slika2"> -->
         <img src="../assets/slika2.jpg" class="slika2" />
-        <!-- </div> -->
-        <!-- <div class="slika3"> -->
         <img src="../assets/slika3.jpg" class="slika3" />
-        <!-- </div> -->
       </div>
     </div>
     <div class="clients">
@@ -49,7 +43,8 @@
 <script>
 export default {
   name: "ONamaHome",
-  components: {},
+  components: {
+  },
 };
 </script>
 
@@ -93,6 +88,7 @@ export default {
 .routerLink {
   font-weight: bold;
   color: #fd0101;
+  transition: 0.4s;
 }
 
 .routerLink:hover {
@@ -135,10 +131,10 @@ export default {
     left: 10px;
   }
 
-  .opis {
-    /* max-width: 600px; */
-    /* padding: 40px 40px; */
-  }
+  /* .opis {
+    max-width: 600px;
+    padding: 40px 40px;
+  } */
 }
 
 .clients {

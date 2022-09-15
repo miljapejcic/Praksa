@@ -151,6 +151,7 @@ export default {
   border-radius: 3px;
   padding: 4%;
   font-family: "GlacialIndifferenceRegular";
+  transition: 0.4s;
 }
 
 .klasa {
@@ -204,8 +205,8 @@ export default {
 }
 
 .dugme:hover {
-  color: rgb(248, 214, 214);
-  border-color: rgb(248, 214, 214);
+  color: #fff7f7;
+  border-color: #fff7f7;
   background-color: #fd010179;
 }
 

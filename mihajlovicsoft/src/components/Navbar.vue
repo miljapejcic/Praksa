@@ -1,7 +1,10 @@
 <template>
   <!-- Navbar -->
   <div class="header">
-    <nav id="navbar" class="navbar navbar-expand-lg shadow-5-strong fixed-top navibg">
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg shadow-5-strong fixed-top navibg"
+    >
       <!-- Container wrapper -->
       <div class="container-fluid">
         <!-- Navbar brand -->
@@ -29,20 +32,27 @@
         <!-- Collapsible wrapper -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <!-- Left links -->
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 content">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="content">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Početna</a
+              <router-link
+                class="nav-link"
+                :to="{ name: 'Home' }"
+                aria-current="page"
+                >Početna</router-link
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Proizvodi i usluge</a>
+              <router-link class="nav-link" :to="{ name: 'Proizvodi' }"
+                >Proizvodi i usluge</router-link
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">O nama</a>
+              <router-link class="nav-link" :to="{ name: 'ONama' }"
+                >O nama</router-link
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Kontakt</a>
+              <a class="nav-link" @click="goto({ footer })">Kontakt</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Postani deo našeg tima</a>
@@ -67,6 +77,15 @@
 export default {
   name: "Navbar",
   components: {},
+  methods: {
+    goto(id) {
+      // console.log(id.footer);
+      document.getElementById(id.footer).scrollIntoView({
+        behavior: "smooth",
+      });
+    },
+  },
+  props: ["footer"],
 };
 
 window.onscroll = function () {
@@ -75,19 +94,21 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("logo").style.width = "60px";
+    document.getElementById("content").style.fontSize = "16px";
     document.getElementById("navbar").style.background = `linear-gradient(
     180deg,
     rgba(136, 136, 136, 0.9),
     rgba(255, 255, 255, 0.9)
   )`;
-    document.getElementById("logo").style.width = "60px";
   } else {
+    document.getElementById("logo").style.width = "90px";
+    document.getElementById("content").style.fontSize = "20px";
     document.getElementById("navbar").style.background = `linear-gradient(
     180deg,
     rgba(136, 136, 136, 0),
     rgba(255, 255, 255, 0.564)
   )`;
-    document.getElementById("logo").style.width = "90px";
   }
 }
 </script>
@@ -104,17 +125,20 @@ function scrollFunction() {
   color: rgb(220, 74, 74);
 }
 
-.content {
+#content {
   text-transform: uppercase;
   /* text-align: right; */
   line-height: 17px;
   font-size: 20px;
   font-family: "GlacialIndifferenceRegular";
   color: rgb(0, 0, 0);
+  transition: 0.4s;
 }
 
-.content .nav-item {
+#content .nav-item {
   margin: 0px 20px;
+  cursor: pointer;
+
 }
 
 .navibg {
@@ -145,8 +169,9 @@ function scrollFunction() {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 620px;
+  min-height: 600px;
   width: 100%;
+  top: 0%;
   margin-top: -60px;
 }
 
@@ -174,5 +199,10 @@ function scrollFunction() {
   width: 65%;
   /* min-width: 200px; */
   width: 65vmin;
+}
+
+a router-link {
+  text-decoration: none;
+  color: black;
 }
 </style>

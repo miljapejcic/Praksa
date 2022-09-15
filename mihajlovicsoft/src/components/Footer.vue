@@ -24,10 +24,12 @@
 </template>
 
 
-<script>
+<script> 
+
 export default {
   name: "Footer",
-  components: {},
+  components: {
+  },
 };
 </script>
 
@@ -38,6 +40,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 50px;
 }
 
 .elements {

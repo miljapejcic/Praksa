@@ -1,6 +1,6 @@
 <template>
-  <div class="homepage">
-    <Navbar />
+  <div>
+    <Navbar footer='footer'/>
     <div class="row pt-2">
       <ProizvodiHome />
     </div>
@@ -10,7 +10,7 @@
     <div class="row pt-2">
       <PartneriHome />
     </div>
-    <div class="row pt-2">
+    <div class="row pt-2" id="footer">
       <Footer/>
     </div>
   </div>
@@ -36,4 +36,5 @@ export default {
 </script>
 
 <style scoped>
+
 </style>

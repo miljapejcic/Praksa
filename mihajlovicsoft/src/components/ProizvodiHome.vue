@@ -1,12 +1,12 @@
 <template>
-  <div class="container">
+  <div class="container kontejner d-flex flex-column align-items-center">
     <div class="row">
       <div class="col-xl-12 justify-content-center naslov">
         NAŠI PROIZVODI I USLUGE
       </div>
     </div>
     <div class="row">
-      <div class="col-xl-6">
+      <div class="col-xl-6 kontejner">
         <div class="container">
           <div class="row ">
             <div
@@ -108,13 +108,7 @@
         </div>
       </div>
       <div
-        class="
-          col-xl-6
-          d-flex
-          flex-column
-          align-items-center
-          justify-content-center
-        "
+        class="col-xl-6 kontejner d-flex flex-column align-items-center justify-content-center"
       >
         <div class="row justify-content-center">
           <div class="col-xl-10 justify-content-center">
@@ -130,7 +124,7 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-xl-12">
+          <div class="col-xl-10">
             <router-link :to="{ name: 'Proizvodi' }"
               ><button type="button" class="dugme">
                 VIDI SVE PROIZVODE I USLUGE
@@ -157,6 +151,17 @@ export default {
   border-radius: 3px;
   padding: 4%;
   font-family: "GlacialIndifferenceRegular";
+}
+
+.klasa {
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items: center;
+}
+
+.kontejner{
+  max-width:none;
 }
 
 .paragraf {
@@ -203,4 +208,6 @@ export default {
   border-color: rgb(248, 214, 214);
   background-color: #fd010179;
 }
+
+
 </style>

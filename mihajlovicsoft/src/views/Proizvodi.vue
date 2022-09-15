@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="row">
-            <!-- <Footer /> -->
+            <Footer />
         </div>
     </div>
 </template>
@@ -23,14 +23,14 @@
 <script>
 
 import Navbar from '../components/Navbar.vue'
-// import Footer from '../components/Footer.vue'
+import Footer from '../components/Footer.vue'
 import json from '../json/proizvodi.json'
 
     export default {
         name: "Proizvodi",
         components: {
             Navbar,
-            // Footer
+            Footer
         },
         data(){
               return{

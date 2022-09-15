@@ -1,8 +1,8 @@
 <template>
   <div class="container about">
-    <div class="title">O nama</div>
-    <div class="content-hor">
-      <div class="opis">
+    <div class="naslov">O nama</div>
+    <div class="row justify-content-center">
+      <div class="col-xl-6 opis">
         <b>Mihajlović Soft</b> je kompanija koja se od 1991. godine bavi izradom
         softvera u cilju omogućavanja bržeg rada i pojednostavljivanja procesa
         poslovanja našim korisnicima. Pored računarskog konsaltinga, prodaje
@@ -13,8 +13,11 @@
         svetskim tehnlogijama i standardima. Sedište kompanije se nalazi u Nišu,
         najvećem gradu na jugu Srbije, sa dugom tradicijom u oblasti elektronike
         i softverskog inženjerstva.
+        <router-link class="routerLink" :to="{ name: 'ONama' }"
+          ><b>Više o nama →</b></router-link
+        >
       </div>
-      <div class="slike">
+      <div class="col-xl-6 slike">
         <!-- <div class="slika1"> -->
         <img src="../assets/slika1.jpg" class="slika1" />
         <!-- </div> -->
@@ -45,7 +48,7 @@
 
 <script>
 export default {
-  name: "ONama",
+  name: "ONamaHome",
   components: {},
 };
 </script>
@@ -56,7 +59,7 @@ export default {
   flex-direction: column;
   margin-top: 40px;
 }
-.title {
+.naslov {
   color: #fd0101;
   text-transform: uppercase;
   font-family: "GlacialIndifferenceRegular";
@@ -73,12 +76,12 @@ export default {
 
 .opis {
   /* font-family: "GlacialIndifferenceRegular"; */
-  padding: 40px 0px;
+  padding: 40px;
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 300;
   font-size: 18px;
   text-align: justify;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 .slike img {
@@ -87,17 +90,27 @@ export default {
   padding: 10px;
 }
 
+.routerLink {
+  font-weight: bold;
+  color: #fd0101;
+}
+
+.routerLink:hover {
+  color: rgb(178, 143, 143);
+}
+/* 
 .slike {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
+} */
 
 @media only screen and (min-width: 1200px) {
   .slike {
     position: relative;
-    margin-left: 50px;
+    /* margin-left: 50px; */
+    /* width: 50%; */
     z-index: -1;
   }
 
@@ -123,9 +136,8 @@ export default {
   }
 
   .opis {
-    max-width: 700px;
-    padding: 40px 40px;
-    margin-bottom: 60px;
+    /* max-width: 600px; */
+    /* padding: 40px 40px; */
   }
 }
 
@@ -137,7 +149,7 @@ export default {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: flex-end;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .client-item {

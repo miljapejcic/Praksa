@@ -8,7 +8,7 @@
     <div class="row">
       <div class="col-xl-6">
         <div class="container">
-          <div class="row">
+          <div class="row ">
             <div
               class="
                 col-xl-4
@@ -55,6 +55,7 @@
                       src="../assets/plata.jpg"
                       alt=""
                       style="border-radius: 60%"
+                      class="img-res"
                     />
                   </div>
                   <div class="row">
@@ -75,7 +76,7 @@
               <router-link class="routerLink" :to="{ name: 'Hoteli' }"
                 ><div class="row stavka m-1 pt-2 pb-2">
                   <div class="row">
-                    <img src="../assets/hotel.png" alt="" />
+                    <img src="../assets/hotel.png" alt="" class="img-res"/>
                   </div>
                   <div class="row">
                     <p>Program za hotele</p>
@@ -95,7 +96,7 @@
               <router-link class="routerLink" :to="{ name: 'SpecificneApp' }"
                 ><div class="row stavka m-1 pt-2 pb-2">
                   <div class="row">
-                    <img src="../assets/specificneaplikacije.png" alt="" />
+                    <img src="../assets/specificneaplikacije.png" alt="" class="img-res"/>
                   </div>
                   <div class="row">
                     <p>Specifične aplikacije</p>

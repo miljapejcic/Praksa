@@ -1,0 +1,49 @@
+{
+    "kategorije":[
+        {
+            "id":0,
+            "ime":"Biznis aplikacije",
+            "potkategorije":
+            [
+                "Obracun zarada zaposlenih",
+                "Finansijsko knjigovodstvo",
+                "PC Kasa",
+                "Robno knjigovostvo",
+                "Gas Pump Station Controller"
+            ]
+        },
+        {
+            "id":1,
+            "ime":"Web sajtovi",
+            "potkategorije":[]
+        },
+        {
+            "id":2,
+            "ime":"Specificne aplikacije",
+            "potkategorije":
+            [
+                "Specificne aplikacije",
+                "Parking sistem",
+                "GERKOR",
+                "IQOS - sistem za kontrolu redova na salterima i pruzanje informacija"
+            ]
+        },
+        {
+            "id":3,
+            "ime":"Antivirusni softver",
+            "potkategorije":
+            [
+                "Kaspersky internet Security",
+                "Kaspersky Internet Gateway",
+                "Kaspersky for Exchange Server",
+                "Kaspersky File Server",
+                "Kaspersky Anti-Virus"
+            ]
+        },
+        {
+            "id":4,
+            "ime":"Umrezavanje poslovnih sistema",
+            "potkategorije":[]
+        }
+    ]
+}

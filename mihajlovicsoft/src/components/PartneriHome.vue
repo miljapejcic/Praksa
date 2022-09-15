@@ -2,8 +2,8 @@
   <div class="container">
     <div class="row">
       <div class="col-xl-12 justify-content-center naslov">Naši partneri</div>
-      <div class="row justify-content-center">
-        <div class="col-xl-6">
+      <div class="row justify-content-around">
+        <div class="col-xl-5 partnericar">
           <VueHorizontal responsive>
             <div
               class="d-flex align-items-center justify-content-center"
@@ -14,7 +14,7 @@
             </div>
           </VueHorizontal>
         </div>
-        <div class="col-xl-6">
+        <div class="col-xl-5">
           <p class="text-justify paragraf">
             Iskren i otvoren odnos, poverenje, poštovanje i saradnja
             predstavljaju suštinu uspešnog partnersta. Kao tim koji se
@@ -243,4 +243,6 @@ section {
   font-size: 30px;
   font-weight: bold;
 }
+
+
 </style>

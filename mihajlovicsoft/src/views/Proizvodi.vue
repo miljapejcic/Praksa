@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navbar />
+        <Navbar footer="footer"/>
         <div class="container elements">
             <div class="row pt-2">
                 <h2 class="naslov">PROIZVODI I USLUGE</h2>

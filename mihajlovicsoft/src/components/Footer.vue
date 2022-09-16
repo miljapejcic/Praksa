@@ -36,15 +36,15 @@ export default {
 
 
 <style>
-.halo {
-  max-width:100%;
-}
+
 .kontakt {
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+  border-top: 1px dashed rgb(205, 205, 205);
+  padding-top: 10px;
 }
 
 .elements {

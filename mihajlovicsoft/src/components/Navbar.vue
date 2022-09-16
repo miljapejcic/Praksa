@@ -101,7 +101,7 @@ function scrollFunction() {
     document.getElementById("content").style.fontSize = "16px";
     document.getElementById("navbar").style.background = `linear-gradient(
     180deg,
-    rgba(136, 136, 136, 0.9),
+    rgba(136, 136, 136, 1),
     rgba(255, 255, 255, 0.9)
   )`;
   } else {
@@ -176,6 +176,7 @@ function scrollFunction() {
   width: 100%;
   top: 0%;
   margin-top: -60px;
+  margin-bottom: 50px;
 }
 
 .titlebox {

@@ -1,16 +1,16 @@
 <template>
   <div>
       <Navbar footer="footer" />
-      <div class="row pt-2">
+      <div>
         <ProizvodiHome />
       </div>
-      <div class="onama">
+      <div>
         <ONamaHome />
       </div>
-      <div class="row pt-2">
+      <div>
         <PartneriHome />
       </div>
-      <div class="row pt-2" id="footer">
+      <div id="footer">
         <Footer />
       </div>
   </div>

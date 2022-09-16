@@ -166,7 +166,6 @@ function scrollFunction() {
 #content .nav-item {
   margin: 0px 20px;
   cursor: pointer;
-
 }
 
 .navibg {
@@ -180,57 +179,28 @@ function scrollFunction() {
   /* margin-top: -60px; */
 }
 
-.home {
-  display: flex;
-  flex-direction: column;
-  /* margin-top: -60px; */
-  margin-bottom: 20px;
-}
 
 .header {
-  background-image: linear-gradient(
-      70deg,
-      rgba(255, 255, 255, 0.229),
-      rgba(238, 238, 238, 0.213)
-    ),
-    url(../assets/final.jpg);
+  background-image: url(../assets/final2.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size:cover;
+  background-position:center;
   min-height: 600px;
   width: 100%;
-  top: 0%;
+  /* top: 0%; */
   margin-top: -60px;
   margin-bottom: 50px;
 }
 
-.titlebox {
-  position: absolute;
-  padding: 30px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  background-image: linear-gradient(
-    70deg,
-    rgba(255, 255, 255, 0.33),
-    rgba(238, 238, 238, 0.381)
-  );
-  font-size: 5vmin;
-  line-height: 32px;
-  font-family: "Open Sans";
-  font-weight: 300;
-}
-
-.titlebox img {
-  padding: 5px;
-  width: 65%;
-  width: 65vmin;
-}
-
 a router-link {
   text-decoration: none;
-  color: black;
+  color: red;
+}
+
+.nav-link:focus {
+  /* text-decoration: underline; */
+  border: 1px dashed grey;
+  border-radius: 15px;
 }
 
 

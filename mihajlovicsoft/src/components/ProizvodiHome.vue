@@ -6,9 +6,9 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xl-6 kontejner">
+      <div class="col-xl-6 ">
         <div class="container">
-          <div class="row ">
+          <div class="row justify-content-center align-items-center vrstaKategorija">
             <div
               class="
                 col-xl-4
@@ -28,7 +28,7 @@
                   </div>
                 </div></router-link
               >
-              <router-link class="routerLink" :to="{ name: 'GasPump' }"
+              <router-link class="routerLink" :to="{ name: 'PCKase' }"
                 ><div class="row stavka m-1 pt-2 pb-2">
                   <div class="row">
                     <p>druga slika</p>
@@ -48,22 +48,23 @@
                 justify-content-around
               "
             >
-              <router-link class="routerLink" :to="{ name: 'ObracunPlata' }"
+              <router-link class="routerLink" :to="{ name: 'PCKase' }"
                 ><div class="row stavka m-1 pt-2 pb-2">
                   <div class="row">
-                    <img
+                    <p>treca slika</p>
+                    <!-- <img
                       src="../assets/plata.jpg"
                       alt=""
                       style="border-radius: 60%"
                       class="img-res"
-                    />
+                    /> -->
                   </div>
                   <div class="row">
                     <p>Program za obračun plata</p>
                   </div>
                 </div></router-link
               >
-              <router-link class="routerLink" :to="{ name: 'Knjigovodstvo' }"
+              <router-link class="routerLink" :to="{ name: 'PCKase' }"
                 ><div class="row stavka m-1 pt-2 pb-2">
                   <div class="row">
                     <p>Cetvrta slika</p>
@@ -73,10 +74,11 @@
                   </div>
                 </div></router-link
               >
-              <router-link class="routerLink" :to="{ name: 'Hoteli' }"
+              <router-link class="routerLink" :to="{ name: 'PCKase' }"
                 ><div class="row stavka m-1 pt-2 pb-2">
                   <div class="row">
-                    <img src="../assets/hotel.png" alt="" class="img-res"/>
+                    <p>peta slika</p>
+                    <!-- <img src="../assets/hotel.png" alt="" class="img-res"/> -->
                   </div>
                   <div class="row">
                     <p>Program za hotele</p>
@@ -93,10 +95,11 @@
                 justify-content-around
               "
             >
-              <router-link class="routerLink" :to="{ name: 'SpecificneApp' }"
+              <router-link class="routerLink" :to="{ name: 'PCKase' }"
                 ><div class="row stavka m-1 pt-2 pb-2">
                   <div class="row">
-                    <img src="../assets/specificneaplikacije.png" alt="" class="img-res"/>
+                    <p>sesta slika</p>
+                    <!-- <img src="../assets/specificneaplikacije.png" alt="" class="img-res"/> -->
                   </div>
                   <div class="row">
                     <p>Specifične aplikacije</p>
@@ -164,9 +167,14 @@ export default {
 .kontejner{
   max-width:none;
 }
+.vrstaKategorija{
+  padding-left:40px;
+  padding-right:40px;
+}
 
 .paragraf {
   font-family: "Be Vietnam Pro", sans-serif;
+  padding:40px;
 
 
   /* ovo nadole je marta dodala!!!!

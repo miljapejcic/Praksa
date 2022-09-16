@@ -55,7 +55,10 @@
               <a class="nav-link" @click="goto({ footer })">Kontakt</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Postani deo našeg tima</a>
+              <router-link class="nav-link" :to="{ name: 'Tim' }"
+                >Postani deo našeg tima</router-link
+              >
+              <!-- <a class="nav-link" href="#">Postani deo našeg tima</a> -->
             </li>
           </ul>
           <!-- Left links -->

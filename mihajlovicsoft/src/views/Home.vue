@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="stranica">
     <Navbar footer='footer'/>
     <div class="row pt-2">
       <ProizvodiHome />

@@ -1,30 +1,32 @@
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-12 justify-content-center naslov">Naši partneri</div>
-      <div class="row justify-content-around">
-        <div class="col-xl-5 partnericar">
-          <VueHorizontal responsive>
-            <div
-              class="d-flex align-items-center justify-content-center"
-              v-for="p in partneri"
-              :key="p.slika"
-            >
-              <img class="img-fluid" v-bind:src="p.slika" />
-            </div>
-          </VueHorizontal>
-        </div>
-        <div class="col-xl-5">
-          <p class="text-justify paragraf">
-            Iskren i otvoren odnos, poverenje, poštovanje i saradnja
-            predstavljaju suštinu uspešnog partnersta. Kao tim koji se
-            neprekidno razvija i uvećava, pozivamo Vas da stupite u kontakt sa
-            nama i proverite koje su Vaše prilike za boljim poslovanjem. Rešenja
-            koja distribuiramo su proverena rešenja. Iza nas je veliki broj
-            zadovoljnih kompanija koje su znale da iskoriste naše znanje i
-            iskustva. Ukoliko se prepoznajete u navedenim delatnostima, Vaš se
-            uspeh ne dovodi u pitanje. <i>Postanite naš PARTNER!</i>
-          </p>
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12 justify-content-center naslov">Naši partneri</div>
+        <div class="row justify-content-around align-items-center">
+          <div class="col-xl-5 partnericar ">
+            <VueHorizontal responsive>
+              <div
+                class="d-flex align-items-center justify-content-center"
+                v-for="p in partneri"
+                :key="p.slika"
+              >
+                <img class="img-fluid" v-bind:src="p.slika" />
+              </div>
+            </VueHorizontal>
+          </div>
+          <div class="col-xl-5">
+            <p class="text-justify paragraf">
+              Iskren i otvoren odnos, poverenje, poštovanje i saradnja
+              predstavljaju suštinu uspešnog partnersta. Kao tim koji se
+              neprekidno razvija i uvećava, pozivamo Vas da stupite u kontakt sa
+              nama i proverite koje su Vaše prilike za boljim poslovanjem. Rešenja
+              koja distribuiramo su proverena rešenja. Iza nas je veliki broj
+              zadovoljnih kompanija koje su znale da iskoriste naše znanje i
+              iskustva. Ukoliko se prepoznajete u navedenim delatnostima, Vaš se
+              uspeh ne dovodi u pitanje. <i>Postanite naš PARTNER!</i>
+            </p>
+          </div>
         </div>
       </div>
     </div>

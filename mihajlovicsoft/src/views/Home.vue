@@ -1,18 +1,18 @@
 <template>
   <div>
-      <Navbar footer="footer" />
-      <div>
-        <ProizvodiHome />
-      </div>
-      <div>
-        <ONamaHome />
-      </div>
-      <div>
-        <PartneriHome />
-      </div>
-      <div id="footer">
-        <Footer />
-      </div>
+    <Navbar footer="footer" />
+    <div>
+      <ProizvodiHome />
+    </div>
+    <div>
+      <ONamaHome />
+    </div>
+    <div>
+      <PartneriHome />
+    </div>
+    <div id="footer">
+      <Footer />
+    </div>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navbar />
+        <Navbar footer="footer"/>
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 pt-2">
@@ -48,7 +48,10 @@ import Footer from '../components/Footer.vue'
             return {
                 vestine:['a','b','c','d','a','b','c','d']
             }
-        }
+        },
+        mounted() {
+            window.scrollTo(0, 0);
+        },
     }
 </script>
 

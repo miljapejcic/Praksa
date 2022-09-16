@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xl-12 justify-content-center naslov">Naši partneri</div>
         <div class="row justify-content-around align-items-center">
-          <div class="col-xl-5 partnericar ">
+          <div class="col-xl-5">
             <VueHorizontal responsive>
               <div
                 class="d-flex align-items-center justify-content-center"

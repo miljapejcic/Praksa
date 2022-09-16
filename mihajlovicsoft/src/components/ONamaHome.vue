@@ -81,7 +81,7 @@ export default {
 
 .slike img {
   position: relative;
-  max-width: 400px;
+  max-width: 300px;
   padding: 10px;
 }
 

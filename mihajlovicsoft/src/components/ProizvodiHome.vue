@@ -25,32 +25,32 @@
                 justify-content-around
               "
             >
-              <router-link class="routerLink" :to="{ name: 'PCKase' }"
-                ><div class="row stavka m-1 pt-2 pb-2">
-                  <div class="row">
+              <div class="row stavka m-1 pt-2 pb-2">
+                <div class="row">
+                  <router-link class="routerLink" :to="{ name: 'PCKase' }">
                     <img
                       class="round-img"
                       src="../assets/proizvodi HOME/kasa.jpg"
                     />
-                  </div>
-                  <div class="row">
-                    <p>PC kase</p>
-                  </div>
-                </div></router-link
-              >
-              <router-link class="routerLink" :to="{ name: 'PCKase' }"
-                ><div class="row stavka m-1 pt-2 pb-2">
-                  <div class="row">
+                  </router-link>
+                </div>
+                <div class="row">
+                  <p>PC kase</p>
+                </div>
+              </div>
+              <div class="row stavka m-1 pt-2 pb-2">
+                <div class="row">
+                  <router-link class="routerLink" :to="{ name: 'PCKase' }">
                     <img
                       class="round-img"
                       src="../assets/proizvodi HOME/gas.jpg"
                     />
-                  </div>
-                  <div class="row">
-                    <p>Gas Pump Station Controller</p>
-                  </div>
-                </div></router-link
-              >
+                  </router-link>
+                </div>
+                <div class="row">
+                  <p>Gas Pump Station Controller</p>
+                </div>
+              </div>
             </div>
             <div
               class="
@@ -61,45 +61,45 @@
                 justify-content-around
               "
             >
-              <router-link class="routerLink" :to="{ name: 'PCKase' }"
-                ><div class="row stavka m-1 pt-2 pb-2">
-                  <div class="row">
+              <div class="row stavka m-1 pt-2 pb-2">
+                <div class="row">
+                  <router-link class="routerLink" :to="{ name: 'PCKase' }">
                     <img
                       class="round-img"
                       src="../assets/proizvodi HOME/plate.jpg"
                     />
-                  </div>
-                  <div class="row">
-                    <p>Program za obračun plata</p>
-                  </div>
-                </div></router-link
-              >
-              <router-link class="routerLink" :to="{ name: 'PCKase' }"
-                ><div class="row stavka m-1 pt-2 pb-2">
-                  <div class="row">
+                  </router-link>
+                </div>
+                <div class="row">
+                  <p>Program za obračun plata</p>
+                </div>
+              </div>
+              <div class="row stavka m-1 pt-2 pb-2">
+                <div class="row">
+                  <router-link class="routerLink" :to="{ name: 'PCKase' }">
                     <img
                       class="round-img"
                       src="../assets/proizvodi HOME/racun.jpg"
                     />
-                  </div>
-                  <div class="row">
-                    <p>Program za knjigovodstvo</p>
-                  </div>
-                </div></router-link
-              >
-              <router-link class="routerLink" :to="{ name: 'PCKase' }"
-                ><div class="row stavka m-1 pt-2 pb-2">
-                  <div class="row">
+                  </router-link>
+                </div>
+                <div class="row">
+                  <p>Program za knjigovodstvo</p>
+                </div>
+              </div>
+              <div class="row stavka m-1 pt-2 pb-2">
+                <div class="row">
+                  <router-link class="routerLink" :to="{ name: 'PCKase' }">
                     <img
                       class="round-img"
                       src="../assets/proizvodi HOME/hotel.jpg"
                     />
-                  </div>
-                  <div class="row">
-                    <p>Program za hotele</p>
-                  </div>
-                </div></router-link
-              >
+                  </router-link>
+                </div>
+                <div class="row">
+                  <p>Program za hotele</p>
+                </div>
+              </div>
             </div>
             <div
               class="
@@ -110,19 +110,19 @@
                 justify-content-around
               "
             >
-              <router-link class="routerLink" :to="{ name: 'PCKase' }"
-                ><div class="row stavka m-1 pt-2 pb-2">
-                  <div class="row">
+              <div class="row stavka m-1 pt-2 pb-2">
+                <div class="row">
+                  <router-link class="routerLink" :to="{ name: 'PCKase' }">
                     <img
                       class="round-img"
                       src="../assets/proizvodi HOME/app.jpg"
                     />
-                  </div>
-                  <div class="row">
-                    <p>Specifične aplikacije</p>
-                  </div>
-                </div></router-link
-              >
+                  </router-link>
+                </div>
+                <div class="row">
+                  <p>Specifične aplikacije</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -130,7 +130,6 @@
       <div
         class="
           col-xl-6
-          kontejner
           d-flex
           flex-column
           align-items-center
@@ -190,7 +189,11 @@ export default {
 
 .kontejner {
   max-width: none;
+  background-image: url("../assets/output-onlinepngtools (1).png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
+
 .vrstaKategorija {
   padding-left: 40px;
   padding-right: 40px;
@@ -222,8 +225,20 @@ export default {
 }
 
 .round-img {
+  width: 100%;
   border-radius: 100%;
   margin-bottom: 10px;
+}
+
+.round-img:hover {
+  opacity: 85%;
+  transition: 0.4s ease;
+}
+
+@media only screen and (max-width: 1200px) {
+  .kontejner {
+    background-image: none;
+  }
 }
 
 .naslov {

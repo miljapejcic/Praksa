@@ -2,13 +2,20 @@
   <div class="container kontejner d-flex flex-column align-items-center">
     <div class="row">
       <div class="col-xl-12 justify-content-center naslov">
-        NAŠI PROIZVODI I USLUGE
+        Naši proizvodi i usluge
       </div>
     </div>
     <div class="row">
-      <div class="col-xl-6 ">
+      <div class="col-xl-6">
         <div class="container">
-          <div class="row justify-content-center align-items-center vrstaKategorija">
+          <div
+            class="
+              row
+              justify-content-center
+              align-items-center
+              vrstaKategorija
+            "
+          >
             <div
               class="
                 col-xl-4
@@ -21,7 +28,10 @@
               <router-link class="routerLink" :to="{ name: 'PCKase' }"
                 ><div class="row stavka m-1 pt-2 pb-2">
                   <div class="row">
-                    <p>prva slika</p>
+                    <img
+                      class="round-img"
+                      src="../assets/proizvodi HOME/kasa.jpg"
+                    />
                   </div>
                   <div class="row">
                     <p>PC kase</p>
@@ -31,7 +41,10 @@
               <router-link class="routerLink" :to="{ name: 'PCKase' }"
                 ><div class="row stavka m-1 pt-2 pb-2">
                   <div class="row">
-                    <p>druga slika</p>
+                    <img
+                      class="round-img"
+                      src="../assets/proizvodi HOME/gas.jpg"
+                    />
                   </div>
                   <div class="row">
                     <p>Gas Pump Station Controller</p>
@@ -51,13 +64,10 @@
               <router-link class="routerLink" :to="{ name: 'PCKase' }"
                 ><div class="row stavka m-1 pt-2 pb-2">
                   <div class="row">
-                    <p>treca slika</p>
-                    <!-- <img
-                      src="../assets/plata.jpg"
-                      alt=""
-                      style="border-radius: 60%"
-                      class="img-res"
-                    /> -->
+                    <img
+                      class="round-img"
+                      src="../assets/proizvodi HOME/plate.jpg"
+                    />
                   </div>
                   <div class="row">
                     <p>Program za obračun plata</p>
@@ -67,7 +77,10 @@
               <router-link class="routerLink" :to="{ name: 'PCKase' }"
                 ><div class="row stavka m-1 pt-2 pb-2">
                   <div class="row">
-                    <p>Cetvrta slika</p>
+                    <img
+                      class="round-img"
+                      src="../assets/proizvodi HOME/racun.jpg"
+                    />
                   </div>
                   <div class="row">
                     <p>Program za knjigovodstvo</p>
@@ -77,8 +90,10 @@
               <router-link class="routerLink" :to="{ name: 'PCKase' }"
                 ><div class="row stavka m-1 pt-2 pb-2">
                   <div class="row">
-                    <p>peta slika</p>
-                    <!-- <img src="../assets/hotel.png" alt="" class="img-res"/> -->
+                    <img
+                      class="round-img"
+                      src="../assets/proizvodi HOME/hotel.jpg"
+                    />
                   </div>
                   <div class="row">
                     <p>Program za hotele</p>
@@ -98,8 +113,10 @@
               <router-link class="routerLink" :to="{ name: 'PCKase' }"
                 ><div class="row stavka m-1 pt-2 pb-2">
                   <div class="row">
-                    <p>sesta slika</p>
-                    <!-- <img src="../assets/specificneaplikacije.png" alt="" class="img-res"/> -->
+                    <img
+                      class="round-img"
+                      src="../assets/proizvodi HOME/app.jpg"
+                    />
                   </div>
                   <div class="row">
                     <p>Specifične aplikacije</p>
@@ -111,7 +128,14 @@
         </div>
       </div>
       <div
-        class="col-xl-6 kontejner d-flex flex-column align-items-center justify-content-center"
+        class="
+          col-xl-6
+          kontejner
+          d-flex
+          flex-column
+          align-items-center
+          justify-content-center
+        "
       >
         <div class="row justify-content-center">
           <div class="col-xl-10 justify-content-center">
@@ -159,47 +183,56 @@ export default {
 
 .klasa {
   display: flex;
-  flex-direction:row;
-  justify-content:center;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
-.kontejner{
-  max-width:none;
+.kontejner {
+  max-width: none;
 }
-.vrstaKategorija{
-  padding-left:40px;
-  padding-right:40px;
+.vrstaKategorija {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .paragraf {
   font-family: "Be Vietnam Pro", sans-serif;
-  padding:40px;
-
+  padding: 40px;
 
   /* ovo nadole je marta dodala!!!!
   padding: 40px 20px;
   */
   font-weight: 300;
   font-size: 18px;
-  text-align: justify; 
+  text-align: justify;
 }
 .routerLink {
   text-decoration: none;
 }
 .stavka {
   font-family: "Be Vietnam Pro", sans-serif;
-  background-color: rgba(196, 183, 183, 0.664);
+  /* background-color: rgba(196, 183, 183, 0.664); */
+  /* border-radius: 65%; */
   color: black;
-  border-radius: 65%;
+  font-size: 15px;
   justify-content: center;
+  max-width: 300px;
+  min-width: 160px;
 }
+
+.round-img {
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+
 .naslov {
   color: #fd0101;
   text-transform: uppercase;
   font-family: "GlacialIndifferenceRegular";
   font-size: 30px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .dugme {
@@ -217,6 +250,4 @@ export default {
   border-color: #fff7f7;
   background-color: #fd010179;
 }
-
-
 </style>

@@ -18,9 +18,9 @@
         >
       </div>
       <div class="col-xl-6 slike">
-        <img src="../assets/slika1.jpg" class="slika1" />
-        <img src="../assets/slika2.jpg" class="slika2" />
-        <img src="../assets/slika3.jpg" class="slika3" />
+        <img src="../assets/firma/slika1.jpg" class="slika1" />
+        <img src="../assets/firma/slika2.jpg" class="slika2" />
+        <img src="../assets/firma/slika3.jpg" class="slika3" />
       </div>
     </div>
     <div class="clients">

@@ -129,19 +129,34 @@ export default {
     return {
       slike: [
         {
-          slika: require("../assets/slika4.jpg"),
+          slika: require("../assets/firma/slika4.jpg"),
         },
         {
-          slika: require("../assets/slika1.jpg"),
+          slika: require("../assets/firma/slika1.jpg"),
         },
         {
-          slika: require("../assets/slika2.jpg"),
+          slika: require("../assets/firma/slika2.jpg"),
         },
         {
-          slika: require("../assets/slika3.jpg"),
+          slika: require("../assets/firma/slika3.jpg"),
         },
         {
-          slika: require("../assets/slika5.jpg"),
+          slika: require("../assets/firma/slika5.jpg"),
+        },
+        {
+          slika: require("../assets/firma/slika6.jpg"),
+        },
+        {
+          slika: require("../assets/firma/slika7.jpg"),
+        },
+        {
+          slika: require("../assets/firma/slika8.jpg"),
+        },
+        {
+          slika: require("../assets/firma/slika9.jpg"),
+        },
+        {
+          slika: require("../assets/firma/slika10.jpg"),
         },
       ],
     };

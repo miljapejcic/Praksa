@@ -1,18 +1,18 @@
 <template>
-  <div class="stranica">
-    <Navbar footer='footer'/>
-    <div class="row pt-2">
-      <ProizvodiHome />
-    </div>
-    <div class="onama">
-      <ONamaHome />
-    </div>
-    <div class="row pt-2">
-      <PartneriHome />
-    </div>
-    <div class="row pt-2" id="footer">
-      <Footer/>
-    </div>
+  <div>
+      <Navbar footer="footer" />
+      <div class="row pt-2">
+        <ProizvodiHome />
+      </div>
+      <div class="onama">
+        <ONamaHome />
+      </div>
+      <div class="row pt-2">
+        <PartneriHome />
+      </div>
+      <div class="row pt-2" id="footer">
+        <Footer />
+      </div>
   </div>
 </template>
 
@@ -32,9 +32,11 @@ export default {
     PartneriHome,
     Footer,
   },
+  mounted() {
+    window.scrollTo(0, 0);
+  },
 };
 </script>
 
 <style scoped>
-
 </style>

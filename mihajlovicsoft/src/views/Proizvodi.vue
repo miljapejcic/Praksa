@@ -7,12 +7,12 @@
             </div>
             <div class="row justify-content-around align-items-center">
                 <div class="col-xl-3 kategorija" v-for="k in json.kategorije" :key="k.id">
-                        <button class="dugme" @click="kat(k.id)">{{k.ime}}</button>
+                    <button class="dugme" @click="kat(k.id)">{{k.ime}}</button>
                 </div>
             </div>
         </div>
         <div id="footer" class="row">
-            <Footer />
+        <Footer />
         </div>
     </div>
 </template>
@@ -38,6 +38,9 @@ import json from '../json/proizvodi.json'
             kat(id){
                 this.$router.push({ name: 'Potkategorije', params: { pid: id } })
             }
+        },
+        mounted() {
+            window.scrollTo(0, 0);
         }
     }
 </script>

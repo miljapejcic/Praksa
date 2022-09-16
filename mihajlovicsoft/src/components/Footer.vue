@@ -1,7 +1,8 @@
 <template>
-  <div>
+  <div class="halo">
     <div class="container kontakt">
-      <div class="row">
+      <!-- dole je bila klasa row -->
+      <div>
         <div class="justify-content-center naslov">Kontakt</div>
         <div class="elements">
           <div class="location">
@@ -35,6 +36,9 @@ export default {
 
 
 <style>
+.halo {
+  max-width:100%;
+}
 .kontakt {
   margin-bottom: 50px;
   display: flex;
@@ -91,7 +95,7 @@ export default {
 
     .location {
         border-right: none;
-        border-bottom: #d8d8d8 solid 1px;;
+        border-bottom: #d8d8d8 solid 1px;
     }
 
     .info {

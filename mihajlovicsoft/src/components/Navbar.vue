@@ -113,7 +113,7 @@ function scrollFunction() {
 }
 </script>
 
-<style scoped>
+<style>
 .logo {
   width: 90px;
   margin: 0px 10px 0px 30px;
@@ -189,7 +189,6 @@ function scrollFunction() {
   );
   font-size: 5vmin;
   line-height: 32px;
-  /* font-family: "GlacialIndifferenceRegular"; */
   font-family: "Open Sans";
   font-weight: 300;
 }
@@ -197,7 +196,6 @@ function scrollFunction() {
 .titlebox img {
   padding: 5px;
   width: 65%;
-  /* min-width: 200px; */
   width: 65vmin;
 }
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar footer='footer'/>
+    <Navbar footer="footer" />
     <div class="row pt-2">
       <ProizvodiHome />
     </div>
@@ -11,7 +11,7 @@
       <PartneriHome />
     </div>
     <div class="row pt-2" id="footer">
-      <Footer/>
+      <Footer />
     </div>
   </div>
 </template>
@@ -32,9 +32,11 @@ export default {
     PartneriHome,
     Footer,
   },
+  mounted() {
+    window.scrollTo(0, 0);
+  },
 };
 </script>
 
 <style scoped>
-
 </style>

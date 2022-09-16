@@ -44,7 +44,6 @@
       </div>
       <div class="d-flex bd-highlight divcina">
         <div class="p-2 w-100 bd-highlight subtitle">Naši ljudi</div>
-
         <div class="p-2 flex-shrink-1 bd-highlight paragraf">
           Naš tim programera čine profesionalci, sa višedecenijskim iskustvom,
           ali i mladi talenti koji se sa nama neprestano usavršavaju i stiču
@@ -66,6 +65,44 @@
         </div>
         <div class="p-2 w-100 bd-highlight subtitle desno">Zašto mi?</div>
       </div>
+      <div class="properties">
+        <div class="divic">
+          <h3>Odnos cene i kvaliteta</h3>
+          <div class="paragraf">
+            Fokusirani smo na pružanje najbolje usluge i na stvaranje
+            superiornih proizvoda, uz vođenje računa o budžetu naših klijenata i
+            održavanje cena koje su u skladu sa postojećim tržištem.
+          </div>
+        </div>
+        <div class="divic">
+          <h3>Posvećenost</h3>
+          <div class="paragraf">
+            Naš tim programera je maksimalno posvećen svakom klijentu, bilo da
+            je u pitanju održavanje postojećih, ili izrada novih projekata.
+          </div>
+        </div>
+        <div class="divic">
+          <h3>Inovativnost</h3>
+          <div class="paragraf">
+            Tokom izrade naših proizvoda, koristimo najsavremenije tehnologije i
+            trudimo se da rešenja koja nudimo budu inovativna.
+          </div>
+        </div>
+        <div class="divic">
+          <h3>Dostupnost</h3>
+          <div class="paragraf">
+            Naš tim tehničke podrške je uvek dostupan, te brzo i efikasno
+            reaguje na potrebe naših klijenata.
+          </div>
+        </div>
+        <div class="divic">
+          <h3>Zadovoljni klijenti</h3>
+          <div class="paragraf">
+            Prioritet našeg poslovanja su zadovoljni klijenti, a tokom 30 godina
+            poslovanja, stekli smo preko 300 zadovoljnih partnera.
+          </div>
+        </div>
+      </div>
     </div>
     <div id="footer">
       <Footer />
@@ -84,6 +121,9 @@ export default {
     Footer,
     Navbar,
     VueHorizontal,
+  },
+  mounted() {
+    window.scrollTo(0, 0);
   },
   data() {
     return {
@@ -120,6 +160,7 @@ export default {
 .divcina {
   padding: 25px 40px;
   margin: 10px 20px;
+  /* flex-wrap: wrap; */
 }
 
 .subtitle {
@@ -142,5 +183,45 @@ export default {
 
 .slike {
   border-radius: 10px;
+}
+
+.divic {
+  max-width: 400px;
+  padding: 20px;
+}
+
+.properties {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+h3 {
+  font-family: "GlacialIndifferenceRegular";
+  color: black;
+  border-bottom: #d8d8d8 solid 1px;
+  padding: 10px;
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 995px) {
+  .divcina {
+    flex-wrap: wrap;
+  }
+
+  .subtitle {
+    word-spacing: 0vw;
+    border-bottom: #d8d8d8 solid 1px;
+  }
+
+  .desno {
+    border-bottom: none;
+    border-top: #d8d8d8 solid 1px;
+  }
+
+  .properties {
+    justify-content: space-around;
+  }
 }
 </style>

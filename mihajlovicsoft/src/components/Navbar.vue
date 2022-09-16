@@ -30,9 +30,9 @@
         </button>
 
         <!-- Collapsible wrapper -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
           <!-- Left links -->
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="content">
+          <ul class=" navbar-nav  mb-2 mb-lg-0" id="content">
             <li class="nav-item">
               <router-link
                 class="nav-link"
@@ -172,4 +172,5 @@ a router-link {
   border: 1px dashed grey;
   border-radius: 15px;
 }
+
 </style>

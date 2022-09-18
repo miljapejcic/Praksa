@@ -67,11 +67,6 @@
       </div>
       <!-- Container wrapper -->
     </nav>
-    <div class="titlebox">
-      Vaš pouzdan partner već <i>30 godina</i> <br /><img
-        src="../assets/logoslova.png"
-      />
-    </div>
     <div>
       <button @click="backToTop" type="button" class="btn btn-floating btn-lg" id="btn-back-to-top" >
           Nazad na vrh

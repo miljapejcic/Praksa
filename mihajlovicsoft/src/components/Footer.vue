@@ -25,18 +25,15 @@
 </template>
 
 
-<script> 
-
+<script>
 export default {
   name: "Footer",
-  components: {
-  },
+  components: {},
 };
 </script>
 
 
 <style>
-
 .kontakt {
   margin-bottom: 50px;
   display: flex;
@@ -86,23 +83,24 @@ export default {
   color: rgb(255, 255, 255);
   filter: drop-shadow(0 -0 0.25rem rgba(153, 153, 153));
   text-shadow: 1px 1px #00000064;
+  /* position:fixed; */
+  bottom: 0;
+  width: 100%;
 }
 
 @media only screen and (max-width: 990px) {
-    .elements {
-        flex-wrap: wrap;
-    }
+  .elements {
+    flex-wrap: wrap;
+  }
 
-    .location {
-        border-right: none;
-        border-bottom: #d8d8d8 solid 1px;
-    }
+  .location {
+    border-right: none;
+    border-bottom: #d8d8d8 solid 1px;
+  }
 
-    .info {
-        text-align: center;
-        padding: 20px;
-    }
-
+  .info {
+    text-align: center;
+    padding: 20px;
+  }
 }
-
 </style>

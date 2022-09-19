@@ -33,7 +33,7 @@
         <p>autorizovani distributeri Kaspersky Anti-Virus palete programa</p>
       </div>
       <div class="col client-item">
-        <img src="../assets/nicatlogo.png" />
+        <img src="../assets/nicatlogo2.png" />
         <p>član Klastera Ni-CAT</p>
       </div>
     </div>
@@ -94,19 +94,10 @@ export default {
 .routerLink:hover {
   color: rgb(178, 143, 143);
 }
-/* 
-.slike {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-} */
 
 @media only screen and (min-width: 1200px) {
   .slike {
     position: relative;
-    /* margin-left: 50px; */
-    /* width: 50%; */
     z-index: -1;
   }
 
@@ -144,8 +135,8 @@ export default {
   margin: 10px 0px;
   justify-content: space-around;
   flex-wrap: wrap;
-  align-items: flex-end;
-  margin-top: 100px;
+  align-items: center;
+  margin-top: 70px;
 }
 
 .client-item {
@@ -153,6 +144,7 @@ export default {
   text-align: center;
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 300;
+  font-size: 13px;
 }
 
 .clients img {

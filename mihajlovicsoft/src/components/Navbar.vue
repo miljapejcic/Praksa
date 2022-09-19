@@ -52,6 +52,11 @@
               >
             </li>
             <li class="nav-item">
+              <router-link class="nav-link" :to="{ name: 'Podrska' }"
+                >Tehnička podrška</router-link
+              >
+            </li>
+            <li class="nav-item">
               <a class="nav-link" @click="goto({ footer })">Kontakt</a>
             </li>
             <li class="nav-item">
@@ -151,11 +156,12 @@ function scrollFunction() {
 #content {
   text-transform: uppercase;
   /* text-align: right; */
-  line-height: 17px;
+  line-height:20px;
   font-size: 20px;
   font-family: "GlacialIndifferenceRegular";
   color: rgb(0, 0, 0);
   transition: 0.4s;
+  align-items: center;
 }
 
 #content .nav-item {

@@ -20,21 +20,20 @@
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xl-12 paragraf">
+      <div class="stavke">
+        <div class="col-xl-6 paragraf mejl">
+          <img src="../assets/cv.jpg" />
+          <p class="pb-0">
+            Ukoliko ste zainteresovani za posao u našoj kompaniji i posedujete
+            navedena znanja i veštine, svoj CV mozete poslati na:
+            <b>office@mihajlovicsoft.rs</b>
+          </p>
+        </div>
+        <div class="col-xl-6 paragraf">
           <p>Potrebna znanja i veštine:</p>
           <li v-for="v in vestine" :key="v.id">
             {{ v }}
           </li>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xl-12 paragraf">
-          <p class="pb-0">
-            Ukoliko ste zainteresovani za posao u našoj kompaniji i posedujete
-            navedena znanja i veštine, svoj CV mozete poslati na:
-          </p>
-          <b class="mejl">office@mihajlovicsoft.rs</b>
         </div>
       </div>
     </div>
@@ -66,44 +65,33 @@ export default {
 </script>
 
 <style scoped>
-.dugme {
-  border-color: #fd0101;
-  border-width: 2px;
-  color: #fd0101;
-  font-weight: 600;
-  letter-spacing: 2px;
-  font-size: 18px;
-  background-color: transparent;
-}
-
-.dugme:hover {
-  color: #fff7f7;
-  border-color: #fff7f7;
-  background-color: #fd010179;
-}
-
 .paragraf {
-  font-family: "Be Vietnam Pro", sans-serif;
-  padding: 30px;
-
-  /* ovo nadole je marta dodala!!!!
-    padding: 40px 20px;
-    */
-  font-weight: 300;
-  font-size: 18px;
-  text-align: justify;
+  padding: 20px 50px;
 }
 
-.naslov {
-  color: #fd0101;
-  text-transform: uppercase;
-  font-family: "GlacialIndifferenceRegular";
-  font-size: 30px;
+.stavke {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.mejl img {
+  max-width: 400px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+b {
   font-weight: bold;
+  color: #fd0101;
 }
 
 .mejl {
-  font-weight: bold;
-  color: #fd0101;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 </style>

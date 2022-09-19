@@ -196,13 +196,6 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap");
-.dugme {
-  border: 1px solid rgba(255, 0, 0, 0.2);
-  border-radius: 3px;
-  padding: 4%;
-  font-family: "GlacialIndifferenceRegular";
-  transition: 0.4s;
-}
 
 .klasa {
   display: flex;
@@ -307,6 +300,7 @@ export default {
 }
 
 .dugme {
+  border-radius: 3px;
   border-color: #fd0101;
   border-width: 2px;
   color: #fd0101;
@@ -314,6 +308,9 @@ export default {
   letter-spacing: 2px;
   font-size: 18px;
   background-color: transparent;
+  padding: 4%;
+  font-family: "GlacialIndifferenceRegular";
+  transition: 0.4s;
 }
 
 .dugme:hover {

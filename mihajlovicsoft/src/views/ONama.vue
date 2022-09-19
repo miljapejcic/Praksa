@@ -2,7 +2,7 @@
   <div>
     <Navbar footer="footer" />
     <div class="row pb-0">
-      <h2 class="naslov">O NAMA</h2>
+      <h2 class="naslov">O nama</h2>
     </div>
     <div class="container elements">
       <div class="d-flex bd-highlight divcina">
@@ -109,16 +109,15 @@
       <div class="bordertop"></div>
       <div>
         <div class="dodatneInfo">
-          
           <h3>Dodatne informacije</h3>
           <p>
-              <u>Naziv banke:</u> AIK banka, Niš <br/>
-              <u>Tekući račun:</u> 105-1833-59<br/>
-              <u>PIB:</u> 100668961<br/>
-              <u>Matični broj:</u> 06066186<br/>
-              <u>Šifra delatnosti:</u> 72200
+            <b>Naziv banke:</b> AIK banka, Niš <br />
+            <b>Tekući račun:</b> 105-1833-59<br />
+            <b>PIB:</b> 100668961<br />
+            <b>Matični broj:</b> 06066186<br />
+            <b>Šifra delatnosti:</b> 72200
           </p>
-        </div>  
+        </div>
       </div>
     </div>
     <div id="footer">
@@ -246,6 +245,7 @@ h3 {
   .subtitle {
     word-spacing: 0vw;
     border-bottom: #d8d8d8 solid 1px;
+    background: none;
   }
 
   .desno {
@@ -271,32 +271,36 @@ h3 {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  text-align:left;
+  text-align: left;
   max-width: 400px;
-  width:100%;
-  margin-top:30px;
+  width: 100%;
+  margin-top: 30px;
 }
 
-.dodatneInfo h3{
+.dodatneInfo h3 {
   font-family: "GlacialIndifferenceRegular";
   color: #fd0101;
-  font-size:30px;
+  font-size: 30px;
   border-bottom: 0;
   padding-left: 0;
 }
 
+.dodatneInfo b {
+  font-weight: 600;
+  color: rgb(125, 44, 44);
+}
 
-.bordertop{
-  width:100%;
+.bordertop {
+  width: 100%;
   border-top: 1px dashed rgb(205, 205, 205);
 }
 
-.vred{
+.vred {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  text-align:left;
+  text-align: left;
   max-width: 400px;
-  width:100%;
+  width: 100%;
 }
 </style>

@@ -9,6 +9,7 @@
             <img src="../assets/location.png" />
           </div>
           <div class="col-xl-6 info">
+            Mihajlović Soft d.o.o<br />
             Janka Veselinovića 5A,
             <br />18000 Niš <br />Serbia <br /><br /><b>E-mail:</b>
             office@mihajlovicsoft.rs <br /><b>Telefon:</b>+381 18 513 000

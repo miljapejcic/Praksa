@@ -1,6 +1,9 @@
 <template>
   <div>
     <Navbar footer="footer" />
+    <div class="row pb-0">
+      <h2 class="naslov">O NAMA</h2>
+    </div>
     <div class="container elements">
       <div class="d-flex bd-highlight divcina">
         <div class="p-2 w-100 bd-highlight subtitle">Ko smo mi?</div>
@@ -103,6 +106,20 @@
           </div>
         </div>
       </div>
+      <div class="bordertop"></div>
+      <div>
+        <div class="dodatneInfo">
+          
+          <h3>Dodatne informacije</h3>
+          <p>
+              <u>Naziv banke:</u> AIK banka, Niš <br/>
+              <u>Tekući račun:</u> 105-1833-59<br/>
+              <u>PIB:</u> 100668961<br/>
+              <u>Matični broj:</u> 06066186<br/>
+              <u>Šifra delatnosti:</u> 72200
+          </p>
+        </div>  
+      </div>
     </div>
     <div id="footer">
       <Footer />
@@ -169,7 +186,7 @@ export default {
 .elements {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
 }
 
 .divcina {
@@ -209,7 +226,7 @@ export default {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 h3 {
@@ -238,5 +255,47 @@ h3 {
   .properties {
     justify-content: space-around;
   }
+}
+
+.naslov {
+  color: #fd0101;
+  text-transform: uppercase;
+  font-family: "GlacialIndifferenceRegular";
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.dodatneInfo {
+  /*padding: 60px;*/
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  text-align:left;
+  max-width: 400px;
+  width:100%;
+  margin-top:30px;
+}
+
+.dodatneInfo h3{
+  font-family: "GlacialIndifferenceRegular";
+  color: #fd0101;
+  font-size:30px;
+  border-bottom: 0;
+  padding-left: 0;
+}
+
+
+.bordertop{
+  width:100%;
+  border-top: 1px dashed rgb(205, 205, 205);
+}
+
+.vred{
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  text-align:left;
+  max-width: 400px;
+  width:100%;
 }
 </style>

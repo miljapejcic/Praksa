@@ -7,6 +7,7 @@ import Potkategorije from '../views/Potkategorije.vue'
 import ONama from '../views/ONama.vue'
 import Tim from '../views/Tim.vue'
 import PCKase from '../views/PCKase.vue'
+import Podrska from '../views/Podrska.vue'
 
 Vue.use(Router)
 
@@ -41,7 +42,12 @@ const router = new Router({
             path: '/Tim',
             name: 'Tim',
             component: Tim
-        }
+        },
+        {
+            path: '/Podrska',
+            name: 'Podrska',
+            component: Podrska
+        },
     ],
     mode: 'history'
 })

@@ -66,7 +66,7 @@ export default {
 
 <style scoped>
 .paragraf {
-  padding: 20px 50px;
+  padding: 20px 40px;
 }
 
 .stavke {

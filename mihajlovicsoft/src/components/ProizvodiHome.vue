@@ -290,6 +290,12 @@ export default {
   }
 }
 
+@media only screen and (min-width: 1800px) {
+  .kontejner {
+    background-size: contain;
+  }
+}
+
 .naslov {
   color: #fd0101;
   text-transform: uppercase;

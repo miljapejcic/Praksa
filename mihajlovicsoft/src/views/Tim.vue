@@ -7,7 +7,7 @@
           <h2 class="naslov">POSTANI DEO NAŠEG TIMA</h2>
         </div>
       </div>
-      <div class="row">
+      <div class="row margine">
         <div class="col-xl-12 paragraf">
           <p>
             Kao kompanija sa dugačkom tradicijom, težimo ka tome da se naš tim
@@ -20,9 +20,9 @@
           </p>
         </div>
       </div>
-      <div class="stavke">
+      <div class="stavke margine">
         <div class="col-xl-6 paragraf mejl">
-          <img src="../assets/cv.jpg" />
+          <img src="../assets/resume.jpg" />
           <p class="pb-0">
             Ukoliko ste zainteresovani za posao u našoj kompaniji i posedujete
             navedena znanja i veštine, svoj CV mozete poslati na:
@@ -93,5 +93,9 @@ b {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.margine {
+  margin: 0px 50px;
 }
 </style>

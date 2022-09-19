@@ -25,15 +25,15 @@
     </div>
     <div class="clients">
       <div class="col client-item">
-        <img src="../assets/mslogo.png" />
+        <img src="../assets/onama HOME/mslogo.png" />
         <p>zvanični Microsoft Certified Partner</p>
       </div>
       <div class="col client-item">
-        <img src="../assets/kasperskylogo.png" />
+        <img src="../assets/onama HOME/kasperskylogo.png" />
         <p>autorizovani distributeri Kaspersky Anti-Virus palete programa</p>
       </div>
       <div class="col client-item">
-        <img src="../assets/nicatlogo2.png" />
+        <img src="../assets/onama HOME/nicatlogo2.png" />
         <p>član Klastera Ni-CAT</p>
       </div>
     </div>

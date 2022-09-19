@@ -8,13 +8,14 @@
       <!-- Container wrapper -->
       <div class="container-fluid">
         <!-- Navbar brand -->
-        <a class="navbar-brand" href="#"
-          ><img
-            src="../assets/logo.png"
-            class="d-inline-block align-top logo"
-            alt="logo"
-            id="logo"
-        /></a>
+        <router-link class="nav-link" :to="{ name: 'Home' }" aria-current="page"
+          ><a class="navbar-brand"
+            ><img
+              src="../assets/navbar/logo.png"
+              class="d-inline-block align-top logo"
+              alt="logo"
+              id="logo" /></a
+        ></router-link>
 
         <!-- Toggle button -->
         <button
@@ -30,9 +31,12 @@
         </button>
 
         <!-- Collapsible wrapper -->
-        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarSupportedContent"
+        >
           <!-- Left links -->
-          <ul class=" navbar-nav mb-2 mb-lg-0" id="content">
+          <ul class="navbar-nav mb-2 mb-lg-0" id="content">
             <li class="nav-item">
               <router-link
                 class="nav-link"
@@ -73,10 +77,15 @@
       <!-- Container wrapper -->
     </nav>
     <div>
-      <button @click="backToTop" type="button" class="btn btn-floating btn-lg" id="btn-back-to-top" >
-          Nazad na vrh
-        </button>
-  </div>
+      <button
+        @click="backToTop"
+        type="button"
+        class="btn btn-floating btn-lg"
+        id="btn-back-to-top"
+      >
+        Nazad na vrh
+      </button>
+    </div>
   </div>
   <!-- Navbar -->
 </template>
@@ -92,51 +101,73 @@ export default {
         behavior: "smooth",
       });
     },
-    backToTop(){
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
+    backToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    },
   },
   props: ["footer"],
-  mounted(){
-        document.getElementById("btn-back-to-top").style.display = "none";
-    }
+  mounted() {
+    document.getElementById("btn-back-to-top").style.display = "none";
+  },
 };
 
 window.onscroll = function () {
   scrollFunction();
 };
 
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
-  ) {
-      document.getElementById("btn-back-to-top").style.display = "block";
-      document.getElementById("btn-back-to-top").style.animation = "fadeIn 1s";
+window.onresize = function () {
+  changeGradientToggle();
+};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("btn-back-to-top").style.display = "block";
+    document.getElementById("btn-back-to-top").style.animation = "fadeIn 1s";
   } else {
     document.getElementById("btn-back-to-top").style.animation = "fadeOut 1s";
     document.getElementById("btn-back-to-top").style.display = "none";
-
-
   }
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("logo").style.width = "60px";
     document.getElementById("content").style.fontSize = "16px";
     document.getElementById("navbar").style.background = `linear-gradient(
-    180deg,
-    rgba(136, 136, 136, 1),
-    rgba(255, 255, 255, 0.9)
-  )`;
+        180deg,
+        rgba(136, 136, 136, 1),
+        rgba(255, 255, 255, 0.9)
+      )`;
   } else {
     document.getElementById("logo").style.width = "90px";
     document.getElementById("content").style.fontSize = "20px";
+    if (window.innerWidth < 991.5) {
+      document.getElementById("navbar").style.background = `linear-gradient(
+        180deg,
+        rgba(136, 136, 136, 1),
+        rgba(255, 255, 255, 0.9)
+      )`;
+    } else {
+      document.getElementById("navbar").style.background = `linear-gradient(
+        180deg,
+        rgba(136, 136, 136, 0),
+        rgba(255, 255, 255, 0.564)
+      )`;
+    }
+  }
+}
+
+function changeGradientToggle() {
+  if (window.innerWidth < 991.5) {
     document.getElementById("navbar").style.background = `linear-gradient(
-    180deg,
-    rgba(136, 136, 136, 0),
-    rgba(255, 255, 255, 0.564)
-  )`;
+        180deg,
+        rgba(136, 136, 136, 1),
+        rgba(255, 255, 255, 0.9)
+      )`;
+  } else {
+    document.getElementById("navbar").style.background = `linear-gradient(
+        180deg,
+        rgba(136, 136, 136, 0),
+        rgba(255, 255, 255, 0.564)
+      )`;
   }
 }
 </script>
@@ -156,7 +187,7 @@ function scrollFunction() {
 #content {
   text-transform: uppercase;
   /* text-align: right; */
-  line-height:20px;
+  line-height: 20px;
   font-size: 20px;
   font-family: "GlacialIndifferenceRegular";
   color: rgb(0, 0, 0);
@@ -180,17 +211,36 @@ function scrollFunction() {
   /* margin-top: -60px; */
 }
 
-
 .header {
-  background-image: url(../assets/final2.png);
+  background-image: url(../assets/navbar/final2.png);
   background-repeat: no-repeat;
-  background-size:cover;
-  background-position:center;
+  background-size: cover;
+  background-position: center;
   min-height: 600px;
   width: 100%;
   /* top: 0%; */
   margin-top: -60px;
   margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 991.5px) {
+  .navbar {
+    background: linear-gradient(
+      180deg,
+      rgba(136, 136, 136, 0),
+      rgba(255, 255, 255, 0.5)
+    );
+  }
+}
+
+@media only screen and (max-width: 991.5px) {
+  .navbar {
+    background: linear-gradient(
+      180deg,
+      rgba(136, 136, 136, 1),
+      rgba(255, 255, 255, 0.9)
+    );
+  }
 }
 
 a router-link {
@@ -204,13 +254,12 @@ a router-link {
   border-radius: 15px;
 }
 
-
 #btn-back-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width:auto;
-  height:auto;
+  width: auto;
+  height: auto;
   z-index: 999;
 
   font-weight: 600;
@@ -225,20 +274,20 @@ a router-link {
 }
 
 @keyframes fadeIn {
-  from{
-    opacity:0;
+  from {
+    opacity: 0;
   }
-  to{
-    opacity:1;
+  to {
+    opacity: 1;
   }
 }
 
 @keyframes fadeOut {
-  from{
-    opacity:1;
+  from {
+    opacity: 1;
   }
-  to{
-    opacity:0;
+  to {
+    opacity: 0;
   }
 }
 </style>

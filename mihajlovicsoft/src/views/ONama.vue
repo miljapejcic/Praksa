@@ -173,8 +173,8 @@ export default {
 }
 
 .divcina {
-  padding: 25px 40px;
-  margin: 10px 20px;
+  padding: 25px 60px;
+  margin: 10px 70px;
   /* flex-wrap: wrap; */
 }
 
@@ -223,6 +223,7 @@ h3 {
 @media only screen and (max-width: 995px) {
   .divcina {
     flex-wrap: wrap;
+    margin: 10px;
   }
 
   .subtitle {

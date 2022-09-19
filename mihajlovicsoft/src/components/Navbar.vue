@@ -72,8 +72,8 @@
       </div>
       <!-- Container wrapper -->
     </nav>
-    <div>
-      <button @click="backToTop" type="button" class="btn btn-floating btn-lg" id="btn-back-to-top" >
+    <div class="dugmeZaTop">
+      <button @click="backToTop" type="button" class="btn btn-danger btn-floating btn-lg topDugme">
           Nazad na vrh
         </button>
   </div>
@@ -99,7 +99,8 @@ export default {
   },
   props: ["footer"],
   mounted(){
-        document.getElementById("btn-back-to-top").style.display = "none";
+        document.querySelector('.topDugme').style.opacity = '0';
+        // document.getElementById("btn-back-to-top").style.display = "none";
     }
 };
 
@@ -109,17 +110,20 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
+    document.body.scrollTop > 40 ||
+    document.documentElement.scrollTop > 40
   ) {
-      document.getElementById("btn-back-to-top").style.display = "block";
-      document.getElementById("btn-back-to-top").style.animation = "fadeIn 1s";
-
+      document.querySelector('.topDugme').style.opacity = '1';
+      document.querySelector('.topDugme').classList.add("active");
+      // document.getElementById("btn-back-to-top").style.display = "block";
+      // document.getElementById("btn-back-to-top").style.animation = "fadeIn 1s";
   } else {
-    document.getElementById("btn-back-to-top").style.animation = "fadeOut 1s";
-    document.getElementById("btn-back-to-top").style.display = "none";
+    document.querySelector('.topDugme').style.opacity = '0';
+    document.querySelector('.topDugme').style.transition = '1s ease';
+    //document.querySelector('.topDugme').classList.remove("active");
 
-
+    // document.getElementById("btn-back-to-top").style.animation = "fadeOut 1s";
+    // document.getElementById("btn-back-to-top").style.display = "none";
   }
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("logo").style.width = "60px";
@@ -205,6 +209,24 @@ a router-link {
 }
 
 
+.topDugme{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width:auto;
+  height:auto;
+  z-index: 9999;
+  
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 18px;
+  color: #fff7f7;
+  background-color: #fd010179;
+
+  /*opacity:1;*/
+  transition: 1s ease;
+}
+
 #btn-back-to-top {
   position: fixed;
   bottom: 20px;
@@ -212,15 +234,44 @@ a router-link {
   width:auto;
   height:auto;
   z-index: 999;
-
+  
   font-weight: 600;
   letter-spacing: 2px;
   font-size: 18px;
   color: #fff7f7;
   background-color: #fd010179;
+
+  visibility:hidden;
+  opacity:0;
+  transition: 1s;
 }
 
+.topDugme.active{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width:auto;
+  height:auto;
+  z-index: 9999;
+  
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 18px;
+  color: #fff7f7;
+  background-color: #fd010179;
+
+  transition: 1s ease;
+  /*transition: opacity 1s;
+  opacity:1;
+  visibility:visible;
+  */
+}
+
+
 #btn-back-to-top:hover {
+  color: #fd0101;
+}
+.topDugme:hover {
   color: #fd0101;
 }
 
@@ -239,6 +290,11 @@ a router-link {
   }
   to{
     opacity:0;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .dugmeZaTop {
+    display:none;
   }
 }
 </style>

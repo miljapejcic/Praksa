@@ -195,8 +195,6 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap");
-
 .klasa {
   display: flex;
   flex-direction: row;
@@ -216,10 +214,10 @@ export default {
 }
 
 .paragraf {
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 40px;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
   text-align: justify;
 }
 .routerLink {
@@ -236,25 +234,26 @@ export default {
 .stavka {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  padding: 20px;
-  font-family: "Be Vietnam Pro", sans-serif;
+  width: 90%;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
   color: black;
-  font-size: 14px;
+  font-size: 13px;
   justify-content: center;
   transition: 0.5s ease;
 }
 
 .stavka:hover {
-  width: 105%;
-  filter: drop-shadow(0 0.4rem 0.3rem rgba(104, 104, 104, 0.498));
+  filter:contrast(1.4) drop-shadow(0 0.3rem 0.5rem rgba(104, 104, 104, 0.772));
   transition: 0.5s ease;
 }
+
 
 .round-img {
   width: 100%;
   border-radius: 100%;
   margin-bottom: 10px;
+  transition: 0.5s ease;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -266,7 +265,7 @@ export default {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 16px;
     width: 100%;
     background-image: linear-gradient(
       to right,
@@ -286,7 +285,7 @@ export default {
   }
 
   .round-img {
-    width: 130px;
+    width: 100px;
   }
 }
 
@@ -297,11 +296,6 @@ export default {
 }
 
 .naslov {
-  color: #fd0101;
-  text-transform: uppercase;
-  font-family: "GlacialIndifferenceRegular";
-  font-size: 30px;
-  font-weight: bold;
   margin-bottom: 10px;
 }
 
@@ -312,10 +306,10 @@ export default {
   color: #fd0101;
   font-weight: 600;
   letter-spacing: 2px;
-  font-size: 18px;
+  font-size: 16px;
   background-color: transparent;
   padding: 4%;
-  font-family: "GlacialIndifferenceRegular";
+  font-family: "Poppins", sans-serif;
   transition: 0.4s;
 }
 

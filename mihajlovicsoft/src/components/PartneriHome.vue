@@ -20,11 +20,11 @@
               Iskren i otvoren odnos, poverenje, poštovanje i saradnja
               predstavljaju suštinu uspešnog partnersta. Kao tim koji se
               neprekidno razvija i uvećava, pozivamo Vas da stupite u kontakt sa
-              nama i proverite koje su Vaše prilike za boljim poslovanjem. Rešenja
-              koja distribuiramo su proverena rešenja. Iza nas je veliki broj
-              zadovoljnih kompanija koje su znale da iskoriste naše znanje i
-              iskustva. Ukoliko se prepoznajete u navedenim delatnostima, Vaš se
-              uspeh ne dovodi u pitanje. <i>Postanite naš PARTNER!</i>
+              nama i proverite koje su Vaše prilike za boljim poslovanjem.
+              Rešenja koja distribuiramo su proverena rešenja. Iza nas je veliki
+              broj zadovoljnih kompanija koje su znale da iskoriste naše znanje
+              i iskustva. Ukoliko se prepoznajete u navedenim delatnostima, Vaš
+              se uspeh ne dovodi u pitanje. <i>Postanite naš PARTNER!</i>
             </p>
           </div>
         </div>
@@ -221,30 +221,15 @@ export default {
 
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap"); */
 .paragraf {
-  font-family: "Be Vietnam Pro", sans-serif;
-
-  /* ovo je marta dodala!!!! 
-  padding: 40px 20px;
-  max-width: 700px;
-  */
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 18px;
-  text-align: justify; 
+  font-size: 16px;
+  text-align: justify;
 }
 section {
   padding: 16px 24px;
   background: #f5f5f5;
 }
-
-.naslov {
-  color: #fd0101;
-  text-transform: uppercase;
-  font-family: "GlacialIndifferenceRegular";
-  font-size: 30px;
-  font-weight: bold;
-}
-
-
 </style>

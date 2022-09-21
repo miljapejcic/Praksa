@@ -1,8 +1,8 @@
 <template>
   <div>
     <Navbar footer="footer" />
-    <div class="container">
-      <div class="naslov">Tehnička podrška</div>
+    <div class="container" style="width: 80em;">
+      <div class="font-lg" style="text-align: left; font-size: 38px; margin: 0px 40px;">Tehnička podrška</div>
       <div>
         <div class="divic">
           <div class="paragraf">
@@ -26,9 +26,10 @@
           </div>
         </div>
         <div class="paragraf">
+          <p class="naslov">Preuzmite klijentsku aplikaciju za tehničku podršku klikom na dugme iznad.</p>
           Kontaktirajte nas i uverite se sami, da imamo proizvode sa kojima
           povećavamo Vaš prosperitet na tržištu. Trudićemo se da Vam pružimo
-          podršku, na najvišem mogućem nivou! <b>Preuzmite klijentsku aplikaciju za tehničku podršku klikom na dugme iznad.</b>
+          podršku, na najvišem mogućem nivou! 
         </div>
       </div>
     </div>

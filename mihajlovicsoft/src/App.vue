@@ -11,14 +11,15 @@ export default {
   name: "App",
   components: {
     // Home
-  }
-}
+  },
+};
 </script>
 
 <style>
 #app {
   /* background-color: rgb(235, 180, 180); */
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

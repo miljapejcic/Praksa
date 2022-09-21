@@ -41,7 +41,7 @@ export default {
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
-  border-top: 1px dashed rgb(205, 205, 205);
+  border-top: 0.6px solid #d8d8d8;
   padding-top: 10px;
 }
 
@@ -54,9 +54,9 @@ export default {
 
 .info {
   padding: 60px;
-  font-family: "Be Vietnam Pro", sans-serif;
-  font-weight: 300;
-  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   text-align: justify;
 }
 
@@ -67,7 +67,7 @@ export default {
 .location {
   padding: 40px;
   margin-top: 10px;
-  border-right: #d8d8d8 solid 1px;
+  border-right: #d8d8d8 solid 0.6px;
 }
 
 .location img {
@@ -76,11 +76,10 @@ export default {
 
 .footer {
   padding: 10px 20px;
-  /* background-image: linear-gradient(to right, #fd0101, #cecece9b); */
   background-color: #fd0101;
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
   color: rgb(255, 255, 255);
   filter: drop-shadow(0 -0 0.25rem rgba(153, 153, 153));
   text-shadow: 1px 1px #00000064;
@@ -96,7 +95,7 @@ export default {
 
   .location {
     border-right: none;
-    border-bottom: #d8d8d8 solid 1px;
+    border-bottom: #d8d8d8 solid 0.6px;
   }
 
   .info {

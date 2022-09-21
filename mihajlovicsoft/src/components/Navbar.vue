@@ -1,88 +1,107 @@
 <template>
-  <!-- Navbar -->
-  <div class="header">
-    <nav
-      id="navbar"
-      class="navbar navbar-expand-lg shadow-5-strong fixed-top navibg"
-    >
-      <!-- Container wrapper -->
-      <div class="container-fluid">
-        <!-- Navbar brand -->
-        <router-link class="nav-link" :to="{ name: 'Home' }" aria-current="page"
-          ><a class="navbar-brand"
-            ><img
-              src="../assets/navbar/logo.png"
-              class="d-inline-block align-top logo"
-              alt="logo"
-              id="logo" /></a
-        ></router-link>
-
-        <!-- Toggle button -->
-        <button
-          class="navbar-toggler navtoggle"
-          type="button"
-          data-mdb-toggle="collapse"
-          data-mdb-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
-
-        <!-- Collapsible wrapper -->
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarSupportedContent"
-        >
-          <!-- Left links -->
-          <ul class="navbar-nav mb-2 mb-lg-0" id="content">
-            <li class="nav-item">
-              <router-link
-                class="nav-link"
-                :to="{ name: 'Home' }"
-                aria-current="page"
-                >Početna</router-link
-              >
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" :to="{ name: 'Proizvodi' }"
-                >Proizvodi i usluge</router-link
-              >
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" :to="{ name: 'ONama' }"
-                >O nama</router-link
-              >
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" :to="{ name: 'Podrska' }"
-                >Tehnička podrška</router-link
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" @click="goto({ footer })">Kontakt</a>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" :to="{ name: 'Tim' }"
-                >Postani deo našeg tima</router-link
-              >
-              <!-- <a class="nav-link" href="#">Postani deo našeg tima</a> -->
-            </li>
-          </ul>
-          <!-- Left links -->
+  <div>
+    <!-- Navbar -->
+    <header>
+      <div class="header">
+        <div class="container-2xl m-auto">
+          <div class="titlebox">
+            <h1 class="font-xl">
+              <span class="msoft">Mihajlović Soft.</span> 30 godina sa vama
+            </h1>
+            <h2 class="font-lg">
+              Microsoft Certified Partner<br />Izrada softvera, Kompjuterski
+              Inženjering
+            </h2>
+          </div>
         </div>
-        <!-- Collapsible wrapper -->
       </div>
-      <!-- Container wrapper -->
-    </nav>
+      <nav
+        id="navbar"
+        class="navbar navbar-expand-lg shadow-5-strong fixed-top navibg"
+      >
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Navbar brand -->
+          <router-link
+            class="nav-link"
+            :to="{ name: 'Home' }"
+            aria-current="page"
+            ><a class="navbar-brand"
+              ><img
+                src="../assets/navbar/logo.png"
+                class="d-inline-block align-top logo"
+                alt="logo"
+                id="logo" /></a
+          ></router-link>
+
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler navtoggle"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Collapsible wrapper -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <!-- Left links -->
+            <ul class="navbar-nav mb-2 mb-lg-0" id="content">
+              <li class="nav-item">
+                <router-link
+                  class="nav-link"
+                  :to="{ name: 'Home' }"
+                  aria-current="page"
+                  >Početna</router-link
+                >
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" :to="{ name: 'Proizvodi' }"
+                  >Proizvodi i usluge</router-link
+                >
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" :to="{ name: 'ONama' }"
+                  >O nama</router-link
+                >
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" :to="{ name: 'Podrska' }"
+                  >Tehnička podrška</router-link
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" @click="goto({ footer })">Kontakt</a>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" :to="{ name: 'Tim' }"
+                  >Postani deo našeg tima</router-link
+                >
+                <!-- <a class="nav-link" href="#">Postani deo našeg tima</a> -->
+              </li>
+            </ul>
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+    </header>
     <div class="dugmeZaTop">
       <button
         @click="backToTop"
         type="button"
         class="btn-floating btn-lg topDugme"
       >
-        Nazad na vrh
+        <!-- <img src="../assets/arrowup.png" /> -->
+        <b-icon icon="chevron-double-up"></b-icon>
       </button>
     </div>
   </div>
@@ -124,7 +143,6 @@ function scrollFunction() {
     document.querySelector(".topDugme").style.opacity = "1";
     document.querySelector(".topDugme").classList.add("active");
     document.querySelector(".topDugme").disabled = false;
-
   } else {
     document.querySelector(".topDugme").style.opacity = "0";
     document.querySelector(".topDugme").style.transition = "1s ease";
@@ -132,7 +150,7 @@ function scrollFunction() {
   }
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("logo").style.width = "60px";
-    document.getElementById("content").style.fontSize = "16px";
+    document.getElementById("content").style.fontSize = "14px";
     document.getElementById("navbar").style.background = `linear-gradient(
         180deg,
         rgba(136, 136, 136, 1),
@@ -140,7 +158,7 @@ function scrollFunction() {
       )`;
   } else {
     document.getElementById("logo").style.width = "90px";
-    document.getElementById("content").style.fontSize = "20px";
+    document.getElementById("content").style.fontSize = "16px";
     if (window.innerWidth < 991.5) {
       document.getElementById("navbar").style.background = `linear-gradient(
         180deg,
@@ -175,10 +193,50 @@ function changeGradientToggle() {
 </script>
 
 <style>
+.titlebox {
+  position: absolute;
+  margin: 0 20px;
+  top: 55%;
+  text-align: left;
+  transform: translate(0, -50%);
+  color: #fff;
+  max-width: 32rem;
+  width: calc(100% - 4.5rem);
+
+  text-shadow: rgba(0, 0, 0, 0.35) 0.1em 0.05em 0.5em;
+}
+
+.msoft {
+  color: #fd0101;
+}
+
+.container-2xl {
+  max-width: 96rem;
+  padding: 0 2.5rem;
+}
+
+.font-xl {
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  margin: 0.67em 0;
+}
+
+.titlebox h1 {
+  display: block;
+  margin: 0.67em 0;
+  font-weight: bold;
+}
+
+.font-lg {
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+  line-height: 2.4rem;
+}
 .logo {
   width: 90px;
   margin: 0px 10px 0px 30px;
-  transition: 0.4s;
+  transition: 1s ease;
 }
 
 .navtoggle {
@@ -187,13 +245,11 @@ function changeGradientToggle() {
 }
 
 #content {
-  text-transform: uppercase;
-  /* text-align: right; */
   line-height: 20px;
-  font-size: 20px;
-  font-family: "GlacialIndifferenceRegular";
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
   color: rgb(0, 0, 0);
-  transition: 0.4s;
+  transition: 1s ease;
   align-items: center;
 }
 
@@ -209,20 +265,24 @@ function changeGradientToggle() {
     rgba(255, 255, 255, 0.564)
   );
   z-index: 99999;
-  transition: 0.4s;
+  transition: 1s ease;
   /* margin-top: -60px; */
 }
 
 .header {
-  background-image: url(../assets/navbar/final2.png);
+  background-image: radial-gradient(transparent, rgba(190, 190, 190, 0.623)),
+    url(../assets/navbar/final.jpg);
+  background-position: center 0px;
+  /* min-height: 600px; */
+  margin-bottom: 50px;
+  margin-top: -60px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  min-height: 600px;
+  position: relative;
   width: 100%;
-  /* top: 0%; */
-  margin-top: -60px;
-  margin-bottom: 50px;
+  box-shadow: 0 4rem 6rem 0rem rgba(99, 99, 99, 0.194);
+
+  height: 100vh;
 }
 
 @media only screen and (min-width: 991.5px) {
@@ -250,57 +310,54 @@ a router-link {
   color: red;
 }
 
+.nav-link.active {
+  color: red;
+}
+
 .nav-link:focus {
-  /* text-decoration: underline; */
-  border: 1px dashed grey;
+  border: 0.4px dashed grey;
   border-radius: 15px;
 }
 
 .topDugme {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
   width: auto;
   height: auto;
   z-index: 9999;
-
-  font-weight: 600;
-  letter-spacing: 2px;
-  font-size: 18px;
-  color: #fff7f7;
-  /* background-color: #fd010179; */
-  transition: 1s ease;
-
-  border-radius: 3px;
-  border-width: 2px;
-  border-color: #fff7f7;
-  padding: 10px;
-  opacity: 40%;
-  border-radius: 15px;
-
+  /* font-weight: 600; */
+  /* letter-spacing: 2px; */
+  /* font-size: 16px; */
+  transition: 0.7s ease;
+  /* border-width: 1px; */
+  /* border-color: #fff7f7; */
+  /* padding: 10px; */
+  /* border-radius: 15px; */
+  /* background-color: transparent; */
 }
 
 .topDugme.active {
   position: fixed;
-  bottom: 20px;
+  bottom: 45px;
   right: 20px;
   width: auto;
   height: auto;
   z-index: 9999;
-
-  font-weight: 600;
-  letter-spacing: 2px;
-  font-size: 18px;
-  color: #fff7f7;
-  background-color: #fd010179;
-
-  transition: 1s ease;
+  font-size: 45px;
+  color: #ff6c6c;
+  background-color: #ffa8a83a;
+  border-width: 1px;
+  border-color: #ff606083;
+  border-radius: 15px;
+  padding: 0px 10px;
+  transition: 0.7s ease;
 }
 
 .topDugme:hover {
-  color: #fd0101;
-  border-color: #fd0101;
   opacity: 100%;
+  transition: 0.5s;
+  color: #fd0101;
+  background-color: #ffc2c2;
+  border-color: #ff6060;
 }
 
 @keyframes fadeIn {

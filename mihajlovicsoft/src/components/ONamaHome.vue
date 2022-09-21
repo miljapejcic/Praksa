@@ -2,7 +2,7 @@
   <div class="container about">
     <div class="naslov">O nama</div>
     <div class="row justify-content-center">
-      <div class="col-xl-6 opis">
+      <div class="col-xl-6 paragraf">
         <b>Mihajlović Soft</b> je kompanija koja se od 1991. godine bavi izradom
         softvera u cilju omogućavanja bržeg rada i pojednostavljivanja procesa
         poslovanja našim korisnicima. Pored računarskog konsaltinga, prodaje
@@ -14,7 +14,7 @@
         najvećem gradu na jugu Srbije, sa dugom tradicijom u oblasti elektronike
         i softverskog inženjerstva.
         <router-link class="routerLink" :to="{ name: 'ONama' }"
-          ><b>Više o nama →</b></router-link
+          ><b>Više o nama <b-icon icon="arrow-up-right-square"></b-icon></b></router-link
         >
       </div>
       <div class="col-xl-6 slike">
@@ -29,12 +29,12 @@
         <p>zvanični Microsoft Certified Partner</p>
       </div>
       <div class="col client-item">
-        <img src="../assets/onama HOME/nicatlogo2.png" />
-        <p>član Klastera Ni-CAT</p>
-      </div>
-      <div class="col client-item">
         <img src="../assets/onama HOME/kasperskylogo.png" />
         <p>autorizovani distributeri Kaspersky Anti-Virus palete programa</p>
+      </div>
+      <div class="col client-item">
+        <img src="../assets/onama HOME/nicatlogo2.png" />
+        <p>član Klastera Ni-CAT</p>
       </div>
     </div>
   </div>
@@ -43,8 +43,7 @@
 <script>
 export default {
   name: "ONamaHome",
-  components: {
-  },
+  components: {},
 };
 </script>
 
@@ -54,28 +53,9 @@ export default {
   flex-direction: column;
   margin-top: 40px;
 }
-.naslov {
-  color: #fd0101;
-  text-transform: uppercase;
-  font-family: "GlacialIndifferenceRegular";
-  font-size: 30px;
-  font-weight: bold;
-}
 
-.content-hor {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  flex-wrap: wrap;
-}
-
-.opis {
-  /* font-family: "GlacialIndifferenceRegular"; */
+.paragraf {
   padding: 40px;
-  font-family: "Be Vietnam Pro", sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  text-align: justify;
   /* max-width: 100%; */
 }
 
@@ -122,27 +102,22 @@ export default {
     left: 10px;
   }
 
-  /* .opis {
-    max-width: 600px;
-    padding: 40px 40px;
-  } */
 }
 
 .clients {
   display: flex;
   flex-direction: row;
   padding: 20px 50px;
-  margin: 10px 0px;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 .client-item {
-  margin: 0px 10px;
+  margin: 30px;
   text-align: center;
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 13px;
 }
@@ -152,6 +127,6 @@ export default {
 }
 
 .client-item p {
-  padding: 0px 40px;
+  padding: 10px 40px;
 }
 </style>

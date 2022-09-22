@@ -27,7 +27,7 @@
             >
               <div class="stavka m-1 pt-2 pb-2">
                 <div class="row">
-                  <router-link class="routerLink" :to="{ name: 'PCKase' }">
+                  <router-link class="routerLink" :to="{ name: 'Proizvod', params:{idkat:0, idproiz:3} }">
                     <img
                       class="round-img"
                       src="../assets/proizvodi HOME/kasa.jpg"
@@ -36,7 +36,7 @@
                 </div>
                 <div class="row">
                   <p>
-                    <router-link class="routerLink" :to="{ name: 'PCKase' }"
+                    <router-link class="routerLink" :to="{ name: 'Proizvod', params:{idkat:0, idproiz:3} }"
                       >PC kase
                     </router-link>
                   </p>
@@ -44,7 +44,7 @@
               </div>
               <div class="stavka m-1 pt-2 pb-2">
                 <div class="row">
-                  <router-link class="routerLink" :to="{ name: 'PCKase' }">
+                  <router-link class="routerLink" :to="{ name: 'Proizvod', params:{idkat:0, idproiz:4} }">
                     <img
                       class="round-img"
                       src="../assets/proizvodi HOME/gas.jpg"
@@ -53,7 +53,7 @@
                 </div>
                 <div class="row">
                   <p>
-                    <router-link class="routerLink" :to="{ name: 'PCKase' }">
+                    <router-link class="routerLink" :to="{ name: 'Proizvod', params:{idkat:0, idproiz:4} }">
                       Gas Pump Station Controller
                     </router-link>
                   </p>
@@ -71,7 +71,7 @@
             >
               <div class="stavka m-1 pt-2 pb-2">
                 <div class="row">
-                  <router-link class="routerLink" :to="{ name: 'PCKase' }">
+                  <router-link class="routerLink" :to="{ name: 'Proizvod', params:{idkat:0, idproiz:0} }">
                     <img
                       class="round-img"
                       src="../assets/proizvodi HOME/plate.jpg"
@@ -80,7 +80,7 @@
                 </div>
                 <div class="row">
                   <p>
-                    <router-link class="routerLink" :to="{ name: 'PCKase' }">
+                    <router-link class="routerLink" :to="{  name: 'Proizvod', params:{idkat:0, idproiz:0} }">
                       Program za obračun plata
                     </router-link>
                   </p>
@@ -88,7 +88,7 @@
               </div>
               <div class="stavka m-1 pt-2 pb-2">
                 <div class="row">
-                  <router-link class="routerLink" :to="{ name: 'PCKase' }">
+                  <router-link class="routerLink" :to="{  name: 'Proizvod', params:{idkat:0, idproiz:1} }">
                     <img
                       class="round-img"
                       src="../assets/proizvodi HOME/racun.jpg"
@@ -97,7 +97,7 @@
                 </div>
                 <div class="row">
                   <p>
-                    <router-link class="routerLink" :to="{ name: 'PCKase' }">
+                    <router-link class="routerLink" :to="{  name: 'Proizvod', params:{idkat:0, idproiz:1} }">
                       Program za knjigovodstvo
                     </router-link>
                   </p>
@@ -105,17 +105,17 @@
               </div>
               <div class="stavka m-1 pt-2 pb-2">
                 <div class="row">
-                  <router-link class="routerLink" :to="{ name: 'PCKase' }">
+                  <router-link class="routerLink" :to="{  name: 'Proizvodi' }">
                     <img
                       class="round-img"
-                      src="../assets/proizvodi HOME/hotel.jpg"
+                      src="../assets/proizvodi HOME/biznisapp.jpg"
                     />
                   </router-link>
                 </div>
                 <div class="row">
                   <p>
-                    <router-link class="routerLink" :to="{ name: 'PCKase' }">
-                      Program za hotele
+                    <router-link class="routerLink" :to="{  name: 'Proizvodi'}">
+                      Biznis aplikacije
                     </router-link>
                   </p>
                 </div>
@@ -132,7 +132,7 @@
             >
               <div class="stavka m-1 pt-2 pb-2">
                 <div class="row">
-                  <router-link class="routerLink" :to="{ name: 'PCKase' }">
+                  <router-link class="routerLink" :to="{  name: 'Proizvodi' }">
                     <img
                       class="round-img"
                       src="../assets/proizvodi HOME/app.jpg"
@@ -141,7 +141,7 @@
                 </div>
                 <div class="row">
                   <p>
-                    <router-link class="routerLink" :to="{ name: 'PCKase' }">
+                    <router-link class="routerLink" :to="{  name: 'Proizvodi' }">
                       Specifične aplikacije
                     </router-link>
                   </p>
@@ -300,7 +300,7 @@ export default {
 }
 
 .dugme {
-  border-radius: 3px;
+  border-radius: 5px;
   border-color: #fd0101;
   border-width: 2px;
   color: #fd0101;
@@ -315,7 +315,7 @@ export default {
 
 .dugme:hover {
   color: #fff7f7;
-  border-color: #fff7f7;
+  /* border-color: #fff7f7; */
   background-color: #fd010179;
 }
 </style>

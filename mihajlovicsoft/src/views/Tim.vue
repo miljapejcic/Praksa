@@ -23,18 +23,21 @@
       <div class="stavke margine">
         <div class="col-xl-6 paragraf mejl">
           <img src="../assets/resume.jpg" />
-          <p class="pb-0">
+          
+        </div>
+        <div class="col-xl-6 paragraf">
+          <h5>Potrebna znanja i veštine:</h5>
+          <li class="pt-1 pb-1" v-for="v in vestine" :key="v.id">
+            {{ v }}
+          </li>
+        </div>
+      </div>
+      <div class="row">
+        <p class="pb-0 mt-3">
             Ukoliko ste zainteresovani za posao u našoj kompaniji i posedujete
             navedena znanja i veštine, svoj CV mozete poslati na:
             <b>office@mihajlovicsoft.rs</b>
           </p>
-        </div>
-        <div class="col-xl-6 paragraf">
-          <p>Potrebna znanja i veštine:</p>
-          <li v-for="v in vestine" :key="v.id">
-            {{ v }}
-          </li>
-        </div>
       </div>
     </div>
     <div id="footer">
@@ -80,7 +83,7 @@ export default {
 .mejl img {
   max-width: 400px;
   border-radius: 15px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 b {

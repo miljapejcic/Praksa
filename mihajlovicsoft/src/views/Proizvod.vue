@@ -2,17 +2,36 @@
   <div>
     <Navbar footer="footer" />
     <div class="container opala">
-      <div class="container-2-xl m-auto">
-        <!-- <img :src="proizvod.slika"/> -->
-        <div class="proizvod">
-          <img
-            class="slika-proizvod"
-            src="../assets/proizvodi/finansijsko.jpg"
-          />
+      <div class="properties prop-pred">
+        <div v-for="p in proizvod.prednosti" :key="p">
+          <div class="divic">
+            <h3>
+              <b-icon icon="star" /><br />
+              {{ p }}
+            </h3>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <h1>{{ proizvod.naziv }}</h1>
+      <div class="row m-auto">
+        <!-- <img :src="proizvod.slika"/> -->
+        <div>
+          <img class="proizvod" src="../assets/proizvodi/finansijsko.jpg" />
+          <div class="naziv">{{ proizvod.naziv }}</div>
+        </div>
+      </div>
+      <div class="row paragraf">
+        {{ proizvod.opis }}
+      </div>
+
+      <div style="margin-top: 50px">
+        <h3 class="font-lg svojstva">Svojstva:</h3>
+        <div class="properties prop-svoj">
+          <div v-for="p in proizvod.svojstva" :key="p">
+            <div class="paragrafic">
+               <b-icon icon="tag" style="color: #fd0101" /> {{ p }}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div id="footer">
@@ -58,34 +77,97 @@ export default {
   background-size: 30rem;
   background-position-y: bottom;
   padding: 1rem 0 9rem 0;
-}
-
-.container-2-xl {
-  max-width: 96rem;
-  padding: 0 2.5rem;
-}
-
-.slika-proizvod {
-  width: 100%;
-  border-radius: 1rem;
-}
-
-.slika-proizvod img {
-  z-index: -1;
-  display: block;
+  z-index: 999999;
 }
 
 .proizvod {
+  width: 100%;
   border-radius: 1rem;
+  box-shadow: 0 0 3rem 1rem rgba(82, 82, 82, 0.15);
   position: relative;
-  display: inline-block;
-  z-index: 1;
-  /* background: linear-gradient(to right, #00213e, transparent); */
-  display: inline-block;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.65) 100%
-  ); /* W3C */
+  z-index: -1;
+}
+
+.naziv {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+  line-height: 2.4rem;
+  position: absolute;
+  margin-top: -70px;
+  margin-left: 50px;
+  color: whitesmoke;
+  text-shadow: rgba(11, 11, 11, 0.55) 0.1em 0.05em 0.18em;
+  transition: 0.4s ease;
+}
+
+.properties {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.prop-pred {
+  justify-content: space-evenly;
+}
+
+.prop-svoj {
+  justify-content:space-between;
+  margin-top: -20px;
+}
+.svojstva {
+  color: #fd0101;
+  font-size: 28px;
+  text-align: left;
+  line-height: 20px;
+  padding-left: 10%;
+}
+
+.divic {
+  max-width: 350px;
+  padding: 15px 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.divic h3 {
+  font-size: 24px;
+  font-weight: 800;
+  transition: 0.4s ease;
+}
+
+.paragrafic {
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 600;
+  padding: 15px;
+  text-align: left;
+  max-width: 250px;
+
+}
+
+@media only screen and (max-width: 767px) {
+  .naziv {
+    font-size: 1.25rem;
+    margin-left: 40px;
+    margin-top: -50px;
+    transition: 0.4s ease;
+  }
+
+  .prop-svoj {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .divic {
+    padding: 5px 20px;
+  }
+  .divic h3 {
+    font-size: 20px;
+    transition: 0.4s ease;
+  }
 }
 </style>

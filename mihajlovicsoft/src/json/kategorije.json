@@ -10,16 +10,15 @@
                     "opis": "Aplikacija K.E.O.P korisniku omogućuje organizaciju, unos i obradu podataka vezanih za lične dohodke zaposlenih. Takođe, aplikacija omogućuje kako prikaz, tako i štampu izveštaja takođe vezanih za lične dohodke zaposlenih. Obračun i isplata zarada zaposlenim je uvek bila jedna od najosetljivijih tačaka u poslovanju preduzeća. Zbog složenosti obračuna, različite strukture zaposlenih, velikog broja pratećih dokumenata itd. obračun zarada je zahtevao izuzetno veliko vreme i stručnost zaposlenih za svoju realizaciju. Modernizovanjem preduzeća, tj. uvođenjem računarske opreme, u velikoj meri se može ubrzati proces obračuna i povećati kvalitet pratećih izveštaja kako na tekućem obračunu, tako i za prethodne obračune.",
                     "prednosti": [
                         "Jednostavnost aplikacije za upotrebu uz minimalnu obuku korisnika",
-                        "Bazirana na savremenim softverskim rešenjima, što omogućava visoke performanse i u računarskim mrežama sa slabijim klijentskim računarima",
-                        "Rad sa više pravnih subjekata"
+                        "Rad sa više pravnih subjekata",
+                        "Visoke performanse i u računarskim mrežama sa slabijim klijentskim računarima"
                     ],
                     "svojstva": [
-                        "unos osnovnih podataka o zaposlenom",
-                        "definisanje primanja, poreza i doprinosa zaposlenog",
-                        "definisanje obračuna (akontacije i konačnog dela zarade)",
-                        "obrada zarade kroz masovnu i pojedinačnu obradu",
-                        "izveštajni pregled i štampa svih zakonom određenih dokumenata o zaradi",
-                        "formiranje virmanskih naloga"
+                        "Unos osnovnih podataka o zaposlenom, kao i definisanje primanja, poreza i doprinosa zaposlenog",
+                        "Definisanje obračuna (akontacije i konačnog dela zarade)",
+                        "Obrada zarade kroz masovnu i pojedinačnu obradu",
+                        "Izveštajni pregled i štampa svih zakonom određenih dokumenata o zaradi",
+                        "Formiranje virmanskih naloga"
                     ],
                     "izvestaji": [
                         "Isplatna lista obračuna je lista sa detaljnim prikazom svih ostvarenja, obustava i raznih drugih podataka relevantnih za obračun (satnica, staž, visina propisane osnovice za obračun doprinosa, radno mesto, koeficijenti ostvarenja, i sl.)",
@@ -40,25 +39,22 @@
                     "naziv": "Finansijsko knjigovodstvo",
                     "opis": "Finansijsko knjigovodstvo, u sklopu Informacionog sistema obezbeđuje podršku funkcijama: glavne knjige, knjiženja naloga i izrade bilansa u skladu sa važećim zakonskim propisima koji regulišu oblast računovodstveno knjigovodstvenih poslova.Osnova Finansijskog knjigovodstva je Kontni plan, koji je opisan hijerarhijskim šifrarnikom i koji obuhvata: klase, grupe, podgrupe, sintetička i analitička konta. Omogućeno je generisanje bilansa stanja, bilansa uspeha i bilansa novčanih tokova na važećim obrascima.",
                     "prednosti": [
-                        "Fleksibilnost rešenja",
-                        "Automatizovana obrada podataka",
-                        "Efektivna finansijska kontrola",
-                        "Ažurno evidentiranje i praćenje rezultata poslovanja"
+                        "Fleksibilnost rešenja i efektivna finansijska kontrola",
+                        "Ažurno evidentiranje i praćenje rezultata poslovanja",
+                        "Automatizovana obrada podataka"
                     ],
                     "svojstva": [
-                        "glavna knjiga - unos kontnog plana, evidentiranje i knjiženje poslovnih promena",
-                        "salda konta kupaca i dobavljača",
-                        "definisanje dokumentacije za unos",
-                        "pregled troškova i prihoda",
-                        "zatvaranje sta stavki iz unosa",
-                        "preuzimanje kontiranih ulaznih i izlaznih dokumenata iz programa Knjige ulaznih i izlaznih računa",
-                        "pojedinačno i grupno knjiženje naloga",
-                        "pojedinačno zatvaranje i otvaranje stavki",
-                        "zatvaranje stare i otvaranje nove poslovne godine",
-                        "generisanje početnog stanja"
+                        "Glavna knjiga - unos kontnog plana, evidentiranje i knjiženje poslovnih promena",
+                        "Definisanje dokumentacije za unos",
+                        "Pregled troškova i prihoda",
+                        "Preuzimanje kontiranih ulaznih i izlaznih dokumenata iz programa knjige ulaznih i izlaznih računa",
+                        "Pojedinačno i grupno knjiženje naloga",
+                        "Pojedinačno zatvaranje i otvaranje stavki",
+                        "Zatvaranje stare i otvaranje nove poslovne godine",
+                        "Generisanje početnog stanja"
                     ],
                     "izvestaji": [
-                        "izveštajni deo aplikacije omogućuje pregled i štampu u skladu sa potrebama preduzeća. To je set obrazaca propisanih podzakonskim aktima o sadržini i formi obrazaca finansijskih izveštaja, u kojima se prikazuju podaci o finansijskom položaju preduzeća i poslovnih promenama u izveštajnoj godini, sastavljen, overen i potpisan u skladu sa Zakonom. Izveštaji su uglavnom: štampa glavne knjige i konto kartica, pregled i štampa dnevnika prometa preduzeća, bruto bilansa, pregled otvorenih i zatvorenih stavki, stanje na dan..."
+                        "Izveštajni deo aplikacije omogućuje pregled i štampu u skladu sa potrebama preduzeća. To je set obrazaca propisanih podzakonskim aktima o sadržini i formi obrazaca finansijskih izveštaja, u kojima se prikazuju podaci o finansijskom položaju preduzeća i poslovnih promenama u izveštajnoj godini, sastavljen, overen i potpisan u skladu sa Zakonom. Izveštaji su uglavnom: štampa glavne knjige i konto kartica, pregled i štampa dnevnika prometa preduzeća, bruto bilansa, pregled otvorenih i zatvorenih stavki, stanje na dan..."
                     ],
                     "ostalo": [
                         "Garancija 12 meseci."
@@ -71,28 +67,24 @@
                     "naziv": "Robno knjigovodstvo",
                     "opis": "Programski modul Robno knjigovodstvo omogućava praćenje i upravljanje zalihama robe i gotovih proizvoda. Omogućava praćenje tokova robe, evidencija poslovnih saradnika i partnera, kao i štampanje svih potrebnih dokumenata.",
                     "prednosti": [
-                        "Robno knjigovodstvo je poslovni softver koji je potreban svakom trgovačkom društvu",
-                        "Ako se bavite proizvodnjom, trgovinom, uvozom ili izvozom, davanjem usluga",
-                        "Želite znati sve detalje o vašem poslovanju"
+                        "Softver koji je potreban svakom trgovačkom društvu",
+                        "Pruža sve detalje o vašem poslovanju",
+                        "Rad sa proizvodnjom, trgovinom, uvozom/izvozom, davanjem usluga"
                     ],
                     "svojstva": [
-                        "robno knjigovodstvo veleprodaje i maloprodaje",
-                        "materijalno knjigovodstvo",
-                        "skladišno i međuskladišno poslovanje",
-                        "razduženje skladišta po normativima",
-                        "definisanje više identifikacijskih oznaka za artikal: šifra, bar kod, kataloški broj, ..",
-                        "mogućnost unosa više naziva za isti artikal (npr. naziv artikla prema vlastitoj nomenklaturi i naziv artikla prema nomenklaturi dobavljača, naziv artikla na više jezika ...)",
-                        "grupisanje artikala prema robnim grupama",
-                        "rezervacija robe ili materijala u skladištu",
-                        "izrada kalkulacija",
-                        "izvještaji po organizacionim jedinicama, lokacijama, robnim grupama, ...",
-                        "prijemnica, otpremnica, ponuda, računi, ...",
-                        "preuzimanje maloprodajnih računa iz programa",
-                        "prenos podataka u program Knjiga U-RA i I-RA",
-                        "pravila kontiranja za prenos u Finansijsko knjigovodstvo"
+                        "Robno knjigovodstvo veleprodaje i maloprodaje i materijalno knjigovodstvo",
+                        "Skladišno i međuskladišno poslovanje i razduženje skladišta po normativima",
+                        "Definisanje više identifikacijskih oznaka za artikal: šifra, bar kod, kataloški broj, ..",
+                        "Mogućnost unosa više naziva za isti artikal (npr. naziv artikla prema vlastitoj nomenklaturi, prema nomenklaturi dobavljača, na više jezika..)",
+                        "Grupisanje artikala prema robnim grupama",
+                        "Rezervacija robe ili materijala u skladištu",
+                        "Izvještaji po organizacionim jedinicama, lokacijama, robnim grupama, ..",
+                        "Prijemnica, otpremnica, ponuda, računi, ...",
+                        "Preuzimanje maloprodajnih računa iz programa i prenos podataka u program Knjiga U-RA i I-RA",
+                        "Pravila kontiranja za prenos u Finansijsko knjigovodstvo"
                     ],
                     "izvestaji": [
-                        "analitička i sintetička kartica artikla, lager lista, dnevnik prometa, analiza prometa po artiklima - Grafički prikaz, analiza prometa po referentima - Grafički prikaz, analiza prometa po partnerima - Grafički prikaz, tovarni list, analiza razlike u ceni (za artikle, za partnere)."
+                        "Analitička i sintetička kartica artikla, lager lista, dnevnik prometa, analiza prometa po artiklima - Grafički prikaz, analiza prometa po referentima - Grafički prikaz, analiza prometa po partnerima - Grafički prikaz, tovarni list, analiza razlike u ceni (za artikle, za partnere)."
                     ],
                     "ostalo": [
                         "Moguć pristup sistemu sa udaljenih lokacija na internetu",
@@ -106,11 +98,9 @@
                     "naziv": "PC Kasa (PDV maloprodaja)",
                     "opis": "Program PC kasa je nezavisna aplikacija namenjena za korišcenje na svim prodajnim mestima u okviru neke organizacije uz mogucnost pracenja zaliha robe, kolicine i vrednosti prodate robe odvojeno po svim smenama i prodajnim mestima. Program može da radi kao nezavisna aplikacija za vodjenje robne evidencije u maloprodaji. ali se podaci o prodaji prikupljeni pomocu ovog programa mogu prosledjivati programu za samostalne trgoviske radnje i otuda dobijati svi potrebni knjigovodstvni izveštaji. Program je predvidjen za veoma brzo i jednostavno korišcenje od strane operatera na kasi koji na više nacina mogu da zadaju artikle: korišcenjem bar kod citaca, zadavanjem kratke numericke šifre ili brzim metodama za traženje šifre na osnovu pocetnog (brži nacin) ili bilo kog dela (sporiji nacin) naziva artikla. Podržan je rad i sa barkod nalepnicama koje stampaju specijalne vage. Omoguceno je i paralelno formiranje veceg broja racuna i slicne pogodnosti koje svoje prednosti najviše dokazuju u uslovima vrlo intenzivne prodaje. U toku naplate se na osnovu zaduženja po racunu i uplacenog iznosa u gotovom novcu izracunava kusur koji je jasno vidljiv i prodavcu i mušteriji. Program pruža mogucnost da lice kome je administrator programa dao potrebno ovlašcenje u svakom trenutku pogleda kolicinu novca u kasi odvojeno po smenama i po svakoj kasi ako u istoj radnji postoji veci broj kasa, kao i vrednost robe prodate sa gotovinskim i odloženim placanjem.",
                     "prednosti": [
-                        "Brzina i jednostavnost",
-                        "Nezavisna aplikacija",
-                        "Praćenje zaliha",
-                        "Praćenje količine i vrednosti prodate robe po smenama i prodajnim mestima",
-                        "Može da se koristi sa više umreženih racunara u istoj ili više maloprodaja"
+                        "Praćenje zaliha, količine i vrednosti prodate robe po smenama i prodajnim mestima",
+                        "Brza, jednostavna i nezavisna aplikacija",
+                        "Može da se koristi sa više umreženih računara u istoj ili više maloprodaja"
                     ],
                     "svojstva": [
                         "Može da se koristi sa više umreženih racunara u istoj ili više maloprodaja sa odvojenom evidencijom prodaje na svakoj od kasa i za svaku maloprodaju",
@@ -128,19 +118,16 @@
                 {
                     "id": 4,
                     "naziv": "Gas Pump Station Controller",
-                    "opis": "Gas pump station controller je programski modul za kontrolu i naplatu istakanja goriva na benzijskim pumpama. Modul podržava rad sa MMX Forecourt kontrolerom firme RS Tehnik, a moguća je i izmena kako bi podržavao rad i drugih kontrolera. Gas pump station controller je programski modul za kontrolu i naplatu istakanja goriva na benzijskim pumpama. Modul podržava rad sa MMX Forecourt kontrolerom firme RS Tehnik, a moguća je i izmena kako bi podržavao rad i drugih kontrolera. Dok je hardver Forecourt kontrolera namenjen prikupljanju podataka sa elektronskih brojača na benzinskoj stanici, kontroli nad njihovim radom i prosleđivanju podataka kasama, modul GPSC je zadužen za prikupljanje podataka o istakanju goriva, praćenje statusa kanala i slavina, naplatu na POS (Point of Sale) terminalima i podešavanja Forecourt kontrolera. Modul se oslanja i integriše u našu postojeću aplikaciju za evidenciju prodaje u maloprodajnim objektima PC Kasa. Koriščenjem ovakvog integrisanog rešenja klijent je u mogućnosti da sa jednog mesta prati evidenciju prodaje kako proizvoda u objektu, tako i goriva na slavinama. Modul za kontrolu i naplatu istakanja goriva je real-time sistem, pa se sve promene (istakanje goriva, naplata...) evidentiraju i prikaziju u momentu dešavanja. Modul je zasnovan na klijent-server arhitekturi pa je omogućeno i korišćenje i konkurentno izvršavanje na većem broju kasa istovremeno, bez mogućnosti stvaranja kolizije među podacima.",
+                    "opis": "Gas pump station controller je programski modul za kontrolu i naplatu istakanja goriva na benzijskim pumpama. Modul podržava rad sa MMX Forecourt kontrolerom firme RS Tehnik, a moguća je i izmena kako bi podržavao rad i drugih kontrolera.\nGas pump station controller je programski modul za kontrolu i naplatu istakanja goriva na benzijskim pumpama. Modul podržava rad sa MMX Forecourt kontrolerom firme RS Tehnik, a moguća je i izmena kako bi podržavao rad i drugih kontrolera. Dok je hardver Forecourt kontrolera namenjen prikupljanju podataka sa elektronskih brojača na benzinskoj stanici, kontroli nad njihovim radom i prosleđivanju podataka kasama, modul GPSC je zadužen za prikupljanje podataka o istakanju goriva, praćenje statusa kanala i slavina, naplatu na POS (Point of Sale) terminalima i podešavanja Forecourt kontrolera. Modul se oslanja i integriše u našu postojeću aplikaciju za evidenciju prodaje u maloprodajnim objektima PC Kasa. \nKoriščenjem ovakvog integrisanog rešenja klijent je u mogućnosti da sa jednog mesta prati evidenciju prodaje kako proizvoda u objektu, tako i goriva na slavinama. Modul za kontrolu i naplatu istakanja goriva je real-time sistem, pa se sve promene (istakanje goriva, naplata...) evidentiraju i prikaziju u momentu dešavanja. Modul je zasnovan na klijent-server arhitekturi pa je omogućeno i korišćenje i konkurentno izvršavanje na većem broju kasa istovremeno, bez mogućnosti stvaranja kolizije među podacima.",
                     "prednosti": [
-                        "Integracija sa PC Kasom",
                         "Naplata goriva i ostalih proizvoda na jednom mestu",
-                        "Real-time sistem",
+                        "Integracija sa PC Kasom, Real-Time sistem",
                         "Konkurentno izvršavanje na većem broju kasa istovremeno"
                     ],
                     "svojstva": [
-                        "praćenje statusa kanala i slavina (ativna, neaktivna, naplata u toku...)",
-                        "naplata",
-                        "definisanje rezervoara i kanala",
-                        "definisanje tipova goriva",
-                        "definisanje cena goriva"
+                        "Praćenje statusa kanala i slavina (aktivna, neaktivna, naplata u toku...)",
+                        "Naplata",
+                        "Definisanje rezervoara i kanala, tipova goriva, cena goriva"
                     ],
                     "izvestaji": null,
                     "ostalo": [

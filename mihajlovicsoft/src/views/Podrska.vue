@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar footer="footer" />
-    <div class="container" style="width: 80em">
+    <div class="container">
       <div>
         <div class="divic">
           <div class="paragraf">

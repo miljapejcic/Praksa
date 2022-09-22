@@ -55,7 +55,7 @@ export default {
   },
   data() {
     return {
-      vestine: ["a", "b", "c", "d", "a", "b", "c", "d"],
+      vestine: ["Više od dve godine radnog iskustva u .Net C#, ASP.NET ili MVC", "Dobro poznavanje .NET framework 4 ili više","Odlično poznavanje projektnih obrazaca", "Odlične analitičke veštine, pažnja prema detaljima i veštine rešavanja problema", "Dobro poznavanje engleskog jezika", "Sposobnost rada u timu"],
     };
   },
   mounted() {

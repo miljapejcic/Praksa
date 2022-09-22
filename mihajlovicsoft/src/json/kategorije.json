@@ -153,22 +153,22 @@
         {
             "ime":"Web sajtovi",
             "id":1,
-            "listaProizvoda":[]
+            "listaProizvoda":["proba1","proba2","proba3"]
         },
         {
             "ime":"Specificne aplikacije",
             "id":2,
-            "listaProizvoda":[]
+            "listaProizvoda":["proba4","proba5"]
         },
         {
             "ime":"Antivirusni softver",
             "id":3,
-            "listaProizvoda":[]
+            "listaProizvoda":["proba1","proba2","proba3", "proba4"]
         },
         {
             "ime":"Softverski paketi",
             "id":4,
-            "listaProizvoda":[]
+            "listaProizvoda":["proba7","proba5","proba6"]
         },
         {
             "ime":"Umrezavanje poslovnih sistema",

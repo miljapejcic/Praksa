@@ -2,10 +2,10 @@
     "kategorije":[
         {
             "ime":"Biznis aplikacije",
-            "idK":0,
+            "id":0,
             "listaProizvoda":[
                 {
-                    "idP": 0,
+                    "id": 0,
                     "naziv": "Obracun zarada zaposlenih",
                     "opis": "Aplikacija K.E.O.P korisniku omogućuje organizaciju, unos i obradu podataka vezanih za lične dohodke zaposlenih. Takođe, aplikacija omogućuje kako prikaz, tako i štampu izveštaja takođe vezanih za lične dohodke zaposlenih. Obračun i isplata zarada zaposlenim je uvek bila jedna od najosetljivijih tačaka u poslovanju preduzeća. Zbog složenosti obračuna, različite strukture zaposlenih, velikog broja pratećih dokumenata itd. obračun zarada je zahtevao izuzetno veliko vreme i stručnost zaposlenih za svoju realizaciju. Modernizovanjem preduzeća, tj. uvođenjem računarske opreme, u velikoj meri se može ubrzati proces obračuna i povećati kvalitet pratećih izveštaja kako na tekućem obračunu, tako i za prethodne obračune.",
                     "prednosti": [
@@ -153,22 +153,22 @@
         {
             "ime":"Web sajtovi",
             "id":1,
-            "listaProizvoda":[]
+            "listaProizvoda":["proba1","proba2","proba3"]
         },
         {
             "ime":"Specificne aplikacije",
             "id":2,
-            "listaProizvoda":[]
+            "listaProizvoda":["proba4","proba5"]
         },
         {
             "ime":"Antivirusni softver",
             "id":3,
-            "listaProizvoda":[]
+            "listaProizvoda":["proba1","proba2","proba3", "proba4"]
         },
         {
             "ime":"Softverski paketi",
             "id":4,
-            "listaProizvoda":[]
+            "listaProizvoda":["proba7","proba5","proba6"]
         },
         {
             "ime":"Umrezavanje poslovnih sistema",

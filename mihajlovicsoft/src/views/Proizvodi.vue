@@ -6,10 +6,12 @@
         <h2 class="naslov">PROIZVODI I USLUGE</h2>
       </div>
       <div class="row justify-content-around align-items-center">
-        <div class="col-xl-3 kategorija" v-for="k in json.ime" :key="k.id">
-          <h2>{{k}}</h2>
-          <div class="" v-for="proizvod in json.k" :key="proizvod.id">
-            <h4></h4>
+        <div class="col-xl-3 kategorija" v-for="k in json.kategorije" :key="k.id">
+          <h2 @click="toggleClass(k.id)">{{k.ime}}</h2>
+          <div :class="'kat'+k.id" class="noactive">
+              <div v-for="proizvod in k.listaProizvoda" :key="proizvod.id">
+              <li @click="saljidalje(k.id,proizvod.id)">{{proizvod.naziv}}</li>
+              </div>
           </div>
           <!-- <button class="dugme" @click="kat(k.id)">{{ k }}</button> -->
         </div>
@@ -34,13 +36,18 @@ export default {
   },
   data() {
     return {
-      json: json.kategorije,
+      json: json,
+      show:false
     };
   },
   methods: {
-    // kat(id) {
-    //   this.$router.push({ name: "Proizvod", params: { idkat: idkat, idproiz: idproiz } });
-    // },
+    saljidalje(idkat, idproiz) {
+      this.$router.push({ name: "Proizvod", params: { idkat: idkat, idproiz: idproiz } });
+    },
+    toggleClass(idK){
+      let klasa = ".kat"+idK;
+      document.querySelector(klasa).classList.toggle("noactive");
+    }
   },
   mounted() {
     window.scrollTo(0, 0);
@@ -49,6 +56,10 @@ export default {
 </script>
 
 <style scoped>
+
+.noactive{
+  display:none;
+}
 .dugme {
   border-color: #fd0101;
   border-width: 2px;

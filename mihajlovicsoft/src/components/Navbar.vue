@@ -153,7 +153,7 @@ function scrollFunction() {
     document.getElementById("content").style.fontSize = "14px";
     document.getElementById("navbar").style.background = `linear-gradient(
         180deg,
-        rgba(136, 136, 136, 1),
+        rgba(255, 206, 168, 1),
         rgba(255, 255, 255, 0.9)
       )`;
   } else {
@@ -162,14 +162,14 @@ function scrollFunction() {
     if (window.innerWidth < 991.5) {
       document.getElementById("navbar").style.background = `linear-gradient(
         180deg,
-        rgba(136, 136, 136, 1),
+        rgba(255, 206, 168, 1),
         rgba(255, 255, 255, 0.9)
       )`;
     } else {
       document.getElementById("navbar").style.background = `linear-gradient(
         180deg,
-        rgba(136, 136, 136, 0),
-        rgba(255, 255, 255, 0.564)
+        rgba(255, 196, 168, 0.623),
+      rgba(136, 136, 136, 0)
       )`;
     }
   }
@@ -179,14 +179,14 @@ function changeGradientToggle() {
   if (window.innerWidth < 991.5) {
     document.getElementById("navbar").style.background = `linear-gradient(
         180deg,
-        rgba(136, 136, 136, 1),
+        rgba(255, 206, 168, 1),
         rgba(255, 255, 255, 0.9)
       )`;
   } else {
     document.getElementById("navbar").style.background = `linear-gradient(
         180deg,
-        rgba(136, 136, 136, 0),
-        rgba(255, 255, 255, 0.564)
+        rgba(255, 196, 168, 0.623),
+      rgba(136, 136, 136, 0)
       )`;
   }
 }
@@ -271,7 +271,7 @@ function changeGradientToggle() {
 }
 
 .header {
-  background-image: radial-gradient(transparent, rgba(255, 196, 168, 0.623)),
+  background-image: radial-gradient(transparent, rgba(255, 196, 168, 0.523)),
     url(../assets/navbar/header2.jpg);
   background-position: center 0px;
   /* min-height: 600px; */
@@ -281,7 +281,7 @@ function changeGradientToggle() {
   background-size: cover;
   position: relative;
   width: 100%;
-  box-shadow: 0 4rem 6rem 0rem rgba(255, 196, 168, 0.423);
+  box-shadow: 0 2rem 3rem 0rem rgba(255, 196, 168, 0.323);
 
   height: 100vh;
 }
@@ -290,8 +290,8 @@ function changeGradientToggle() {
   .navbar {
     background: linear-gradient(
       180deg,
-      rgba(136, 136, 136, 0),
-      rgba(255, 255, 255, 0.5)
+      rgba(255, 196, 168, 0.623),
+      rgba(136, 136, 136, 0)
     );
   }
 }
@@ -300,7 +300,7 @@ function changeGradientToggle() {
   .navbar {
     background: linear-gradient(
       180deg,
-      rgba(136, 136, 136, 1),
+      rgba(255, 206, 168, 1),
       rgba(255, 255, 255, 0.9)
     );
   }
@@ -317,7 +317,6 @@ a router-link {
 
 .nav-item .router-link-active:focus {
   color: #fd01019e;
-  
 }
 
 .topDugme {

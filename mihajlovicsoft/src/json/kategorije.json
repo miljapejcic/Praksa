@@ -28,7 +28,7 @@
                         "Virmanski nalozi se štampaju na obrascu virmanskih naloga, a mogu se štampati i na blanko papiru u vidu rekapitulacije virmanski naloga."
                     ],
                     "ostalo": [
-                        "U sklopu ovog programskog segmenta nalaze se i opcije za obračun toplog obroka, isplatu regresa, prenos isplate preko banke, prepis šifarnika iz prethodne godine i sl. Jedna od važnih funkcija iz ovog dela je aktiviranje obračuna iz arhive. Ova funkcija omogućava da se bilo koji obračun koji je arhiviran ponovo aktivira i primene sve opcije kao i za tekući obračun (štampa rekapitulacija, spiskova, obrazaca, itd.). Segment obračun zarada zaposlenih je maksimalno parametrizovan i omogućava veliki broj izmena u obračunu bez potrebe za programerom.",
+                        "Jedna od važnih funkcija je aktiviranje obračuna iz arhive, koja omogućava da se bilo koji obračun koji je arhiviran ponovo aktivira i primene sve opcije kao i za tekući obračun. Segment omogućava veliki broj izmena u obračunu bez potrebe za programerom.",
                         "Garancija 12 meseci."
                     ],
                     "slika": "../assets/proizvodi/zarada.jpg"
@@ -87,8 +87,8 @@
                         "Analitička i sintetička kartica artikla, lager lista, dnevnik prometa, analiza prometa po artiklima - Grafički prikaz, analiza prometa po referentima - Grafički prikaz, analiza prometa po partnerima - Grafički prikaz, tovarni list, analiza razlike u ceni (za artikle, za partnere)."
                     ],
                     "ostalo": [
-                        "Moguć pristup sistemu sa udaljenih lokacija na internetu",
-                        "Garancija 12 meseci"
+                        "Moguć pristup sistemu sa udaljenih lokacija na internetu.",
+                        "Garancija 12 meseci."
                     ],
                     "slika": "../assets/proizvodi/robno.jpg"
         
@@ -109,8 +109,8 @@
                     ],
                     "izvestaji": null,
                     "ostalo": [
-                        "Rad u mreži sa više odvojenih objekata(maloprodaja)",
-                        "Garancija 12 meseci"
+                        "Rad u mreži sa više odvojenih objekata(maloprodaja).",
+                        "Garancija 12 meseci."
                     ],
                     "slika": "../assets/proizvodi/pc kase.jpg"
         

@@ -26,6 +26,6 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
   cursor: default;
-  background:  radial-gradient(transparent, rgba(255, 234, 225, 0.44));
+  background:  radial-gradient(transparent, rgba(255, 234, 225, 0.24));
 }
 </style>

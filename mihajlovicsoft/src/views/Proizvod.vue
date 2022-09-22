@@ -19,8 +19,12 @@
           <div class="naziv">{{ proizvod.naziv }}</div>
         </div>
       </div>
-      <div class="row paragraf">
+      <div class="paragraf">
         {{ proizvod.opis }}
+        <div class="ostalo">
+          <br />
+          <li v-for="p in proizvod.ostalo" :key="p">{{ p }}</li>
+        </div>
       </div>
 
       <div style="margin-top: 50px">
@@ -28,7 +32,7 @@
         <div class="properties prop-svoj">
           <div v-for="p in proizvod.svojstva" :key="p">
             <div class="paragrafic">
-               <b-icon icon="tag" style="color: #fd0101" /> {{ p }}
+              <b-icon icon="tag" style="color: #fd0101" /> {{ p }}
             </div>
           </div>
         </div>
@@ -113,8 +117,9 @@ export default {
 }
 
 .prop-svoj {
-  justify-content:space-between;
+  justify-content: space-between;
   margin-top: -20px;
+  padding: 20px 50px;
 }
 .svojstva {
   color: #fd0101;
@@ -138,6 +143,15 @@ export default {
   transition: 0.4s ease;
 }
 
+.ostalo {
+  color: #fd0101;
+  font-weight: 600;
+}
+
+.ostalo li {
+    list-style-type: none;
+}
+
 .paragrafic {
   font-size: 17px;
   line-height: 22px;
@@ -145,7 +159,6 @@ export default {
   padding: 15px;
   text-align: left;
   max-width: 250px;
-
 }
 
 @media only screen and (max-width: 767px) {

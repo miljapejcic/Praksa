@@ -8,6 +8,7 @@ import ONama from '../views/ONama.vue'
 import Tim from '../views/Tim.vue'
 import PCKase from '../views/PCKase.vue'
 import Podrska from '../views/Podrska.vue'
+import Proizvod from '../views/Proizvod.vue'
 
 Vue.use(Router)
 
@@ -48,6 +49,11 @@ const router = new Router({
             name: 'Podrska',
             component: Podrska
         },
+        {
+            path: '/Proizvod/:idkat/:idproiz',
+            name: 'Proizvod',
+            component: Proizvod
+        }
     ],
     mode: 'history'
 })

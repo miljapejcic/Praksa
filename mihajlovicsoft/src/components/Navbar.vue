@@ -6,10 +6,10 @@
         <div class="container-2xl m-auto">
           <div class="titlebox">
             <h1 class="font-xl">
-              <span class="msoft">Mihajlović Soft.</span> 30 godina sa vama
+              <span class="msoft">Mihajlović Soft.</span> Već 30 godina sa vama
             </h1>
             <h2 class="font-lg">
-              Microsoft Certified Partner<br />Izrada softvera, Kompjuterski
+              Microsoft Certified Partner, Izrada softvera, Kompjuterski
               Inženjering
             </h2>
           </div>
@@ -208,6 +208,7 @@ function changeGradientToggle() {
 
 .msoft {
   color: #fd0101;
+  font-style: italic;
 }
 
 .container-2xl {
@@ -248,7 +249,7 @@ function changeGradientToggle() {
   line-height: 20px;
   font-size: 16px;
   font-family: Poppins, sans-serif;
-  color: rgb(0, 0, 0);
+  color: rgb(200, 0, 0);
   transition: 1s ease;
   align-items: center;
 }
@@ -259,19 +260,19 @@ function changeGradientToggle() {
 }
 
 .navibg {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     180deg,
     rgba(136, 136, 136, 0),
     rgba(255, 255, 255, 0.564)
-  );
+  ); */
   z-index: 99999;
   transition: 1s ease;
   /* margin-top: -60px; */
 }
 
 .header {
-  background-image: radial-gradient(transparent, rgba(190, 190, 190, 0.623)),
-    url(../assets/navbar/final.jpg);
+  background-image: radial-gradient(transparent, rgba(255, 196, 168, 0.623)),
+    url(../assets/navbar/header2.jpg);
   background-position: center 0px;
   /* min-height: 600px; */
   margin-bottom: 50px;
@@ -280,7 +281,7 @@ function changeGradientToggle() {
   background-size: cover;
   position: relative;
   width: 100%;
-  box-shadow: 0 4rem 6rem 0rem rgba(99, 99, 99, 0.194);
+  box-shadow: 0 4rem 6rem 0rem rgba(255, 196, 168, 0.423);
 
   height: 100vh;
 }
@@ -310,13 +311,13 @@ a router-link {
   color: red;
 }
 
-.nav-link.active {
-  color: red;
+.nav-item .nav-link {
+  color: rgb(120, 120, 120);
 }
 
-.nav-link:focus {
-  border: 0.4px dashed grey;
-  border-radius: 15px;
+.nav-item .router-link-active:focus {
+  color: #fd01019e;
+  
 }
 
 .topDugme {

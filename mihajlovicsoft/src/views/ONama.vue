@@ -28,7 +28,7 @@
           elektronike i softverskog inženjerstva.
         </div>
       </div>
-      <div class="d-flex bd-highlight divcina"  style="border-bottom: none;">
+      <div class="d-flex bd-highlight divcina">
         <div class="row m-auto">
           <div class="font-lg pitanje" style="text-align: left">
             Naše vrednosti
@@ -46,17 +46,19 @@
           </div>
         </div>
       </div>
-      <div class="d-flex p-2 bd-highlight divcina" style="border-bottom: none;">
-        <VueHorizontal responsive>
+      <div class="d-flex p-2 bd-highlight divcina carousel" style="border-bottom: none;">
+        <Carousel/>
+        <!-- <VueHorizontal responsive>
           <div
-            class="d-flex align-items-center justify-content-center"
+            class="d-flex align-items-center justify-content-center slike"
             v-for="s in slike"
             :key="s.slika"
           >
-            <img class="img-fluid slike" v-bind:src="s.slika" />
+            <img class="img-fluid" v-bind:src="s.slika" />
           </div>
-        </VueHorizontal>
+        </VueHorizontal> -->
       </div>
+      <!-- <Carousel/> -->
       <div class="d-flex bd-highlight divcina">
         <div class="row m-auto">
           <div
@@ -98,7 +100,9 @@
       <div class="properties">
         <div class="divic">
           <div class="paragraf">
-          <h3 class="font-lg"><b-icon icon="star"/> Odnos cene i kvaliteta</h3>
+            <h3 class="font-lg">
+              <b-icon icon="star" /> Odnos cene i kvaliteta
+            </h3>
             Fokusirani smo na pružanje najbolje usluge i na stvaranje
             superiornih proizvoda, uz vođenje računa o budžetu naših klijenata i
             održavanje cena koje su u skladu sa postojećim tržištem.
@@ -106,28 +110,32 @@
         </div>
         <div class="divic">
           <div class="paragraf">
-          <h3 class="font-lg"><b-icon icon="briefcase"/> Posvećenost</h3>
+            <h3 class="font-lg"><b-icon icon="briefcase" /> Posvećenost</h3>
             Naš tim programera je maksimalno posvećen svakom klijentu, bilo da
             je u pitanju održavanje postojećih, ili izrada novih projekata.
           </div>
         </div>
         <div class="divic">
           <div class="paragraf">
-          <h3 class="font-lg"><b-icon icon="lightbulb"/> Inovativnost</h3>
+            <h3 class="font-lg"><b-icon icon="lightbulb" /> Inovativnost</h3>
             Tokom izrade naših proizvoda, koristimo najsavremenije tehnologije i
             trudimo se da rešenja koja nudimo budu inovativna.
           </div>
         </div>
         <div class="divic">
           <div class="paragraf">
-          <h3 class="font-lg"><b-icon icon="file-earmark-check"/> Dostupnost</h3>
+            <h3 class="font-lg">
+              <b-icon icon="file-earmark-check" /> Dostupnost
+            </h3>
             Naš tim tehničke podrške je uvek dostupan, te brzo i efikasno
             reaguje na potrebe naših klijenata.
           </div>
         </div>
         <div class="divic">
           <div class="paragraf">
-          <h3 class="font-lg"><b-icon icon="emoji-smile"/> Zadovoljni klijenti</h3>
+            <h3 class="font-lg">
+              <b-icon icon="emoji-smile" /> Zadovoljni klijenti
+            </h3>
             Prioritet našeg poslovanja su zadovoljni klijenti, a tokom 30 godina
             poslovanja, stekli smo preko 300 zadovoljnih partnera.
           </div>
@@ -156,52 +164,54 @@
 <script>
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import VueHorizontal from "vue-horizontal";
+// import VueHorizontal from "vue-horizontal";
+import Carousel from "@/components/Carousel";
 
 export default {
   name: "ONama",
   components: {
     Footer,
     Navbar,
-    VueHorizontal,
+    // VueHorizontal,
+    Carousel
   },
   mounted() {
     window.scrollTo(0, 0);
   },
   data() {
     return {
-      slike: [
-        {
-          slika: require("../assets/firma/slika4.jpg"),
-        },
-        {
-          slika: require("../assets/firma/slika1.jpg"),
-        },
-        {
-          slika: require("../assets/firma/slika2.jpg"),
-        },
-        {
-          slika: require("../assets/firma/slika3.jpg"),
-        },
-        {
-          slika: require("../assets/firma/slika5.jpg"),
-        },
-        {
-          slika: require("../assets/firma/slika6.jpg"),
-        },
-        {
-          slika: require("../assets/firma/slika7.jpg"),
-        },
-        {
-          slika: require("../assets/firma/slika8.jpg"),
-        },
-        {
-          slika: require("../assets/firma/slika9.jpg"),
-        },
-        {
-          slika: require("../assets/firma/slika10.jpg"),
-        },
-      ],
+      // slike: [
+      //   {
+      //     slika: require("../assets/firma/slika4.jpg"),
+      //   },
+      //   {
+      //     slika: require("../assets/firma/slika1.jpg"),
+      //   },
+      //   {
+      //     slika: require("../assets/firma/slika2.jpg"),
+      //   },
+      //   {
+      //     slika: require("../assets/firma/slika3.jpg"),
+      //   },
+      //   {
+      //     slika: require("../assets/firma/slika5.jpg"),
+      //   },
+      //   {
+      //     slika: require("../assets/firma/slika6.jpg"),
+      //   },
+      //   {
+      //     slika: require("../assets/firma/slika7.jpg"),
+      //   },
+      //   {
+      //     slika: require("../assets/firma/slika8.jpg"),
+      //   },
+      //   {
+      //     slika: require("../assets/firma/slika9.jpg"),
+      //   },
+      //   {
+      //     slika: require("../assets/firma/slika10.jpg"),
+      //   },
+      // ],
     };
   },
 };
@@ -212,42 +222,36 @@ export default {
 .elements {
   display: flex;
   flex-direction: column;
-  max-width:70em;
+  max-width: 70em;
 }
 
 .divcina {
   padding: 0px 25px;
   margin: 40px 20px;
   border-bottom: 0.7px solid #d8d8d8;
-  /* flex-wrap: wrap; */
 }
 
 .subtitle {
   color: #fd0101;
-  /* text-transform: uppercase; */
-  /* letter-spacing: 5px; */
   font-size: 24px;
   text-align: right;
-  /* word-spacing: 100vw; */
-  /* text-align: justify; */
   line-height: 30px;
   margin: auto;
 }
 
 .pitanje {
-  /* text-align: center; */
   font-size: 38px;
   margin: auto;
-}
-
-.slike {
-  border-radius: 10px;
 }
 
 .divic {
   max-width: 400px;
   padding: 10px;
   margin-top: 10px;
+}
+
+.slike {
+  width: 300px;
 }
 
 .properties {
@@ -260,7 +264,6 @@ export default {
 h3 {
   font-family: "Poppins", sans-serif;
   color: black;
-  /* border-bottom: #d8d8d8 solid 1px; */
   padding: 0px 10px;
   font-size: 20px;
 }
@@ -278,7 +281,6 @@ h3 {
 }
 
 .dodatneInfo {
-  /*padding: 60px;*/
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 16px;

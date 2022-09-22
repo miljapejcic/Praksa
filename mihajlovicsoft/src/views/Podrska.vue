@@ -1,11 +1,13 @@
 <template>
   <div>
     <Navbar footer="footer" />
-    <div class="container" style="width: 80em;">
-      <div class="font-lg" style="text-align: left; font-size: 38px; margin: 0px 40px;">Tehnička podrška</div>
+    <div class="container" style="width: 80em">
       <div>
         <div class="divic">
           <div class="paragraf">
+            <div class="font-lg" style="text-align: left; font-size: 38px">
+              Tehnička podrška
+            </div>
             Sve ove godine rada dovele su nas do saznanja da je jedna od
             najvažnijih usluga <i>posleprodajna usluga</i>. Za mnoge firme,
             posao se završava u trenutku kada prodaju, implementiraju i naplate.
@@ -26,10 +28,13 @@
           </div>
         </div>
         <div class="paragraf">
-          <p class="naslov">Preuzmite klijentsku aplikaciju za tehničku podršku klikom na dugme iznad.</p>
+          <p class="naslov">
+            Preuzmite klijentsku aplikaciju za tehničku podršku klikom na dugme
+            iznad.
+          </p>
           Kontaktirajte nas i uverite se sami, da imamo proizvode sa kojima
           povećavamo Vaš prosperitet na tržištu. Trudićemo se da Vam pružimo
-          podršku, na najvišem mogućem nivou! 
+          podršku, na najvišem mogućem nivou!
         </div>
       </div>
     </div>
@@ -74,20 +79,19 @@ export default {
   max-width: 400px;
 }
 
-@media only screen and (max-width:1200px) {
-    .divic {
-        flex-wrap: wrap;
-    }
+@media only screen and (max-width: 1200px) {
+  .divic {
+    flex-wrap: wrap;
+  }
 }
 
 .container {
-    padding: 20px;
+  padding: 20px;
 }
 .teamviewer {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  margin: auto;
 }
-
 </style>

@@ -50,7 +50,7 @@ export default {
 <style>
 .naslov {
   color: #fd0101;
-  z-index: 9999;
+  /* z-index: 9999; */
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   font-size: 24px;

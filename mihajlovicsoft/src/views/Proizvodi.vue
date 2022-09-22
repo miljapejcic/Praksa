@@ -6,12 +6,12 @@
         <h2 class="naslov">PROIZVODI I USLUGE</h2>
       </div>
       <div class="row justify-content-around align-items-center">
-        <div
-          class="col-xl-3 kategorija"
-          v-for="k in json.kategorije"
-          :key="k.id"
-        >
-          <button class="dugme" @click="kat(k.id)">{{ k.ime }}</button>
+        <div class="col-xl-3 kategorija" v-for="k in json.ime" :key="k.id">
+          <h2>{{k}}</h2>
+          <div class="" v-for="proizvod in json.k" :key="proizvod.id">
+            <h4></h4>
+          </div>
+          <!-- <button class="dugme" @click="kat(k.id)">{{ k }}</button> -->
         </div>
       </div>
     </div>
@@ -24,7 +24,7 @@
 <script>
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
-import json from "../json/proizvodi.json";
+import json from "../json/kategorije.json";
 
 export default {
   name: "Proizvodi",
@@ -34,13 +34,13 @@ export default {
   },
   data() {
     return {
-      json: json,
+      json: json.kategorije,
     };
   },
   methods: {
-    kat(id) {
-      this.$router.push({ name: "Potkategorije", params: { pid: id } });
-    },
+    // kat(id) {
+    //   this.$router.push({ name: "Proizvod", params: { idkat: idkat, idproiz: idproiz } });
+    // },
   },
   mounted() {
     window.scrollTo(0, 0);
@@ -67,6 +67,7 @@ export default {
 
 .kategorija {
   padding-top: 2%;
+  padding-left:5%;
 }
 
 .elements {

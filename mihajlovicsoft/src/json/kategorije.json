@@ -143,7 +143,7 @@
             "listaProizvoda":["proba1","proba2","proba3"]
         },
         {
-            "ime":"Specificne aplikacije",
+            "ime":"Specifične aplikacije",
             "id":2,
             "listaProizvoda":["proba4","proba5"]
         },
@@ -158,7 +158,7 @@
             "listaProizvoda":["proba7","proba5","proba6"]
         },
         {
-            "ime":"Umrezavanje poslovnih sistema",
+            "ime":"Umrežavanje poslovnih sistema",
             "id":5,
             "listaProizvoda":[]
         }        

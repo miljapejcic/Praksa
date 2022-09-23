@@ -7,10 +7,11 @@
       </div>
       <div class="row justify-content-around align-items-center">
         <div class="col-xl-3 paddin " v-for="k in json.kategorije" :key="k.id">
-          <h3 class="mouse-cursor-gradient-tracking" @click="toggleClass(k.id)">{{k.ime}}</h3>
-          <div :class="'kat'+k.id" class="noactive">
+          <h3>{{k.ime}}</h3>
+          <!-- <h3 @click="toggleClass(k.id)">{{k.ime}}</h3> -->
+          <div :class="'kat'+k.id" class="noactive" style="border-top: rgba(17, 16, 16, 0.664) solid 1px">
               <div v-for="proizvod in k.listaProizvoda" :key="proizvod.id">
-              <li @click="saljidalje(k.id,proizvod.id)">{{proizvod.naziv}}</li>
+              <p class="item" @click="saljidalje(k.id,proizvod.id)">{{proizvod.naziv}}</p>
               </div>
           </div>
           <!-- <button class="dugme" @click="kat(k.id)">{{ k }}</button> -->
@@ -47,6 +48,7 @@ export default {
     toggleClass(idK){
       let klasa = ".kat"+idK;
       document.querySelector(klasa).classList.toggle("noactive");
+      document.querySelector("imeKat").classList.toggle("noshow");
     }
   },
   mounted() {
@@ -76,7 +78,7 @@ export default {
 .noactive{
   display:none;
 }
-.dugme {
+/* .dugme {
   border-color: #fd0101;
   border-width: 2px;
   color: #fd0101;
@@ -90,7 +92,8 @@ export default {
   color: #fff7f7;
   border-color: #fff7f7;
   background-color: #fd010179;
-}
+} */
+
 
 .paddin {
   /* background-color: rgba(250, 220, 207, 0.904);
@@ -110,52 +113,30 @@ export default {
   color:black;
 }
 
+.paddin:hover > .noactive{
+  display:block;
+  padding-top:20px;
+}
+
+.paddin:hover > .noactive.item{
+  opacity:0;
+  animation:animacija 2s ease-in-out;
+}
+
+@keyframes animacija {
+  0%    { opacity: 0; }
+  100%  { opacity: 1; }
+}
+
+
+.item:hover{
+  color:rgba(219, 1, 1, 0.918);
+  transition:0.2s ease-in-out;
+  cursor:pointer;
+}
 .elements {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
 }
-
-
-
-
-
-
-
-
-
-/* OVO JE BIO NEKI POKUSAJ NEUSPELI */
-
-/* .mouse-cursor-gradient-tracking {
-  position: relative;
-  background: transparent;
-  padding: 0.5rem 1rem;
-  font-size: 1.2rem;
-  border: none;
-  color:rgb(41, 35, 35);
-  cursor: pointer;
-  outline: none;
-  overflow: hidden;
-} */
-
-/* .mouse-cursor-gradient-tracking span {
-  position: relative;
-} */
-
-/* .mouse-cursor-gradient-tracking:before {
-  --size: 0;
-  content: '';
-  position: absolute;
-  left: var(--x);
-  top: var(--y);
-  width: var(--size);
-  height: var(--size);
-  background: radial-gradient(circle closest-side, rgb(255, 238, 231), transparent);
-  transform: translate(-50%, -50%);
-  transition: width 0.2s ease, height 0.2s ease;
-}
-
-.mouse-cursor-gradient-tracking:hover:before {
-  --size: 600px;
-} */
 </style>

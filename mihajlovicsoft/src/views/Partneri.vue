@@ -86,6 +86,7 @@ export default {
   background-size: cover;
   box-shadow: 0px 0px 30px 8px rgb(254, 220, 205) inset;
   border-radius: 50px;
+  transition: 0.7s ease;
 }
 
 .header-img .font-xl {
@@ -93,6 +94,7 @@ export default {
   text-shadow: rgba(0, 0, 0, 0.65) 0.07em 0.05em 0.1em;
   font-weight: 600;
   mix-blend-mode: color-dodge;
+  transition: 0.7s ease;
 }
 
 .gridcina {
@@ -124,5 +126,17 @@ export default {
 .gridce a:hover {
   color: #fd0101;
   transition: 0.4s ease;
+}
+
+@media only screen and (max-width: 992px) {
+  .header-img {
+    padding: 30px;
+    transition: 0.7s ease;
+  }
+  .header-img .font-xl {
+    font-size: 30px;
+    line-height: 40px;
+    transition: 0.7s ease;
+  }
 }
 </style>

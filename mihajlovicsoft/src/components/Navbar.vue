@@ -365,10 +365,4 @@ a router-link {
   border-color: #ff6060;
 }
 
-
-@media only screen and (max-width: 750px) {
-  .dugmeZaTop {
-    display: none;
-  }
-}
 </style>

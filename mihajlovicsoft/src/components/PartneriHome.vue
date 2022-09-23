@@ -5,15 +5,29 @@
         <div class="col-xl-12 justify-content-center naslov">Naši partneri</div>
         <div class="row justify-content-around align-items-center">
           <div class="col-xl-5">
-            <VueHorizontal responsive>
+            <VueHorizontal responsive class="horiz">
               <div
-                class="d-flex align-items-center justify-content-center"
+                class="
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  hor-item
+                "
                 v-for="p in partneri"
-                :key="p.slika"
+                :key="p.id"
               >
-                <img class="img-fluid" v-bind:src="p.slika" />
-              </div>
-            </VueHorizontal>
+                <a :href="`${p.link}`" target="_blank">
+                  <img
+                    class="img-fluid"
+                    :src="require(`@/assets/partneri/glavni/${p.slika}`)"
+                  />
+                  <p>{{ p.naziv }}</p>
+                </a>
+              </div></VueHorizontal
+            ><router-link class="routerLink" :to="{ name: 'Partneri' }">
+              <p class="prikaz">
+                Prikaz svih partnera <b-icon icon="arrow-up-right-square" /></p
+            ></router-link>
           </div>
           <div class="col-xl-5">
             <p class="text-justify paragraf">
@@ -24,7 +38,7 @@
               Rešenja koja distribuiramo su proverena rešenja. Iza nas je veliki
               broj zadovoljnih kompanija koje su znale da iskoriste naše znanje
               i iskustva. Ukoliko se prepoznajete u navedenim delatnostima, Vaš
-              se uspeh ne dovodi u pitanje. <i>Postanite naš PARTNER!</i>
+              se uspeh ne dovodi u pitanje. <br><span class="font-lg">Postanite naš partner!</span>
             </p>
           </div>
         </div>
@@ -36,6 +50,7 @@
 
 <script>
 import VueHorizontal from "vue-horizontal";
+import json from "../json/partneri.json";
 
 export default {
   name: "PartneriHome",
@@ -44,176 +59,7 @@ export default {
   },
   data() {
     return {
-      partneri: [
-        {
-          slika: require("../assets/partneri/aleksandar.jpg"),
-          link: "https://hotel-aleksandar.rs/",
-        },
-        {
-          slika: require("../assets/partneri/benni.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/biftek.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/comtel.png"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/cynkmal.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/doljevac.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/ekstra-testera.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/elite.png"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/euro-plast.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/evropa.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/frigonais.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/gerontoloski-nis.png"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/GMGLogo.png"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/grosis.png"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/ilic.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/lik-promet.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/masinski.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/mg-electronic.png"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/milsa.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/monopol.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/my-place.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/nase-vreme.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/ni_medic.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/nicom.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/nis-produkt.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/niski-cvet.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/nitehnoklima.gif"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/pakom.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/plast-dent.png"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/pozoriste.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/prity-line.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/rucklogo.png"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/samson.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/SD.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/specijalna-bolnica.png"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/start-nis.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/svaba.png"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/tami.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/telix.jpg"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/timor.png"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/touring.png"),
-          link: "www.google.com",
-        },
-        {
-          slika: require("../assets/partneri/yumis.gif"),
-          link: "www.google.com",
-        },
-      ],
+      partneri: json.glavni,
     };
   },
 };
@@ -231,5 +77,49 @@ export default {
 section {
   padding: 16px 24px;
   background: #f5f5f5;
+}
+
+.hor-item {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+}
+.hor-item img {
+  max-height: 140px;
+}
+.hor-item p {
+  filter: drop-shadow(0 0 0.25rem rgba(153, 153, 153));
+  margin-top: 15px;
+  line-height: 16px;
+  font-size: 13px;
+}
+
+.horiz {
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(153, 153, 153));
+  background-color: white;
+  height: 200px;
+  align-items: center;
+  padding: 10px 15px 5px 15px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.prikaz {
+  text-align: right;
+  padding: 15px;
+  font-size: 16px;
+  color: #fd0101;
+  font-weight: 600;
+}
+
+.horiz a {
+  text-decoration: none;
+  color: #2c3e50;
+  transition: 0.4s ease;
+}
+
+.horiz a:hover {
+  color: #fd0101;
+  transition: 0.4s ease;
 }
 </style>

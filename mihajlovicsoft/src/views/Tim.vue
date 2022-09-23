@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar footer="footer" />
-    <div class="container reveal fade-bottom">
+    <div class="container reveal fade-bottom" style="margin-top: 50px;">
       <div class="row">
         <div class="col-xl-12 pt-2">
           <h2 class="naslov">Postani deo našeg tima!</h2>

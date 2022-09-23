@@ -207,6 +207,7 @@ export default {
   background-image: url("../assets/output-onlinepngtools (1).png");
   background-repeat: no-repeat;
   background-size: 55vw;
+  margin-top: 50px;
 }
 
 .vrstaKategorija {

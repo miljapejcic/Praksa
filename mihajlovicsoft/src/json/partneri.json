@@ -1,0 +1,300 @@
+{
+    "svi": [
+        {
+            "id": 30,
+            "naziv": "Recon",
+            "slika": "recon.png",
+            "link": "https://recon.rs/" 
+        },
+        {
+            "id": 31,
+            "naziv": "Reconal Sistemi",
+            "slika": "reconal.png",
+            "link": "https://www.reconal.rs/" 
+        },
+        {
+            "id": 32,
+            "naziv": "Rival d.o.o.",
+            "slika": "rival.png",
+            "link": "https://www.companywall.rs/firma/rival-doo-nis/MMrujCTR" 
+        },
+        {
+            "id": 33,
+            "naziv": "RuckZuck WebShop",
+            "slika": "rucklogo.png",
+            "link": "http://webshop.ruckzuck.rs/" 
+        },
+        {
+            "id": 0,
+            "naziv": "Benni plus d.o.o.",
+            "slika": "benni.jpg",
+            "link": "https://benniplus.rs/"
+        },
+        {
+            "id": 1,
+            "naziv": "Ekstra Testera Komerc",
+            "slika": "ekstra-testera.jpg",
+            "link": "https://ekstratestera.rs/"
+        },
+        {
+            "id": 2,
+            "naziv": "Europlast",
+            "slika": "euro-plast.jpg",
+            "link": "https://www.europlast.co.rs/"
+        },
+        {
+            "id": 3,
+            "naziv": "Frigonais d.o.o.",
+            "slika": "frigonais.jpg",
+            "link": "https://www.frigonais.rs/index.php/en/"
+        },
+        {
+            "id": 4,
+            "naziv": "Gerontoloski Centar Nis",
+            "slika": "gerontoloski-nis.png",
+            "link": "http://www.gcnis.com/"
+        },
+        {
+            "id": 5,
+            "naziv": "Grosis d.o.o." ,
+            "slika": "grosis.png",
+            "link": "https://www.grosis.rs/"
+        },
+        {
+            "id": 6,
+            "naziv": "KeepTank",
+            "slika": "keeptank.png",
+            "link": "https://www.keeptank.rs/"
+        },
+        {
+            "id": 7,
+            "naziv": "Masinski Fakultet u Nisu",
+            "slika": "masinski.jpg",
+            "link": "http://www.masfak.ni.ac.rs/"
+        },
+        {
+            "id": 8,
+            "naziv": "M&G Electronic",
+            "slika": "mg-electronic.png",
+            "link": "https://www.mgelectronic.rs/"
+        },
+        {
+            "id": 9,
+            "naziv": "Mihajlovic Poslovni Sistem",
+            "slika": "Mihajlovic paracin.png",
+            "link": "https://mihajlovic.rs/"
+        },
+        {
+            "id": 10,
+            "naziv": "Milsa d.o.o.",
+            "slika": "milsa.jpg",
+            "link": "http://www.milsa.rs/en/"
+        },
+        {
+            "id": 11,
+            "naziv": "IGM Mladost",
+            "slika": "mladost.png",
+            "link": "https://mladost.co.rs/sr/"
+        },
+        {
+            "id": 12,
+            "naziv": "Monicom",
+            "slika": "monicom.png",
+            "link": "https://monicom.rs/sr/"
+        },
+        {
+            "id": 13,
+            "naziv": "Memoris Monopol d.o.o.",
+            "slika": "monopol.jpg",
+            "link": "https://memoris.rs/"
+        },
+        {
+            "id": 14,
+            "naziv": "Hotel My Place, Nis",
+            "slika": "my-place.jpg",
+            "link": "https://www.hotelmyplace.com/"
+        },
+        {
+            "id": 15,
+            "naziv": "NiTechno Clima",
+            "slika": "nitehnoklima.png",
+            "link": "https://nitechnoclima.com/"
+        },
+        {
+            "id": 16,
+            "naziv": "Plast-DENT",
+            "slika": "plast-dent.png",
+            "link": "https://www.plastdent.com/"
+        },
+        {
+            "id": 17,
+            "naziv": "Pozoriste Lutaka Nis",
+            "slika": "pozoriste.jpg",
+            "link": "https://sr-rs.facebook.com/PozoristelutakaNis/"
+        },
+        {
+            "id": 18,
+            "naziv": "Prity Line",
+            "slika": "prity-line.jpg",
+            "link": "https://www.prity.rs/"
+        },
+        {
+            "id": 19,
+            "naziv": "Put Inzenjering",
+            "slika": "putinzenjering.jpg",
+            "link": "https://putinzenjering.com/en/"
+        },
+        {
+            "id": 20,
+            "naziv": "SD Elektronik",
+            "slika": "SD.jpg",
+            "link": "https://www.sdelectronic.rs/search?search_query=L"
+        },
+        {
+            "id": 21,
+            "naziv": "Stefan d.o.o. Arilje",
+            "slika": "stefan.png",
+            "link": "https://stefantekstil.rs/"
+        },
+        {
+            "id": 22,
+            "naziv": "Švaba Auto",
+            "slika": "svaba.png",
+            "link": "http://www.svaba-auto.rs/"
+        },
+        {
+            "id": 23,
+            "naziv": "Tami Residence",
+            "slika": "tami.png",
+            "link": "https://www.tamiresidence.com/"
+        },
+        {
+            "id": 24,
+            "naziv": "Telix d.o.o.",
+            "slika": "telix.jpg",
+            "link": "https://www.telix.rs/"
+        },
+        {
+            "id": 25,
+            "naziv": "Timor d.o.o.",
+            "slika": "timor.png",
+            "link": "https://timor.ls.rs/"
+        },
+        {
+            "id": 26,
+            "naziv": "Touring Europa",
+            "slika": "touring.png",
+            "link": "https://touringeuropa.rs/"
+        },
+        {
+            "id": 27,
+            "naziv": "Trgomen Grupa",
+            "slika": "trgomen.png",
+            "link": "http://www.trgomen.com/en/homepage/"
+        },
+        {
+            "id": 28,
+            "naziv": "Unijapak",
+            "slika": "unijapak.png",
+            "link": "https://unijapak.rs/"
+        },
+        {
+            "id": 29,
+            "naziv": "YUMIS",
+            "slika": "yumis.png",
+            "link": "https://yumis.rs/en/"
+        }
+    ],
+    "glavni": [
+        {
+            "id": 29,
+            "naziv": "YUMIS",
+            "slika": "yumis.png",
+            "link": "https://yumis.rs/en/"
+        },
+        {
+            "id": 24,
+            "naziv": "Telix d.o.o.",
+            "slika": "telix.jpg",
+            "link": "https://www.telix.rs/"
+        },
+        {
+            "id": 30,
+            "naziv": "Recon",
+            "slika": "recon.png",
+            "link": "https://recon.rs/" 
+        },
+        {
+            "id": 31,
+            "naziv": "Reconal Sistemi",
+            "slika": "reconal.png",
+            "link": "https://www.reconal.rs/" 
+        },
+        {
+            "id": 32,
+            "naziv": "Rival d.o.o.",
+            "slika": "rival.png",
+            "link": "https://www.companywall.rs/firma/rival-doo-nis/MMrujCTR" 
+        },
+        {
+            "id": 33,
+            "naziv": "RuckZuck WebShop",
+            "slika": "rucklogo.png",
+            "link": "http://webshop.ruckzuck.rs/" 
+        },
+        {
+            "id": 3,
+            "naziv": "Frigonais d.o.o.",
+            "slika": "frigonais.jpg",
+            "link": "https://www.frigonais.rs/index.php/en/"
+        },
+        {
+            "id": 27,
+            "naziv": "Trgomen Grupa",
+            "slika": "trgomen.png",
+            "link": "http://www.trgomen.com/en/homepage/"
+        },
+        {
+            "id": 28,
+            "naziv": "Unijapak",
+            "slika": "unijapak.png",
+            "link": "https://unijapak.rs/"
+        },
+        {
+            "id": 22,
+            "naziv": "Švaba Auto",
+            "slika": "svaba.png",
+            "link": "http://www.svaba-auto.rs/"
+        },
+        {
+            "id": 21,
+            "naziv": "Stefan d.o.o. Arilje",
+            "slika": "stefan.png",
+            "link": "https://stefantekstil.rs/"
+        },
+        {
+            "id": 8,
+            "naziv": "M&G Electronic",
+            "slika": "mg-electronic.png",
+            "link": "https://www.mgelectronic.rs/"
+        },
+        {
+            "id": 9,
+            "naziv": "Mihajlovic Poslovni Sistem",
+            "slika": "Mihajlovic paracin.png",
+            "link": "https://mihajlovic.rs/"
+        },
+        {
+            "id": 10,
+            "naziv": "Milsa d.o.o.",
+            "slika": "milsa.jpg",
+            "link": "http://www.milsa.rs/en/"
+        },
+        {
+            "id": 6,
+            "naziv": "KeepTank",
+            "slika": "keeptank.png",
+            "link": "https://www.keeptank.rs/"
+        }
+    ]
+}

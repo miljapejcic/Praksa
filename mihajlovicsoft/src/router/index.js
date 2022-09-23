@@ -9,6 +9,7 @@ import Tim from '../views/Tim.vue'
 import PCKase from '../views/PCKase.vue'
 import Podrska from '../views/Podrska.vue'
 import Proizvod from '../views/Proizvod.vue'
+import Partneri from '../views/Partneri.vue'
 
 Vue.use(Router)
 
@@ -53,6 +54,11 @@ const router = new Router({
             path: '/Proizvod/:idkat/:idproiz',
             name: 'Proizvod',
             component: Proizvod
+        },
+        {
+            path: '/Partneri',
+            name: 'Partneri',
+            component: Partneri
         }
     ],
     mode: 'history'

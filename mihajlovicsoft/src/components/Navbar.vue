@@ -17,7 +17,7 @@
       </div>
       <nav
         id="navbar"
-        class="navbar navbar-expand-lg shadow-5-strong fixed-top navibg"
+        class="navbar navbar-expand-lg shadow-5-strong fixed-top navibg "
       >
         <!-- Container wrapper -->
         <div class="container-fluid">
@@ -49,7 +49,7 @@
 
           <!-- Collapsible wrapper -->
           <div
-            class="collapse navbar-collapse justify-content-center"
+            class="collapse navbar-collapse justify-content-end"
             id="navbarSupportedContent"
           >
             <!-- Left links -->
@@ -78,11 +78,16 @@
                 >
               </li>
               <li class="nav-item">
+                <router-link class="nav-link" :to="{ name: 'Partneri' }"
+                  >Partneri</router-link
+                >
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" @click="goto({ footer })">Kontakt</a>
               </li>
               <li class="nav-item">
                 <router-link class="nav-link" :to="{ name: 'Tim' }"
-                  >Postani deo našeg tima</router-link
+                  >Postani deo tima</router-link
                 >
                 <!-- <a class="nav-link" href="#">Postani deo našeg tima</a> -->
               </li>
@@ -255,7 +260,7 @@ function changeGradientToggle() {
 }
 
 #content .nav-item {
-  margin: 0px 20px;
+  margin: 0px 10px;
   cursor: pointer;
 }
 
@@ -275,7 +280,7 @@ function changeGradientToggle() {
     url(../assets/navbar/header2.jpg);
   background-position: center 0px;
   /* min-height: 600px; */
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   margin-top: -60px;
   background-repeat: no-repeat;
   background-size: cover;

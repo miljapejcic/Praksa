@@ -15,7 +15,10 @@
         </div>
         <!-- <img :src="proizvod.slika"/> -->
         <div>
-          <img class="proizvod" :src="require(`@/assets/proizvodi/${proizvod.slika}`)"/>
+          <img
+            class="proizvod"
+            :src="require(`@/assets/proizvodi/${proizvod.slika}`)"
+          />
           <div class="naziv">{{ proizvod.naziv }}</div>
         </div>
       </div>
@@ -57,6 +60,9 @@ export default {
   components: {
     Navbar,
     Footer,
+  },
+  mounted() {
+    window.scrollTo(0, 0);
   },
   computed: {
     proizvodID() {

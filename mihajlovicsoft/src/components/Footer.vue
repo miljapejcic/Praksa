@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container kontakt reveal fade-bottom">
+    <div class="container kontakt">
       <!-- dole je bila klasa row -->
       <div>
         <div class="justify-content-center naslov">Kontakt</div>
@@ -40,7 +40,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 10px;
   border-top: 0.6px solid #d8d8d8;
   padding-top: 10px;
 }

@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar footer="footer" />
-    <div class="opala">
+    <div class="container opala">
       <div class="row m-auto reveal fade-bottom">
         <div class="container properties prop-pred">
           <div v-for="p in proizvod.prednosti" :key="p">
@@ -23,7 +23,7 @@
         </div>
       </div>
 
-      <div class="container info reveal fade-left">
+      <div class="col-xl-10 info reveal fade-left">
         <img src="../assets/proizvodi/info.png" />
         <div class="paragraf">
           {{ proizvod.opis }}
@@ -35,7 +35,7 @@
       </div>
 
       <div class="container reveal fade-bottom">
-        <h3 class="font-lg svojstva">Svojstva:</h3>
+        <h3 class="font-lg svojstva"><b-icon icon="inboxes" /> Svojstva:</h3>
         <div class="properties prop-svoj">
           <div v-for="p in proizvod.svojstva" :key="p">
             <div class="paragrafic">
@@ -43,6 +43,16 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div
+        class="container paragraf reveal fade-right"
+        v-if="proizvod.izvestaji != null"
+      >
+        <h2 class="font-lg svojstva"><b-icon icon="book" /> Izveštaji:</h2>
+        <p class="vestine" v-for="i in proizvod.izvestaji" :key="i">
+          <b-icon icon="caret-right-fill" /> {{ i }}
+        </p>
       </div>
     </div>
     <div id="footer">
@@ -126,15 +136,13 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding: 10px;
+  margin: auto;
 }
 
 .info img {
   max-width: 100px;
-}
-
-.info .paragraf {
-  margin: 0px 50px;
 }
 
 .prop-pred {
@@ -186,6 +194,36 @@ export default {
   max-width: 250px;
 }
 
+.vestine {
+  position: relative;
+  padding: 5px;
+  margin: 0 50px;
+}
+
+.vestine::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.vestine:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.vestine::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: hsl(200 100% 80%);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
 @media only screen and (max-width: 767px) {
   .naziv {
     font-size: 1.25rem;
@@ -196,6 +234,14 @@ export default {
 
   .prop-svoj {
     justify-content: space-around;
+  }
+  .info {
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .info img {
+    display: none;
   }
 }
 
@@ -210,13 +256,5 @@ export default {
 }
 
 @media only screen and (max-width: 1200px) {
-  .info {
-    flex-direction: column;
-    padding: 0px;
-  }
-
-  .info img {
-    display: none;
-  }
 }
 </style>

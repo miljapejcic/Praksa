@@ -5,10 +5,10 @@
       <div class="header">
         <div class="container-2xl m-auto">
           <div class="titlebox">
-            <h1 class="font-xl">
+            <h1 class="font-xl animate__animated animate__pulse">
               <span class="msoft">Mihajlović Soft.</span> Već 30 godina sa vama
             </h1>
-            <h2 class="font-lg">
+            <h2 class="font-lg animate__animated animate__lightSpeedInLeft">
               Microsoft Certified Partner, Izrada softvera, Kompjuterski
               Inženjering
             </h2>
@@ -17,7 +17,7 @@
       </div>
       <nav
         id="navbar"
-        class="navbar navbar-expand-lg shadow-5-strong fixed-top navibg "
+        class="navbar navbar-expand-lg shadow-5-strong fixed-top navibg"
       >
         <!-- Container wrapper -->
         <div class="container-fluid">
@@ -49,7 +49,7 @@
 
           <!-- Collapsible wrapper -->
           <div
-            class="collapse navbar-collapse justify-content-end"
+            class="collapse navbar-collapse justify-content-end animate__animated animate__pulse"
             id="navbarSupportedContent"
           >
             <!-- Left links -->

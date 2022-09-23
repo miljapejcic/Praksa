@@ -5,12 +5,11 @@
 </template>
 
 <script>
-// import Home from './views/Home.vue'
+import 'animate.css';
 
 export default {
   name: "App",
   components: {
-    // Home
   },
 };
 

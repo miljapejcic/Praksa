@@ -1,43 +1,59 @@
 <template>
   <div>
     <Navbar footer="footer" />
-    <div class="container reveal fade-bottom" style="margin-top: 50px;">
+    <div class="container" style="margin-top: 30px">
       <div class="row">
-        <div class="col-xl-12 pt-2">
-          <h2 class="naslov">Postani deo našeg tima!</h2>
-        </div>
-      </div>
-      <div class="row margine">
-        <div class="col-xl-12 paragraf">
-          <p>
-            Kao kompanija sa dugačkom tradicijom, težimo ka tome da se naš tim
-            stručnjaka neprekidno razvija i uvećava. Mihajlović Soft nudi
-            mogućnost za izvanredan profesionalni razvoj i unapređivanje
-            profesionalnih veština tokom rada na različitim projektima, kako sa
-            klijentima u zemlji, tako i u inostranstvu. Naš tim programera je
-            uporan, posvećen svakom dodeljenom zadatku, a ostvareni rezultati su
-            naša garancija kvaliteta.
-          </p>
-        </div>
-      </div>
-      <div class="stavke margine">
-        <div class="col-xl-6 paragraf mejl">
-          <img src="../assets/resume.jpg" />
-          
-        </div>
-        <div class="col-xl-6 paragraf">
-          <h5>Potrebna znanja i veštine:</h5>
-          <li class="pt-1 pb-1" v-for="v in vestine" :key="v.id">
-            {{ v }}
-          </li>
+        <div class="stavke">
+          <div class="col-xl-2 paragraf round-img reveal fade-left">
+            <img src="../assets/interview.jpeg" />
+          </div>
+          <div class="col-xl-8 paragraf reveal fade-bottom">
+            <div class="col-xl-12 pt-2">
+              <h2
+                class="font-lg"
+                style="font-size: 34px; margin: auto; text-align: left"
+              >
+                <b-icon icon="person" /> Postani deo našeg tima
+              </h2>
+            </div>
+            <p>
+              <br />
+              Kao kompanija sa dugačkom tradicijom, težimo ka tome da se naš tim
+              stručnjaka neprekidno razvija i uvećava. Mihajlović Soft nudi
+              mogućnost za izvanredan profesionalni razvoj i unapređivanje
+              profesionalnih veština tokom rada na različitim projektima, kako
+              sa klijentima u zemlji, tako i u inostranstvu. Naš tim programera
+              je uporan, posvećen svakom dodeljenom zadatku, a ostvareni
+              rezultati su naša garancija kvaliteta.
+            </p>
+          </div>
         </div>
       </div>
       <div class="row">
-        <p class="pb-0 mt-3">
-            Ukoliko ste zainteresovani za posao u našoj kompaniji i posedujete
-            navedena znanja i veštine, svoj CV mozete poslati na:
-            <b>office@mihajlovicsoft.rs</b>
-          </p>
+        <div class="stavke">
+          <div class="col-xl-6 paragraf reveal fade-left">
+            <h2
+              class="font-lg"
+              style="font-size: 34px; margin: auto; text-align: left"
+            >
+              <b-icon icon="lightbulb" /> Potrebna znanja i veštine:
+            </h2>
+            <br />
+            <p class="vestine" v-for="v in vestine" :key="v.id">
+              <b-icon icon="caret-right-fill" /> {{ v }}
+            </p>
+          </div>
+          <div class="col-xl-4 mejl reveal fade-right">
+            <img src="../assets/application.jpeg" />
+          </div>
+          <div class="col-xl-10  reveal fade-bottom">
+            <p class="paragraf">
+              <b><b-icon icon="envelope" /></b> Ukoliko ste zainteresovani za posao u našoj kompaniji i posedujete
+              navedena znanja i veštine, svoj CV mozete poslati na:
+              <b>office@mihajlovicsoft.rs</b>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <div id="footer">
@@ -58,7 +74,15 @@ export default {
   },
   data() {
     return {
-      vestine: ["Više od dve godine radnog iskustva u .Net C#, ASP.NET ili MVC", "Dobro poznavanje .NET framework 4 ili više","Odlično poznavanje projektnih obrazaca", "Odlične analitičke veštine, pažnja prema detaljima i veštine rešavanja problema", "Dobro poznavanje engleskog jezika", "Sposobnost rada u timu"],
+      vestine: [
+        "Radno iskustvo u .Net C#, ASP.NET ili MVC",
+        "Dobro poznavanje .NET framework 4 ili više",
+        "Odlično poznavanje projektnih obrazaca",
+        "Odlične analitičke veštine i veštine rešavanja problema",
+        "Pažnja prema detaljima",
+        "Dobro poznavanje engleskog jezika",
+        "Sposobnost rada u timu",
+      ],
     };
   },
   mounted() {
@@ -73,6 +97,7 @@ export default {
 }
 
 .stavke {
+  margin: 20px 0px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -80,10 +105,51 @@ export default {
   align-items: center;
 }
 
-.mejl img {
-  max-width: 400px;
-  border-radius: 15px;
-  /* margin-bottom: 30px; */
+.round-img {
+  max-width: 100%;
+  padding: 10px 20px 0px 10px;
+}
+
+.round-img img {
+  width: 180px;
+  border-radius: 100%;
+  transition: 0.4s ease;
+  box-shadow: 0.7rem 0 1.4rem 0.2rem rgba(82, 82, 82, 0.25);
+}
+
+.round-img img:hover {
+  width: 190px;
+  transition: 0.4s ease;
+}
+
+.vestine::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.vestine:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.vestine::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: hsl(200 100% 80%);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.vestine {
+  position: relative;
+  padding: 5px;
+  margin: 0px;
 }
 
 b {
@@ -98,7 +164,15 @@ b {
   align-items: center;
 }
 
-.margine {
-  margin: 0px 50px;
+.mejl img {
+  width: 70%;
+  border-radius: 10%;
+  transition: 0.4s ease;
+  box-shadow: 0.7rem 0 1.4rem 0.2rem rgba(82, 82, 82, 0.25);
+}
+
+.mejl img:hover {
+  width: 75%;
+  transition: 0.4s ease;
 }
 </style>

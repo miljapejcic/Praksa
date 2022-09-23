@@ -1,6 +1,6 @@
 <template>
-  <div class="halo">
-    <div class="container kontakt">
+  <div>
+    <div class="container kontakt reveal fade-bottom">
       <!-- dole je bila klasa row -->
       <div>
         <div class="justify-content-center naslov">Kontakt</div>

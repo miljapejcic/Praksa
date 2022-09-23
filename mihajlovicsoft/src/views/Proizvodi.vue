@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar footer="footer" />
-    <div class="container elements">
+    <div class="container elements reveal fade-bottom">
       <div class="row pt-2">
         <h2 class="naslov">PROIZVODI I USLUGE</h2>
       </div>

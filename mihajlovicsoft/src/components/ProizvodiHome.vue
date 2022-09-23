@@ -1,12 +1,12 @@
 <template>
   <div class="container kontejner d-flex flex-column align-items-center">
-    <div class="row">
+    <div class="row reveal fade-left">
       <div class="col-xl-12 justify-content-center naslov">
         Naši proizvodi i usluge
       </div>
     </div>
     <div class="row">
-      <div class="col-xl-6">
+      <div class="col-xl-6 reveal fade-left">
         <div class="container">
           <div
             class="
@@ -158,6 +158,7 @@
           flex-column
           align-items-center
           justify-content-center
+          reveal fade-right
         "
       >
         <div class="row justify-content-center">

@@ -2,12 +2,13 @@
   <div>
     <Navbar footer="footer" />
     <div class="container">
-      <div>
-        <div class="divic">
-          <div class="paragraf">
-            <div class="font-lg" style="text-align: left; font-size: 38px">
-              Tehnička podrška
-            </div>
+      <div class="divic">
+        <div class="paragraf reveal fade-left">
+          <!-- <img class="par-img" src="../assets/tehnicka.jpg"/> -->
+          <div class="font-lg" style="text-align: left; font-size: 38px">
+            Tehnička podrška
+          </div>
+          <p>
             Sve ove godine rada dovele su nas do saznanja da je jedna od
             najvažnijih usluga <i>posleprodajna usluga</i>. Za mnoge firme,
             posao se završava u trenutku kada prodaju, implementiraju i naplate.
@@ -16,26 +17,26 @@
             napredovanja, mi gradimo partnerski odnos na dugi rok i uvek stojimo
             na raspolaganju! Podržavamo partnere na takav način da saradnja sa
             nama predstavlja dodatnu vrednost i bolju zaradu na dugi rok.
-          </div>
-          <div class="teamviewer">
-            <img src="../assets/teamviewer.png" />
-            <input
-              type="button"
-              onClick="location.href='https://get.teamviewer.com/ejzxke2'"
-              value="Aplikacija za Tehničku Podršku"
-              class="dugme"
-            />
-          </div>
-        </div>
-        <div class="paragraf">
-          <p class="naslov">
-            Preuzmite klijentsku aplikaciju za tehničku podršku klikom na dugme
-            iznad.
           </p>
-          Kontaktirajte nas i uverite se sami, da imamo proizvode sa kojima
-          povećavamo Vaš prosperitet na tržištu. Trudićemo se da Vam pružimo
-          podršku, na najvišem mogućem nivou!
         </div>
+        <div class="teamviewer reveal fade-right">
+          <img class="teamviewer-img" src="../assets/teamviewer.png" />
+          <input
+            type="button"
+            onClick="location.href='https://get.teamviewer.com/ejzxke2'"
+            value="Aplikacija za Tehničku Podršku"
+            class="dugme"
+          />
+        </div>
+      </div>
+      <div class="paragraf reveal fade-bottom">
+        <span class="font-lg">
+          Preuzmite klijentsku aplikaciju za tehničku podršku klikom na dugme
+          iznad. </span
+        ><br />
+        Kontaktirajte nas i uverite se sami, da imamo proizvode sa kojima
+        povećavamo Vaš prosperitet na tržištu. Trudićemo se da Vam pružimo
+        podršku, na najvišem mogućem nivou!
       </div>
     </div>
     <div id="footer">
@@ -74,7 +75,7 @@ export default {
   justify-content: center;
 }
 
-.divic img {
+.teamviewer-img {
   padding: 20px 30px 0px 30px;
   max-width: 400px;
 }

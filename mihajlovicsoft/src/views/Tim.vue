@@ -1,10 +1,10 @@
 <template>
   <div>
     <Navbar footer="footer" />
-    <div class="container">
+    <div class="container reveal fade-bottom">
       <div class="row">
         <div class="col-xl-12 pt-2">
-          <h2 class="naslov">POSTANI DEO NAŠEG TIMA</h2>
+          <h2 class="naslov">Postani deo našeg tima!</h2>
         </div>
       </div>
       <div class="row margine">

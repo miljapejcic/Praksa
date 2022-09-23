@@ -4,10 +4,10 @@
     <div>
       <ProizvodiHome />
     </div>
-    <div>
+    <div class="reveal fade-bottom">
       <ONamaHome />
     </div>
-    <div>
+    <div class="reveal fade-bottom">
       <PartneriHome />
     </div>
     <div id="footer">

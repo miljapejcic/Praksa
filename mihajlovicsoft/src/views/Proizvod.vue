@@ -1,33 +1,37 @@
 <template>
   <div>
     <Navbar footer="footer" />
-    <div class="container opala">
-      <div class="properties prop-pred">
-        <div v-for="p in proizvod.prednosti" :key="p">
-          <div class="divic">
-            <h3>
-              <b-icon icon="star" /><br />
-              {{ p }}
-            </h3>
+    <div class="opala">
+      <div class="row m-auto reveal fade-bottom">
+        <div class="container properties prop-pred">
+          <div v-for="p in proizvod.prednosti" :key="p">
+            <div class="divic">
+              <h3>
+                <b-icon icon="star" /><br />
+                {{ p }}
+              </h3>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row m-auto">
         <!-- <img :src="proizvod.slika"/> -->
         <div>
           <img class="proizvod" src="../assets/proizvodi/finansijsko.jpg" />
           <div class="naziv">{{ proizvod.naziv }}</div>
         </div>
       </div>
-      <div class="paragraf">
-        {{ proizvod.opis }}
-        <div class="ostalo">
-          <br />
-          <li v-for="p in proizvod.ostalo" :key="p">{{ p }}</li>
+
+      <div class="container info reveal fade-left">
+        <img src="../assets/proizvodi/info.png" />
+        <div class="paragraf">
+          {{ proizvod.opis }}
+          <div class="ostalo">
+            <br />
+            <li v-for="p in proizvod.ostalo" :key="p">{{ p }}</li>
+          </div>
         </div>
       </div>
 
-      <div style="margin-top: 50px">
+      <div class="container reveal fade-bottom">
         <h3 class="font-lg svojstva">Svojstva:</h3>
         <div class="properties prop-svoj">
           <div v-for="p in proizvod.svojstva" :key="p">
@@ -89,7 +93,7 @@ export default {
   border-radius: 1rem;
   box-shadow: 0 0 3rem 1rem rgba(82, 82, 82, 0.15);
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 .naziv {
@@ -109,7 +113,22 @@ export default {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+
+.info img {
+  max-width: 100px;
+}
+
+.info .paragraf {
+  margin: 0px 50px;
 }
 
 .prop-pred {
@@ -149,7 +168,7 @@ export default {
 }
 
 .ostalo li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .paragrafic {
@@ -181,6 +200,17 @@ export default {
   .divic h3 {
     font-size: 20px;
     transition: 0.4s ease;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .info {
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .info img {
+    display: none;
   }
 }
 </style>

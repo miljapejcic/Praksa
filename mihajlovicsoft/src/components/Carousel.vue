@@ -26,12 +26,6 @@
         data-mdb-slide-to="2"
         aria-label="Slide 3"
       ></button>
-      <button
-        type="button"
-        data-mdb-target="#carouselBasicExample"
-        data-mdb-slide-to="3"
-        aria-label="Slide 4"
-      ></button>
     </div>
 
     <!-- Inner -->
@@ -41,7 +35,6 @@
         <img
           src="../assets/onama/1.png"
           class="d-block w-100"
-          alt="Sunset Over the City"
         />
         <div class="carousel-caption d-none d-md-block"></div>
       </div>
@@ -51,17 +44,6 @@
         <img
           src="../assets/onama/2.png"
           class="d-block w-100"
-          alt="Canyon at Nigh"
-        />
-        <div class="carousel-caption d-none d-md-block"></div>
-      </div>
-
-      <!-- Single item -->
-      <div class="carousel-item">
-        <img
-          src="../assets/onama/3.png"
-          class="d-block w-100"
-          alt="Cliff Above a Stormy Sea"
         />
         <div class="carousel-caption d-none d-md-block"></div>
       </div>
@@ -69,7 +51,6 @@
         <img
           src="../assets/onama/4.png"
           class="d-block w-100"
-          alt="Cliff Above a Stormy Sea"
         />
         <div class="carousel-caption d-none d-md-block"></div>
       </div>

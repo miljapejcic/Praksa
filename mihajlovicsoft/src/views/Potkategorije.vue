@@ -49,12 +49,15 @@ export default {
 
 <style>
 .naslov {
-  color: #fd0101;
+  /* color: #fd0101; */
   /* z-index: 9999; */
-  text-transform: uppercase;
+  background: -webkit-linear-gradient(#fd0101, rgb(255, 139, 139));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* text-transform: uppercase; */
   font-family: "Poppins", sans-serif;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 35px;
+  font-weight: 600;
 }
 
 </style>

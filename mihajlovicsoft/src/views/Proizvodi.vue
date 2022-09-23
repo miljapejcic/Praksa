@@ -7,6 +7,7 @@
       </div>
       <div class="row justify-content-around align-items-center">
         <div class="col-xl-3 paddin " v-for="k in json.kategorije" :key="k.id">
+          <img class="slikastil" src="../assets/kategorije/biznisapp.jpg" />
           <h3>{{k.ime}}</h3>
           <!-- <h3 @click="toggleClass(k.id)">{{k.ime}}</h3> -->
           <div :class="'kat'+k.id" class="noactive" style="border-top: rgba(17, 16, 16, 0.664) solid 1px">
@@ -41,6 +42,11 @@ export default {
       show:false
     };
   },
+  computed:{
+    imag(kid){
+      return this.retimag(kid)
+    }
+  },
   methods: {
     saljidalje(idkat, idproiz) {
       this.$router.push({ name: "Proizvod", params: { idkat: idkat, idproiz: idproiz } });
@@ -49,18 +55,15 @@ export default {
       let klasa = ".kat"+idK;
       document.querySelector(klasa).classList.toggle("noactive");
       document.querySelector("imeKat").classList.toggle("noshow");
+    },
+    retimag(kid){
+      // console.log()
+      return json.kategorije[kid].slika
     }
   },
+
   mounted() {
     window.scrollTo(0, 0);
-    let btn = document.querySelector('.mouse-cursor-gradient-tracking');
-    btn.addEventListener('mousemove', e => {
-      let rect = e.target.getBoundingClientRect();
-      let x = e.clientX - rect.left;
-      let y = e.clientY - rect.top;
-      btn.style.setProperty('--x', x + 'px');
-      btn.style.setProperty('--y', y + 'px');
-    });
   },
 };
 
@@ -118,16 +121,15 @@ export default {
   padding-top:20px;
 }
 
-.paddin:hover > .noactive.item{
+.slikastil{
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+}
+/* .paddin:hover > .noactive.item{
   opacity:0;
-  animation:animacija 2s ease-in-out;
-}
-
-@keyframes animacija {
-  0%    { opacity: 0; }
-  100%  { opacity: 1; }
-}
-
+  animation:fadeIn 2s ease-in-out forwards;
+} */
 
 .item:hover{
   color:rgba(219, 1, 1, 0.918);

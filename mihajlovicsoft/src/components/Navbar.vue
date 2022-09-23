@@ -360,23 +360,7 @@ a router-link {
   border-color: #ff6060;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 @media only screen and (max-width: 750px) {
   .dugmeZaTop {
     display: none;

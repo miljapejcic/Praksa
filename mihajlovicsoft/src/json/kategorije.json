@@ -3,6 +3,7 @@
         {
             "ime":"Biznis aplikacije",
             "id":0,
+            "slika":"../assets/kategorije/biznisapp.jpg",
             "listaProizvoda":[
                 {
                     "id": 0,
@@ -140,26 +141,31 @@
         {
             "ime":"Web sajtovi",
             "id":1,
+            "slika":"",
             "listaProizvoda":["proba1","proba2","proba3"]
         },
         {
             "ime":"Specifične aplikacije",
             "id":2,
+            "slika":"",
             "listaProizvoda":["proba4","proba5"]
         },
         {
             "ime":"Antivirusni softver",
             "id":3,
+            "slika":"",
             "listaProizvoda":["proba1","proba2","proba3", "proba4"]
         },
         {
             "ime":"Softverski paketi",
             "id":4,
+            "slika":"",
             "listaProizvoda":["proba7","proba5","proba6"]
         },
         {
             "ime":"Umrežavanje poslovnih sistema",
             "id":5,
+            "slika":"",
             "listaProizvoda":[]
         }        
     ]

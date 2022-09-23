@@ -15,7 +15,7 @@
         </div>
         <!-- <img :src="proizvod.slika"/> -->
         <div>
-          <img class="proizvod" src="../assets/proizvodi/finansijsko.jpg" />
+          <img class="proizvod" :src="require(`@/assets/proizvodi/${proizvod.slika}`)"/>
           <div class="naziv">{{ proizvod.naziv }}</div>
         </div>
       </div>

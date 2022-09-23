@@ -7,8 +7,8 @@
       </div>
       <div class="row justify-content-around align-items-center">
         <div class="col-xl-3 paddin " v-for="k in json.kategorije" :key="k.id">
-          <img class="slikastil" src="../assets/kategorije/biznisapp.jpg" />
-          <h3>{{k.ime}}</h3>
+          <img class="slikastil" :src="require(`@/assets/kategorije/${k.slika}`)" />
+          <h3 class="naslovstil">{{k.ime}}</h3>
           <!-- <h3 @click="toggleClass(k.id)">{{k.ime}}</h3> -->
           <div :class="'kat'+k.id" class="noactive" style="border-top: rgba(17, 16, 16, 0.664) solid 1px">
               <div v-for="proizvod in k.listaProizvoda" :key="proizvod.id">
@@ -42,11 +42,6 @@ export default {
       show:false
     };
   },
-  computed:{
-    imag(kid){
-      return this.retimag(kid)
-    }
-  },
   methods: {
     saljidalje(idkat, idproiz) {
       this.$router.push({ name: "Proizvod", params: { idkat: idkat, idproiz: idproiz } });
@@ -55,10 +50,6 @@ export default {
       let klasa = ".kat"+idK;
       document.querySelector(klasa).classList.toggle("noactive");
       document.querySelector("imeKat").classList.toggle("noshow");
-    },
-    retimag(kid){
-      // console.log()
-      return json.kategorije[kid].slika
     }
   },
 
@@ -131,6 +122,9 @@ export default {
   animation:fadeIn 2s ease-in-out forwards;
 } */
 
+.naslovstil{
+  margin-top: 20px;
+}
 .item:hover{
   color:rgba(219, 1, 1, 0.918);
   transition:0.2s ease-in-out;

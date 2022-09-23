@@ -2,8 +2,8 @@
     "kategorije":[
         {
             "ime":"Biznis aplikacije",
+            "slika":"biznisapp.jpg",
             "id":0,
-            "slika":"../assets/kategorije/biznisapp.jpg",
             "listaProizvoda":[
                 {
                     "id": 0,
@@ -32,7 +32,7 @@
                         "Jedna od važnih funkcija je aktiviranje obračuna iz arhive, koja omogućava da se bilo koji obračun koji je arhiviran ponovo aktivira i primene sve opcije kao i za tekući obračun. Segment omogućava veliki broj izmena u obračunu bez potrebe za programerom.",
                         "Garancija 12 meseci."
                     ],
-                    "slika": "../assets/proizvodi/zarada.jpg"
+                    "slika": "zarada.jpg"
         
                 },
                 {
@@ -60,7 +60,7 @@
                     "ostalo": [
                         "Garancija 12 meseci."
                     ],
-                    "slika": "../assets/proizvodi/finansijsko.jpg"
+                    "slika": "finansijsko.jpg"
         
                 },
                 {
@@ -91,7 +91,7 @@
                         "Moguć pristup sistemu sa udaljenih lokacija na internetu.",
                         "Garancija 12 meseci."
                     ],
-                    "slika": "../assets/proizvodi/robno.jpg"
+                    "slika": "robno.jpg"
         
                 },
                 {
@@ -113,7 +113,7 @@
                         "Rad u mreži sa više odvojenih objekata(maloprodaja).",
                         "Garancija 12 meseci."
                     ],
-                    "slika": "../assets/proizvodi/pc kase.jpg"
+                    "slika": "pc kase.jpg"
         
                 },
                 {
@@ -134,38 +134,38 @@
                     "ostalo": [
                         "Garancija 12 meseci."
                     ],
-                    "slika": "../assets/proizvodi/gas.jpg"
+                    "slika": "gas.jpg"
                 }
             ]
         },
         {
             "ime":"Web sajtovi",
             "id":1,
-            "slika":"",
+            "slika":"websajtovi.jpg",
             "listaProizvoda":["proba1","proba2","proba3"]
         },
         {
             "ime":"Specifične aplikacije",
             "id":2,
-            "slika":"",
+            "slika":"specificne.jpg",
             "listaProizvoda":["proba4","proba5"]
         },
         {
             "ime":"Antivirusni softver",
             "id":3,
-            "slika":"",
+            "slika":"antivirus.jpg",
             "listaProizvoda":["proba1","proba2","proba3", "proba4"]
         },
         {
             "ime":"Softverski paketi",
             "id":4,
-            "slika":"",
+            "slika":"softverskipaketi.jpg",
             "listaProizvoda":["proba7","proba5","proba6"]
         },
         {
             "ime":"Umrežavanje poslovnih sistema",
             "id":5,
-            "slika":"",
+            "slika":"mreze.jpg",
             "listaProizvoda":[]
         }        
     ]

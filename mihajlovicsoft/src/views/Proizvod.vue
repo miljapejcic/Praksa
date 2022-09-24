@@ -1,7 +1,10 @@
 <template>
   <div>
     <Navbar footer="footer" />
-    <div class="container opala">
+    <h2 class="font-lg naslov-stripe animate__animated animate__fadeInDown" style="color: #fd0101;">
+      {{ proizvod.naziv}}
+    </h2>
+    <div class="container" style="margin-top:-40px;">
       <div class="row m-auto reveal fade-bottom">
         <div class="container properties prop-pred">
           <div v-for="p in proizvod.prednosti" :key="p">
@@ -82,7 +85,7 @@ export default {
       return parseInt(this.$route.params.idkat);
     },
     proizvod() {
-      console.log(this.kategorijaID);
+      // console.log(this.kategorijaID);
       var kat = json.kategorije.find(
         (kategorija) => kategorija.id === this.kategorijaID
       );
@@ -91,18 +94,17 @@ export default {
       );
       return proiz;
     },
+    kategorija() {
+      var kat = json.kategorije.find(
+        (kategorija) => kategorija.id === this.kategorijaID
+      );
+      return kat;
+    },
   },
 };
 </script>
 
 <style scoped>
-.opala {
-  background-repeat: no-repeat;
-  background-size: 30rem;
-  background-position-y: bottom;
-  padding: 1rem 0 9rem 0;
-  z-index: 999999;
-}
 
 .proizvod {
   width: 100%;

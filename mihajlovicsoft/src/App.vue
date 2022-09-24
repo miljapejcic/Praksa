@@ -5,12 +5,11 @@
 </template>
 
 <script>
-import 'animate.css';
+import "animate.css";
 
 export default {
   name: "App",
-  components: {
-  },
+  components: {},
 };
 
 function reveal() {
@@ -42,7 +41,8 @@ reveal();
   color: #2c3e50;
   margin-top: 60px;
   cursor: default;
-  background: radial-gradient(#fff, rgba(255, 213, 193, 0.329));
+  /* background-color: none; */
+  background: radial-gradient(#fff, rgba(255, 228, 217, 0.725));
 }
 
 .reveal {
@@ -92,5 +92,12 @@ reveal();
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+.naslov-stripe {
+  background: linear-gradient(to top, rgba(255, 236, 236, 0.341), rgb(255, 196, 168));
+  padding: 10px 0px 20px 0px;
+  letter-spacing: 3px;
+  font-size: 40px;
 }
 </style>

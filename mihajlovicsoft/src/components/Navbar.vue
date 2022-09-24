@@ -286,7 +286,8 @@ function changeGradientToggle() {
   background-size: cover;
   position: relative;
   width: 100%;
-  box-shadow: 0 2rem 3rem 0rem rgba(255, 196, 168, 0.323);
+  /* box-shadow: 0 2rem 3rem 0rem rgba(255, 196, 168, 0.323); */
+  box-shadow: inset 0 -12px 10px -10px rgb(255, 196, 168);
 
   height: 100vh;
 }

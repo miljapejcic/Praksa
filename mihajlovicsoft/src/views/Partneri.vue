@@ -1,13 +1,13 @@
 <template>
   <div>
     <Navbar footer="footer" />
-    <div class="container">
       <div class="header-img reveal fade-bottom">
         <div class="font-xl">
           Poverenje, poštovanje i zajednička saradnja predstavljaju suštinu
           uspešnog partnerstva.
         </div>
       </div>
+    <div class="container">
       <div class="paragraf reveal fade-left">
         Kao tim koji se neprekidno razvija i uvećava, pozivamo Vas, da stupite u
         kontakt sa nama i proverite, koje su Vaše prilike za boljim poslovanjem.
@@ -76,7 +76,7 @@ export default {
 .header-img {
   width: 100%;
   padding: 70px;
-  margin-top: 50px;
+  margin-top: -5px;
   background: linear-gradient(
       to top,
       rgba(255, 183, 101, 0.22),
@@ -85,7 +85,8 @@ export default {
     url("../assets/partneri/handshake.jpg");
   background-size: cover;
   box-shadow: 0px 0px 30px 8px rgb(254, 220, 205) inset;
-  border-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
   transition: 0.7s ease;
 }
 

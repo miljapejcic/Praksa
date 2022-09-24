@@ -13,7 +13,7 @@
           />
           <div class="paddin">
             <h3 class="font-lg">{{ k.ime }}</h3>
-            <button class="dugme" id="ponude" @click="showDiv()">
+            <button class="dugme" id="ponude" @click="toggleClass(k.id)">
               Prikaz ponuda <b-icon icon="caret-down" />
             </button>
             <!-- <h3 @click="toggleClass(k.id)">{{k.ime}}</h3> -->
@@ -62,11 +62,11 @@ export default {
         params: { idkat: idkat, idproiz: idproiz },
       });
     },
-    // toggleClass(idK) {
-    //   let klasa = ".kat" + idK;
-    //   document.querySelector(klasa).classList.toggle("noactive");
-    //   document.querySelector("imeKat").classList.toggle("noshow");
-    // },
+    toggleClass(idK) {
+      let klasa = ".kat" + idK;
+      document.querySelector(klasa).classList.toggle("noactive");
+      // document.querySelector("imeKat").classList.toggle("noshow");
+    },
     showDiv() {
       if (document.querySelector(".noactive").style.display == "block") {
         document.querySelector(".noactive").style.display = "none";
@@ -113,7 +113,7 @@ export default {
   box-shadow: 0px 0px 10px 2px rgba(1, 0, 5, 0.204);
   color: black;
   border-radius: 10px;
-  background: radial-gradient(#fff, rgba(229, 214, 255, 0.55));
+  background: radial-gradient(#fff, rgba(248, 215, 202, 0.55));
   transition: 0.7s ease;
 }
 

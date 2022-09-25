@@ -94,7 +94,7 @@
       <div class="properties">
         <div class="divic reveal fade-bottom">
           <div class="paragraf">
-            <h3 class="font-lg">
+            <h3 class="font-lg" style="text-align:left;">
               <b-icon icon="star" /> Odnos cene i kvaliteta
             </h3>
             Fokusirani smo na pružanje najbolje usluge i na stvaranje
@@ -104,21 +104,21 @@
         </div>
         <div class="divic reveal fade-bottom">
           <div class="paragraf">
-            <h3 class="font-lg"><b-icon icon="briefcase" /> Posvećenost</h3>
+            <h3 class="font-lg" style="text-align:left;"><b-icon icon="briefcase" /> Posvećenost</h3>
             Naš tim programera je maksimalno posvećen svakom klijentu, bilo da
             je u pitanju održavanje postojećih, ili izrada novih projekata.
           </div>
         </div>
         <div class="divic reveal fade-bottom">
           <div class="paragraf">
-            <h3 class="font-lg"><b-icon icon="lightbulb" /> Inovativnost</h3>
+            <h3 class="font-lg" style="text-align:left;"><b-icon icon="lightbulb" /> Inovativnost</h3>
             Tokom izrade naših proizvoda, koristimo najsavremenije tehnologije i
             trudimo se da rešenja koja nudimo budu inovativna.
           </div>
         </div>
         <div class="divic reveal fade-bottom">
           <div class="paragraf">
-            <h3 class="font-lg">
+            <h3 class="font-lg" style="text-align:left;">
               <b-icon icon="file-earmark-check" /> Dostupnost
             </h3>
             Naš tim tehničke podrške je uvek dostupan, te brzo i efikasno
@@ -127,7 +127,7 @@
         </div>
         <div class="divic reveal fade-bottom">
           <div class="paragraf">
-            <h3 class="font-lg">
+            <h3 class="font-lg" style="text-align:left;">
               <b-icon icon="emoji-smile" /> Zadovoljni klijenti
             </h3>
             Prioritet našeg poslovanja su zadovoljni klijenti, a tokom 30 godina
@@ -281,7 +281,7 @@ h3 {
   font-size: 16px;
   text-align: left;
   width: 100%;
-  margin-top: 30px;
+  margin: 30px 0px;
   display: flex;
   flex-direction: row;
   align-items: center;

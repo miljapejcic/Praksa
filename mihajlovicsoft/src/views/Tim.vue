@@ -46,10 +46,11 @@
           <div class="col-xl-4 mejl reveal fade-right">
             <img src="../assets/application.jpeg" />
           </div>
-          <div class="col-xl-10  reveal fade-bottom">
+          <div class="col-xl-10 reveal fade-bottom">
             <p class="paragraf">
-              <b><b-icon icon="envelope" /></b> Ukoliko ste zainteresovani za posao u našoj kompaniji i posedujete
-              navedena znanja i veštine, svoj CV mozete poslati na:
+              <b><b-icon icon="envelope" /></b> Ukoliko ste zainteresovani za
+              posao u našoj kompaniji i posedujete navedena znanja i veštine,
+              svoj CV mozete poslati na:
               <b>office@mihajlovicsoft.rs</b>
             </p>
           </div>
@@ -114,12 +115,14 @@ export default {
   width: 180px;
   border-radius: 100%;
   transition: 0.4s ease;
-  box-shadow: 0.7rem 0 1.4rem 0.2rem rgba(82, 82, 82, 0.25);
+  box-shadow: none;
+  border: 0.5px rgb(217, 199, 199) solid;
 }
 
 .round-img img:hover {
   width: 190px;
   transition: 0.4s ease;
+  box-shadow: 0.7rem 0 1.4rem 0.2rem rgba(82, 82, 82, 0.25);
 }
 
 .vestine::before {
@@ -141,7 +144,7 @@ export default {
   bottom: 0;
   left: 0;
   inset: 0 0 0 0;
-  background: hsl(200 100% 80%);
+  background: rgb(181, 0, 0);
   z-index: -1;
   transition: transform 0.3s ease;
 }
@@ -166,13 +169,25 @@ b {
 
 .mejl img {
   width: 70%;
-  border-radius: 10%;
+  border-radius: 5%;
   transition: 0.4s ease;
-  box-shadow: 0.7rem 0 1.4rem 0.2rem rgba(82, 82, 82, 0.25);
+  box-shadow: none;
+  border: 0.5px rgb(217, 199, 199) solid;
 }
 
 .mejl img:hover {
   width: 75%;
   transition: 0.4s ease;
+  box-shadow: 0.7rem 0 1.4rem 0.2rem rgba(82, 82, 82, 0.25);
+}
+
+@media only screen and (max-width: 1200px) {
+  .round-img {
+    text-align: center;
+  }
+
+  .round-img img {
+    border-radius: 5%;
+  }
 }
 </style>

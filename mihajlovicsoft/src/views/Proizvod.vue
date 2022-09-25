@@ -221,7 +221,7 @@ export default {
   bottom: 0;
   left: 0;
   inset: 0 0 0 0;
-  background: hsl(200 100% 80%);
+  background: rgb(181, 0, 0);
   z-index: -1;
   transition: transform 0.3s ease;
 }

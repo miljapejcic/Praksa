@@ -25,40 +25,38 @@
                 justify-content-around
               "
             >
-              <div class="stavka m-1 pt-2 pb-2">
-                <div class="row">
-                  <router-link class="routerLink" :to="{ name: 'Proizvod', params:{idkat:0, idproiz:3} }">
+              <router-link
+                class="routerLink"
+                :to="{ name: 'Proizvod', params: { idkat: 0, idproiz: 3 } }"
+              >
+                <div class="stavka m-1 pt-2 pb-2">
+                  <div class="row">
                     <img
                       class="round-img"
                       src="../assets/proizvodi HOME/kasa.jpg"
                     />
-                  </router-link>
+                  </div>
+                  <div class="row">
+                    <p>PC kase</p>
+                  </div>
                 </div>
-                <div class="row">
-                  <p>
-                    <router-link class="routerLink" :to="{ name: 'Proizvod', params:{idkat:0, idproiz:3} }"
-                      >PC kase
-                    </router-link>
-                  </p>
-                </div>
-              </div>
-              <div class="stavka m-1 pt-2 pb-2">
-                <div class="row">
-                  <router-link class="routerLink" :to="{ name: 'Proizvod', params:{idkat:0, idproiz:4} }">
+              </router-link>
+              <router-link
+                class="routerLink"
+                :to="{ name: 'Proizvod', params: { idkat: 0, idproiz: 4 } }"
+              >
+                <div class="stavka m-1 pt-2 pb-2">
+                  <div class="row">
                     <img
                       class="round-img"
                       src="../assets/proizvodi HOME/gas.jpg"
                     />
-                  </router-link>
+                  </div>
+                  <div class="row">
+                    <p>Gas Pump Station Controller</p>
+                  </div>
                 </div>
-                <div class="row">
-                  <p>
-                    <router-link class="routerLink" :to="{ name: 'Proizvod', params:{idkat:0, idproiz:4} }">
-                      Gas Pump Station Controller
-                    </router-link>
-                  </p>
-                </div>
-              </div>
+              </router-link>
             </div>
             <div
               class="
@@ -69,57 +67,51 @@
                 justify-content-around
               "
             >
-              <div class="stavka m-1 pt-2 pb-2">
-                <div class="row">
-                  <router-link class="routerLink" :to="{ name: 'Proizvod', params:{idkat:0, idproiz:0} }">
+              <router-link
+                class="routerLink"
+                :to="{ name: 'Proizvod', params: { idkat: 0, idproiz: 0 } }"
+              >
+                <div class="stavka m-1 pt-2 pb-2">
+                  <div class="row">
                     <img
                       class="round-img"
                       src="../assets/proizvodi HOME/plate.jpg"
                     />
-                  </router-link>
+                  </div>
+                  <div class="row">
+                    <p>Program za obračun plata</p>
+                  </div>
                 </div>
-                <div class="row">
-                  <p>
-                    <router-link class="routerLink" :to="{  name: 'Proizvod', params:{idkat:0, idproiz:0} }">
-                      Program za obračun plata
-                    </router-link>
-                  </p>
-                </div>
-              </div>
-              <div class="stavka m-1 pt-2 pb-2">
-                <div class="row">
-                  <router-link class="routerLink" :to="{  name: 'Proizvod', params:{idkat:0, idproiz:1} }">
+              </router-link>
+              <router-link
+                class="routerLink"
+                :to="{ name: 'Proizvod', params: { idkat: 0, idproiz: 1 } }"
+              >
+                <div class="stavka m-1 pt-2 pb-2">
+                  <div class="row">
                     <img
                       class="round-img"
                       src="../assets/proizvodi HOME/racun.jpg"
                     />
-                  </router-link>
+                  </div>
+                  <div class="row">
+                    <p>Program za knjigovodstvo</p>
+                  </div>
                 </div>
-                <div class="row">
-                  <p>
-                    <router-link class="routerLink" :to="{  name: 'Proizvod', params:{idkat:0, idproiz:1} }">
-                      Program za knjigovodstvo
-                    </router-link>
-                  </p>
-                </div>
-              </div>
-              <div class="stavka m-1 pt-2 pb-2">
-                <div class="row">
-                  <router-link class="routerLink" :to="{  name: 'Proizvodi' }">
+              </router-link>
+              <router-link class="routerLink" :to="{ name: 'Proizvodi' }">
+                <div class="stavka m-1 pt-2 pb-2">
+                  <div class="row">
                     <img
                       class="round-img"
                       src="../assets/proizvodi HOME/biznisapp.jpg"
                     />
-                  </router-link>
+                  </div>
+                  <div class="row">
+                    <p>Biznis aplikacije</p>
+                  </div>
                 </div>
-                <div class="row">
-                  <p>
-                    <router-link class="routerLink" :to="{  name: 'Proizvodi'}">
-                      Biznis aplikacije
-                    </router-link>
-                  </p>
-                </div>
-              </div>
+              </router-link>
             </div>
             <div
               class="
@@ -130,23 +122,19 @@
                 justify-content-around
               "
             >
-              <div class="stavka m-1 pt-2 pb-2">
-                <div class="row">
-                  <router-link class="routerLink" :to="{  name: 'Proizvodi' }">
+              <router-link class="routerLink" :to="{ name: 'Proizvodi' }">
+                <div class="stavka m-1 pt-2 pb-2">
+                  <div class="row">
                     <img
                       class="round-img"
                       src="../assets/proizvodi HOME/app.jpg"
                     />
-                  </router-link>
+                  </div>
+                  <div class="row">
+                    <p>Specifične aplikacije</p>
+                  </div>
                 </div>
-                <div class="row">
-                  <p>
-                    <router-link class="routerLink" :to="{  name: 'Proizvodi' }">
-                      Specifične aplikacije
-                    </router-link>
-                  </p>
-                </div>
-              </div>
+              </router-link>
             </div>
           </div>
         </div>
@@ -158,7 +146,8 @@
           flex-column
           align-items-center
           justify-content-center
-          reveal fade-right
+          reveal
+          fade-right
         "
       >
         <div class="row justify-content-center">
@@ -246,10 +235,9 @@ export default {
 }
 
 .stavka:hover {
-  filter:contrast(1.4) drop-shadow(0 0.3rem 0.5rem rgba(104, 104, 104, 0.772));
+  filter: contrast(1.4) drop-shadow(0 0.3rem 0.5rem rgba(104, 104, 104, 0.772));
   transition: 0.5s ease;
 }
-
 
 .round-img {
   width: 100%;
@@ -271,8 +259,8 @@ export default {
     width: 100%;
     background-image: linear-gradient(
       to right,
+      transparent,
       #ffffff,
-      #faf5fc,
       #fbeaf4,
       #fedee6,
       #ffd4d2,
@@ -281,13 +269,22 @@ export default {
       #ffd4d2,
       #fedee6,
       #fbeaf4,
-      #faf5fc,
-      #ffffff
+      #ffffff,
+      transparent
     );
   }
 
-  .round-img {
-    width: 100px;
+  .stavka .round-img {
+    width: 140px;
+  }
+
+  .routerLink {
+    width: 100%;
+  }
+
+  .stavka p {
+    font-size: 18px;
+    text-align: right;
   }
 }
 

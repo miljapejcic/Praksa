@@ -1,6 +1,14 @@
 <template>
   <div>
     <Navbar footer="footer" />
+    <div>
+      <h2 class="naslov-stripe reveal fade-left">
+        <router-link :to="{ name: 'Home' }" class="routerlink"
+          > Početna </router-link
+        >
+        <b-icon icon="chevron-double-right" /><i> Tehnička podrška</i>
+      </h2>
+    </div>
     <div class="container">
       <div class="divic">
         <div class="paragraf reveal fade-left">

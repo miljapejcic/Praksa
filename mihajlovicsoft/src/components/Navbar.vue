@@ -18,6 +18,7 @@
       <nav
         id="navbar"
         class="navbar navbar-expand-lg shadow-5-strong fixed-top navibg"
+        style="transition: 0.4s ease;"
       >
         <!-- Container wrapper -->
         <div class="container-fluid">
@@ -38,6 +39,7 @@
           <button
             class="navbar-toggler navtoggle"
             type="button"
+            style="color: #e1e1e1; border-color: #e1e1e1"
             data-mdb-toggle="collapse"
             data-mdb-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
@@ -49,7 +51,12 @@
 
           <!-- Collapsible wrapper -->
           <div
-            class="collapse navbar-collapse justify-content-end animate__animated animate__pulse"
+            class="
+              collapse
+              navbar-collapse
+              justify-content-end
+              animate__animated animate__pulse
+            "
             id="navbarSupportedContent"
           >
             <!-- Left links -->
@@ -89,7 +96,6 @@
                 <router-link class="nav-link" :to="{ name: 'Tim' }"
                   >Postani deo tima</router-link
                 >
-                <!-- <a class="nav-link" href="#">Postani deo našeg tima</a> -->
               </li>
             </ul>
             <!-- Left links -->
@@ -105,7 +111,6 @@
         type="button"
         class="btn-floating btn-lg topDugme"
       >
-        <!-- <img src="../assets/arrowup.png" /> -->
         <b-icon icon="chevron-double-up"></b-icon>
       </button>
     </div>
@@ -119,7 +124,6 @@ export default {
   components: {},
   methods: {
     goto(id) {
-      // console.log(id.footer);
       document.getElementById(id.footer).scrollIntoView({
         behavior: "smooth",
       });
@@ -154,45 +158,31 @@ function scrollFunction() {
     document.querySelector(".topDugme").disabled = true;
   }
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("logo").style.width = "60px";
-    document.getElementById("content").style.fontSize = "14px";
-    document.getElementById("navbar").style.background = `linear-gradient(
-        180deg,
-        rgba(255, 206, 168, 1),
-        rgba(255, 255, 255, 0.9)
-      )`;
+    document.getElementById("logo").style.width = "50px";
+    document.getElementById("content").style.fontSize = "13px";
+    document.getElementById("navbar").style.background = `rgb(62, 83, 104)`;
   } else {
-    document.getElementById("logo").style.width = "90px";
-    document.getElementById("content").style.fontSize = "16px";
     if (window.innerWidth < 991.5) {
-      document.getElementById("navbar").style.background = `linear-gradient(
-        180deg,
-        rgba(255, 206, 168, 1),
-        rgba(255, 255, 255, 0.9)
-      )`;
+      document.getElementById("logo").style.width = "60px";
+      document.getElementById("content").style.fontSize = "14px";
+      document.getElementById("navbar").style.background = `rgb(62, 83, 104)`;
     } else {
-      document.getElementById("navbar").style.background = `linear-gradient(
-        180deg,
-        rgba(255, 196, 168, 0.623),
-      rgba(136, 136, 136, 0)
-      )`;
+      document.getElementById("logo").style.width = "90px";
+      document.getElementById("content").style.fontSize = "16px";
+      document.getElementById(
+        "navbar"
+      ).style.background = `rgba(136, 136, 136, 0.4)`;
     }
   }
 }
 
 function changeGradientToggle() {
   if (window.innerWidth < 991.5) {
-    document.getElementById("navbar").style.background = `linear-gradient(
-        180deg,
-        rgba(255, 206, 168, 1),
-        rgba(255, 255, 255, 0.9)
-      )`;
+    document.getElementById("navbar").style.background = `rgb(62, 83, 104)`;
   } else {
-    document.getElementById("navbar").style.background = `linear-gradient(
-        180deg,
-        rgba(255, 196, 168, 0.623),
-      rgba(136, 136, 136, 0)
-      )`;
+    document.getElementById(
+      "navbar"
+    ).style.background = `rgba(136, 136, 136, 0.4)`;
   }
 }
 </script>
@@ -254,7 +244,7 @@ function changeGradientToggle() {
   line-height: 20px;
   font-size: 16px;
   font-family: Poppins, sans-serif;
-  color: rgb(200, 0, 0);
+  /* color: rgb(200, 0, 0); */
   transition: 1s ease;
   align-items: center;
 }
@@ -262,83 +252,68 @@ function changeGradientToggle() {
 #content .nav-item {
   margin: 0px 10px;
   cursor: pointer;
+  color: #eaeaea;
 }
 
 .navibg {
-  /* background-image: linear-gradient(
-    180deg,
-    rgba(136, 136, 136, 0),
-    rgba(255, 255, 255, 0.564)
-  ); */
   z-index: 99999;
   transition: 1s ease;
-  /* margin-top: -60px; */
 }
 
 .header {
-  background-image: radial-gradient(transparent, rgba(255, 196, 168, 0.523)),
+  background-image: linear-gradient(
+      155deg,
+      transparent,
+      rgba(44, 62, 80, 0.542)
+    ),
     url(../assets/navbar/header2.jpg);
   background-position: center 0px;
-  /* min-height: 600px; */
-  /* margin-bottom: 50px; */
   margin-top: -60px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
-  /* box-shadow: 0 2rem 3rem 0rem rgba(255, 196, 168, 0.323); */
-  box-shadow: inset 0 -12px 10px -10px rgb(255, 196, 168);
 
   height: 100vh;
 }
 
 @media only screen and (min-width: 991.5px) {
   .navbar {
-    background: linear-gradient(
-      180deg,
-      rgba(255, 196, 168, 0.623),
-      rgba(136, 136, 136, 0)
-    );
+    background: rgba(136, 136, 136, 0.4);
   }
 }
 
 @media only screen and (max-width: 991.5px) {
   .navbar {
-    background: linear-gradient(
-      180deg,
-      rgba(255, 206, 168, 1),
-      rgba(255, 255, 255, 0.9)
-    );
+    background: rgb(62, 83, 104);
   }
 }
 
 a router-link {
   text-decoration: none;
-  color: red;
 }
 
 .nav-item .nav-link {
-  color: rgb(120, 120, 120);
+  color: #eaeaea;
 }
 
 .nav-item .router-link-active:focus {
   color: #fd01019e;
 }
 
+.navbar .navbar-nav > li > a:hover {
+  color: #fd0101;
+}
+
+#navbar {
+  transition: 0.4s ease;
+}
 .topDugme {
   position: fixed;
   width: auto;
   height: auto;
   z-index: 9999;
-  /* font-weight: 600; */
-  /* letter-spacing: 2px; */
-  /* font-size: 16px; */
   transition: 0.7s ease;
-  /* border-width: 1px; */
-  /* border-color: #fff7f7; */
-  /* padding: 10px; */
-  /* border-radius: 15px; */
-  /* background-color: transparent; */
 }
 
 .topDugme.active {
@@ -365,5 +340,4 @@ a router-link {
   background-color: #ffc2c2;
   border-color: #ff6060;
 }
-
 </style>

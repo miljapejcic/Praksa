@@ -1,12 +1,20 @@
 <template>
   <div>
     <Navbar footer="footer" />
-      <div class="header-img reveal fade-bottom">
-        <div class="font-xl">
-          Poverenje, poštovanje i zajednička saradnja predstavljaju suštinu
-          uspešnog partnerstva.
-        </div>
+    <div>
+      <h2 class="naslov-stripe reveal fade-left">
+        <router-link :to="{ name: 'Home' }" class="routerlink">
+          Početna
+        </router-link>
+        <b-icon icon="chevron-double-right" /><i> Partneri</i>
+      </h2>
+    </div>
+    <div class="header-img reveal fade-bottom">
+      <div class="font-xl">
+        Poverenje, poštovanje i zajednička saradnja predstavljaju suštinu
+        uspešnog partnerstva.
       </div>
+    </div>
     <div class="container">
       <div class="paragraf reveal fade-left">
         Kao tim koji se neprekidno razvija i uvećava, pozivamo Vas, da stupite u
@@ -76,18 +84,18 @@ export default {
 .header-img {
   width: 100%;
   padding: 70px;
-  margin-top: -5px;
   background: linear-gradient(
       to top,
-      rgba(255, 183, 101, 0.22),
-      rgba(82, 15, 0, 0.259)
+      rgba(82, 48, 0, 0.259),
+      rgba(20, 65, 127, 0.22)
     ),
     url("../assets/partneri/handshake.jpg");
   background-size: cover;
-  box-shadow: 0px 0px 30px 8px rgb(254, 220, 205) inset;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  box-shadow: 0px 0px 30px 8px rgba(18, 40, 70, 0.288) inset;
+  /* border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px; */
   transition: 0.7s ease;
+  margin-top: -10px;
 }
 
 .header-img .font-xl {

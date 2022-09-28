@@ -42,7 +42,7 @@ reveal();
   margin-top: 60px;
   cursor: default;
   /* background-color: none; */
-  background: radial-gradient(#fff, rgba(255, 228, 217, 0.725));
+  /* background: radial-gradient(#fff, rgba(255, 228, 217, 0.725)); */
 }
 
 .reveal {
@@ -95,9 +95,21 @@ reveal();
 }
 
 .naslov-stripe {
-  background: linear-gradient(to top, rgba(255, 236, 236, 0.341), rgb(255, 196, 168));
-  padding: 10px 0px 20px 0px;
-  letter-spacing: 3px;
-  font-size: 40px;
+  padding: 20px 40px;
+  background: #2c3e50;
+  color: whitesmoke;
+  font-size: 18px;
+  text-align: left;
+}
+
+h2 .routerlink {
+  color: whitesmoke;
+  text-decoration: none;
+  transition: 0.4s ease;
+}
+
+h2 .routerlink:hover {
+  color: #fd0101;
+  transition: 0.4s ease;
 }
 </style>

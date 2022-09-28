@@ -11,9 +11,9 @@
           <div class="col-xl-6 info">
             Mihajlović Soft d.o.o<br />
             Janka Veselinovića 5A,
-            <br />18000 Niš <br />Serbia <br /><br /><b>E-mail:</b>
-            office@mihajlovicsoft.rs <br /><b>Telefon:</b>+381 18 513 000
-            <br /><b>Fax:</b>
+            <br />18000 Niš <br />Serbia <br /><br /><b><b-icon icon="envelope-open"/></b> 
+            office@mihajlovicsoft.rs <br /><b><b-icon icon="telephone"/></b> +381 18 513 000
+            <br /><b><b-icon icon="printer"/> </b>
             +381 18 513 308
           </div>
         </div>

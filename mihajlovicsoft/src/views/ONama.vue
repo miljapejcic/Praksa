@@ -1,12 +1,16 @@
 <template>
   <div>
     <Navbar footer="footer" />
-    <!-- <div class="row pb-0">
-      <h2 class="naslov">O nama</h2>
-    </div> -->
+    <div>
+      <h2 class="naslov-stripe reveal fade-left">
+        <router-link :to="{ name: 'Home' }" class="routerlink">
+          Početna
+        </router-link>
+        <b-icon icon="chevron-double-right" /><i> O nama</i>
+      </h2>
+    </div>
     <div class="elements">
       <div class="d-flex bd-highlight divcina">
-        <!-- <div class="p-2 w-100 bd-highlight subtitle"> -->
         <div class="col m-auto">
           <div class="font-lg lg-right pitanje reveal fade-left">
             Ko smo mi?
@@ -28,12 +32,81 @@
           elektronike i softverskog inženjerstva.
         </div>
       </div>
+      <div class="d-flex bd-highlight divcina">
+        <div class="row m-auto">
+          <div class="font-lg pitanje reveal fade-right"  style="font-size: 34px;">Zašto mi?</div>
+          <div
+            class="font-lg subtitle reveal fade-left"
+            style="font-size: 40px; line-height: 37px; text-align: center"
+          >
+            Kvalitet, pouzdanost, sigurnost.
+          </div>
+          <div class="paragraf reveal fade-right">
+            Tokom 30 godina postojanja, stekli smo veliki broj korisnika, kako u
+            Nišu, tako i širom zemlje, gde je naše ime postalo simbol kvaliteta,
+            pouzdanosti i sigurnosti. Zato je sve veći broj organizacija i
+            ustanova sa širokim spektrom delatnosti, koje se opredeljuju za
+            korišćenje naših usluga i rešenja, sa ciljem povećanja efikasnosti
+            svog poslovanja.
+          </div>
+        </div>
+      </div>
+      <div class="properties">
+        <div class="divic reveal fade-bottom">
+          <div class="paragraf">
+            <h3 class="font-lg" style="text-align: left">
+              <b-icon icon="star" /> Odnos cene i kvaliteta
+            </h3>
+            Fokusirani smo na pružanje najbolje usluge i na stvaranje
+            superiornih proizvoda, uz vođenje računa o budžetu naših klijenata i
+            održavanje cena koje su u skladu sa postojećim tržištem.
+          </div>
+        </div>
+        <div class="divic reveal fade-bottom">
+          <div class="paragraf">
+            <h3 class="font-lg" style="text-align: left">
+              <b-icon icon="briefcase" /> Posvećenost
+            </h3>
+            Naš tim programera je maksimalno posvećen svakom klijentu, bilo da
+            je u pitanju održavanje postojećih, ili izrada novih projekata.
+          </div>
+        </div>
+        <div class="divic reveal fade-bottom">
+          <div class="paragraf">
+            <h3 class="font-lg" style="text-align: left">
+              <b-icon icon="lightbulb" /> Inovativnost
+            </h3>
+            Tokom izrade naših proizvoda, koristimo najsavremenije tehnologije i
+            trudimo se da rešenja koja nudimo budu inovativna.
+          </div>
+        </div>
+        <div class="divic reveal fade-bottom">
+          <div class="paragraf">
+            <h3 class="font-lg" style="text-align: left">
+              <b-icon icon="file-earmark-check" /> Dostupnost
+            </h3>
+            Naš tim tehničke podrške je uvek dostupan, te brzo i efikasno
+            reaguje na potrebe naših klijenata.
+          </div>
+        </div>
+        <div class="divic reveal fade-bottom">
+          <div class="paragraf">
+            <h3 class="font-lg" style="text-align: left">
+              <b-icon icon="emoji-smile" /> Zadovoljni klijenti
+            </h3>
+            Prioritet našeg poslovanja su zadovoljni klijenti, a tokom 30 godina
+            poslovanja, stekli smo preko 300 zadovoljnih partnera.
+          </div>
+        </div>
+      </div>
+      <div class="bordertop"></div>
+
       <div class="d-flex bd-highlight divcina reveal fade-bottom">
         <div class="row m-auto">
-          <div class="font-lg pitanje lg-right" style="padding-right: 60px">
+          <div class="font-lg pitanje lg-right">
             Naše vrednosti
           </div>
-          <div class="row paragraf" style="padding: 25px">
+          <div class="paragraf">
             Negujemo kulturu timskog rada, zdravu ravnotežu između posla i
             privatnog života i efikasnu upotrebu alokacije resursa, kako bismo
             osigurali da projekti budu završeni na vreme, u skladu sa budžetom i
@@ -51,14 +124,14 @@
           <Carousel />
         </div>
         <div class="col">
-          <div class="row m-auto">
+          <div class="m-auto">
             <div
               class="naslov pitanje reveal fade-left"
               style="text-align: left; padding: 0px 35px"
             >
               Naši ljudi
             </div>
-            <div class="row paragraf" style="padding: 25px">
+            <div class="paragraf" style="padding: 25px">
               Naš tim programera čine profesionalci, sa višedecenijskim
               iskustvom, ali i mladi talenti koji se sa nama neprestano
               usavršavaju i stiču dragocena znanja, a u njima vidimo budućnost
@@ -70,72 +143,6 @@
           </div>
         </div>
       </div>
-      <div class="d-flex bd-highlight divcina">
-        <div class="col">
-          <div class="font-lg lg-right pitanje reveal fade-right">
-            Zašto mi?
-          </div>
-          <div
-            class="font-lg subtitle reveal fade-left"
-            style="font-size: 40px; line-height: 37px"
-          >
-            Kvalitet, pouzdanost, sigurnost.
-          </div>
-        </div>
-        <div class="col paragraf reveal fade-right">
-          Tokom 30 godina postojanja, stekli smo veliki broj korisnika, kako u
-          Nišu, tako i širom zemlje, gde je naše ime postalo simbol kvaliteta,
-          pouzdanosti i sigurnosti. Zato je sve veći broj organizacija i
-          ustanova sa širokim spektrom delatnosti, koje se opredeljuju za
-          korišćenje naših usluga i rešenja, sa ciljem povećanja efikasnosti
-          svog poslovanja.
-        </div>
-      </div>
-      <div class="properties">
-        <div class="divic reveal fade-bottom">
-          <div class="paragraf">
-            <h3 class="font-lg" style="text-align:left;">
-              <b-icon icon="star" /> Odnos cene i kvaliteta
-            </h3>
-            Fokusirani smo na pružanje najbolje usluge i na stvaranje
-            superiornih proizvoda, uz vođenje računa o budžetu naših klijenata i
-            održavanje cena koje su u skladu sa postojećim tržištem.
-          </div>
-        </div>
-        <div class="divic reveal fade-bottom">
-          <div class="paragraf">
-            <h3 class="font-lg" style="text-align:left;"><b-icon icon="briefcase" /> Posvećenost</h3>
-            Naš tim programera je maksimalno posvećen svakom klijentu, bilo da
-            je u pitanju održavanje postojećih, ili izrada novih projekata.
-          </div>
-        </div>
-        <div class="divic reveal fade-bottom">
-          <div class="paragraf">
-            <h3 class="font-lg" style="text-align:left;"><b-icon icon="lightbulb" /> Inovativnost</h3>
-            Tokom izrade naših proizvoda, koristimo najsavremenije tehnologije i
-            trudimo se da rešenja koja nudimo budu inovativna.
-          </div>
-        </div>
-        <div class="divic reveal fade-bottom">
-          <div class="paragraf">
-            <h3 class="font-lg" style="text-align:left;">
-              <b-icon icon="file-earmark-check" /> Dostupnost
-            </h3>
-            Naš tim tehničke podrške je uvek dostupan, te brzo i efikasno
-            reaguje na potrebe naših klijenata.
-          </div>
-        </div>
-        <div class="divic reveal fade-bottom">
-          <div class="paragraf">
-            <h3 class="font-lg" style="text-align:left;">
-              <b-icon icon="emoji-smile" /> Zadovoljni klijenti
-            </h3>
-            Prioritet našeg poslovanja su zadovoljni klijenti, a tokom 30 godina
-            poslovanja, stekli smo preko 300 zadovoljnih partnera.
-          </div>
-        </div>
-      </div>
-      <div class="bordertop"></div>
       <div>
         <div class="dodatneInfo reveal fade-bottom">
           <h3 class="font-lg" style="font-size: 32px">
@@ -174,42 +181,6 @@ export default {
   mounted() {
     window.scrollTo(0, 0);
   },
-  data() {
-    return {
-      // slike: [
-      //   {
-      //     slika: require("../assets/firma/slika4.jpg"),
-      //   },
-      //   {
-      //     slika: require("../assets/firma/slika1.jpg"),
-      //   },
-      //   {
-      //     slika: require("../assets/firma/slika2.jpg"),
-      //   },
-      //   {
-      //     slika: require("../assets/firma/slika3.jpg"),
-      //   },
-      //   {
-      //     slika: require("../assets/firma/slika5.jpg"),
-      //   },
-      //   {
-      //     slika: require("../assets/firma/slika6.jpg"),
-      //   },
-      //   {
-      //     slika: require("../assets/firma/slika7.jpg"),
-      //   },
-      //   {
-      //     slika: require("../assets/firma/slika8.jpg"),
-      //   },
-      //   {
-      //     slika: require("../assets/firma/slika9.jpg"),
-      //   },
-      //   {
-      //     slika: require("../assets/firma/slika10.jpg"),
-      //   },
-      // ],
-    };
-  },
 };
 </script>
 
@@ -218,7 +189,7 @@ export default {
 .elements {
   display: flex;
   flex-direction: column;
-  max-width: 80em;
+  max-width: 70em;
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
@@ -230,7 +201,7 @@ export default {
 
 .divcina {
   padding: 0px 25px;
-  margin: 20px 20px;
+  margin: 20px;
   border-bottom: 0.7px solid #d8d8d8;
   align-items: center;
 }
@@ -249,9 +220,8 @@ export default {
 }
 
 .divic {
-  max-width: 400px;
-  padding: 10px;
-  margin-top: 10px;
+  max-width: 350px;
+  padding: 0px;
 }
 
 .slike {
@@ -303,6 +273,7 @@ h3 {
 
 .bordertop {
   width: 100%;
+  margin: 15px 0px;
   border-top: 0.6px solid rgb(205, 205, 205);
 }
 
@@ -320,8 +291,7 @@ h3 {
     flex-direction: column;
     flex-wrap: wrap;
     /* margin: 10px; */
-    border-bottom: none;
-    padding: 0px;
+    /* border-bottom: none; */
   }
 
   .divcina .font-lg {

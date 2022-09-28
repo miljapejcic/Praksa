@@ -1,8 +1,9 @@
 <template>
   <div class="container about">
-    <div class="naslov reveal fade-bottom">O nama</div>
+    <div class="naslov reveal fade-bottom">O nama
+    </div>
     <div class="row justify-content-center">
-      <div class="col-xl-6 paragraf reveal fade-bottom">
+      <div class="col-xl-6 paragraf reveal fade-left">
         <b>Mihajlović Soft</b> je kompanija koja se od 1991. godine bavi izradom
         softvera u cilju omogućavanja bržeg rada i pojednostavljivanja procesa
         poslovanja našim korisnicima. Pored računarskog konsaltinga, prodaje
@@ -17,7 +18,7 @@
           ><b>Više o nama <b-icon icon="arrow-up-right-square"></b-icon></b
         ></router-link>
       </div>
-      <div class="col-xl-6 slike reveal fade-bottom">
+      <div class="col-xl-6 slike reveal fade-right">
         <img src="../assets/firma/slika1.jpg" class="slika1" />
         <img src="../assets/firma/slika2.jpg" class="slika2" />
         <img src="../assets/firma/slika3.jpg" class="slika3" />

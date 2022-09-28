@@ -235,8 +235,14 @@ export default {
 }
 
 .stavka:hover {
-  filter: contrast(1.4) drop-shadow(0 0.3rem 0.5rem rgba(104, 104, 104, 0.772));
+  /* filter: contrast(1.4) drop-shadow(0 0.3rem 0.5rem rgba(104, 104, 104, 0.772)); */
+  filter: contrast(1.4) saturate(1.5)
+    drop-shadow(0 0.3rem 0.5rem rgba(104, 104, 104, 0.772));
   transition: 0.5s ease;
+}
+
+.round-img:hover {
+  transform: rotate(10deg);
 }
 
 .round-img {
@@ -283,8 +289,10 @@ export default {
   }
 
   .stavka p {
-    font-size: 18px;
+    font-size: 17px;
     text-align: right;
+    max-width: 180px;
+    color: rgb(47, 47, 47);
   }
 }
 

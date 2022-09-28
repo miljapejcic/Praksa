@@ -1,10 +1,18 @@
 <template>
   <div>
     <Navbar footer="footer" />
-    <h2 class="font-lg naslov-stripe animate__animated animate__fadeInDown" style="color: #fd0101;">
-      {{ proizvod.naziv}}
+    <h2 class="naslov-stripe reveal fade-left">
+      <router-link :to="{ name: 'Home' }" class="routerlink"
+        >Početna </router-link
+      >
+      <b-icon icon="chevron-double-right" />
+      <router-link class="routerlink" :to="{ name: 'Proizvodi' }"
+        > Proizvodi i usluge </router-link
+      >
+      <b-icon icon="chevron-double-right" /> {{ kategorija.ime }}
+      <b-icon icon="chevron-double-right" /> <i>{{ proizvod.naziv }}</i>
     </h2>
-    <div class="container" style="margin-top:-40px;">
+    <div class="container">
       <div class="row m-auto reveal fade-bottom">
         <div class="container properties prop-pred">
           <div v-for="p in proizvod.prednosti" :key="p">
@@ -105,7 +113,6 @@ export default {
 </script>
 
 <style scoped>
-
 .proizvod {
   width: 100%;
   border-radius: 1rem;
@@ -221,7 +228,7 @@ export default {
   bottom: 0;
   left: 0;
   inset: 0 0 0 0;
-  background: rgb(181, 0, 0);
+  background: radial-gradient(#fff, rgba(255, 228, 217, 1));
   z-index: -1;
   transition: transform 0.3s ease;
 }

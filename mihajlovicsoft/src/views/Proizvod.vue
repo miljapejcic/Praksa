@@ -93,7 +93,6 @@ export default {
       return parseInt(this.$route.params.idkat);
     },
     proizvod() {
-      // console.log(this.kategorijaID);
       var kat = json.kategorije.find(
         (kategorija) => kategorija.id === this.kategorijaID
       );

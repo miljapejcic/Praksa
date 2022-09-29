@@ -4,11 +4,13 @@
     <div>
       <ProizvodiHome />
     </div>
-    <div class="reveal fade-bottom">
-      <ONamaHome />
-    </div>
-    <div class="reveal fade-bottom">
-      <PartneriHome />
+    <div class="container shapes">
+      <div class="reveal fade-bottom">
+        <ONamaHome />
+      </div>
+      <div class="reveal fade-bottom">
+        <PartneriHome />
+      </div>
     </div>
     <div id="footer">
       <Footer />
@@ -36,8 +38,21 @@ export default {
     window.scrollTo(0, 0);
   },
 };
-
 </script>
 
 <style scoped>
+.shapes {
+  background: url("../assets/shape4.png");
+  /* background-position: relative; */
+  background-position: contain;
+  background-repeat: no-repeat;
+  background-size: 600pt;
+  background-position-y: 400px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .shapes {
+    background: none;
+  }
+}
 </style>

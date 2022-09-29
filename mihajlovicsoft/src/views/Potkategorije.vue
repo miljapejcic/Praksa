@@ -51,13 +51,13 @@ export default {
 .naslov {
   /* color: #fd0101; */
   /* z-index: 9999; */
-  background: -webkit-linear-gradient(#fd0101, rgb(255, 139, 139));
+  background: -webkit-radial-gradient(#fd0101, rgba(102, 114, 174, 0.7));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /* text-transform: uppercase; */
   font-family: "Poppins", sans-serif;
-  font-size: 35px;
+  font-size: 38px;
   font-weight: 600;
+  letter-spacing: -2px;
 }
-
 </style>

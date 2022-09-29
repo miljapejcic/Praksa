@@ -38,7 +38,9 @@
               Rešenja koja distribuiramo su proverena rešenja. Iza nas je veliki
               broj zadovoljnih kompanija koje su znale da iskoriste naše znanje
               i iskustva. Ukoliko se prepoznajete u navedenim delatnostima, Vaš
-              se uspeh ne dovodi u pitanje. <br><span class="font-lg">Postanite naš partner!</span>
+              se uspeh ne dovodi u pitanje. <br /><span class="font-lg"
+                >Postanite naš partner!</span
+              >
             </p>
           </div>
         </div>
@@ -67,7 +69,6 @@ export default {
 
 
 <style>
-/* @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap"); */
 .paragraf {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -85,7 +86,7 @@ section {
   max-height: 100%;
 }
 .hor-item img {
-  max-height: 140px;
+  max-width: 50px;
 }
 .hor-item p {
   filter: drop-shadow(0 0 0.25rem rgba(153, 153, 153));
@@ -93,7 +94,6 @@ section {
   line-height: 16px;
   font-size: 13px;
 }
-
 .horiz {
   filter: drop-shadow(0 0.2rem 0.25rem rgba(153, 153, 153));
   background-color: white;
@@ -121,5 +121,11 @@ section {
 .horiz a:hover {
   color: #fd0101;
   transition: 0.4s ease;
+}
+
+@media only screen and (max-width: 1200px) {
+  .hor-item img {
+    max-width: 110px;
+  }
 }
 </style>

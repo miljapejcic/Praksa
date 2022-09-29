@@ -167,7 +167,6 @@
 <script>
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-// import VueHorizontal from "vue-horizontal";
 import Carousel from "@/components/Carousel";
 
 export default {
@@ -175,7 +174,6 @@ export default {
   components: {
     Footer,
     Navbar,
-    // VueHorizontal,
     Carousel,
   },
   mounted() {

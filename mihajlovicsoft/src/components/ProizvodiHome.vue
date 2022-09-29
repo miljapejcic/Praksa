@@ -196,7 +196,7 @@ export default {
   background-image: url("../assets/output-onlinepngtools (1).png");
   background-repeat: no-repeat;
   background-size: 55vw;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .vrstaKategorija {
@@ -228,7 +228,7 @@ export default {
   width: 90%;
   padding: 10px;
   font-family: "Poppins", sans-serif;
-  color: black;
+  color: rgb(24, 39, 74);
   font-size: 13px;
   justify-content: center;
   transition: 0.5s ease;
@@ -292,7 +292,6 @@ export default {
     font-size: 17px;
     text-align: right;
     max-width: 180px;
-    color: rgb(47, 47, 47);
   }
 }
 

@@ -1,9 +1,8 @@
 <template>
   <div class="container about">
-    <div class="naslov reveal fade-bottom">O nama
-    </div>
     <div class="row justify-content-center">
       <div class="col-xl-6 paragraf reveal fade-left">
+        <div class="naslov" style="text-align: center">Ko smo mi?</div>
         <b>Mihajlović Soft</b> je kompanija koja se od 1991. godine bavi izradom
         softvera u cilju omogućavanja bržeg rada i pojednostavljivanja procesa
         poslovanja našim korisnicima. Pored računarskog konsaltinga, prodaje
@@ -27,15 +26,15 @@
     <div class="clients reveal fade-left">
       <div class="col client-item">
         <img src="../assets/onama HOME/mslogo.png" />
-        <p>zvanični Microsoft Certified Partner</p>
+        <p>Zvanični Microsoft Certified Partner</p>
       </div>
       <div class="col client-item">
         <img src="../assets/onama HOME/kasperskylogo.png" />
-        <p>autorizovani distributeri Kaspersky Anti-Virus palete programa</p>
+        <p>Autorizovani distributeri Kaspersky Anti-Virus palete programa</p>
       </div>
       <div class="col client-item">
         <img src="../assets/onama HOME/nicatlogo2.png" />
-        <p>član Klastera Ni-CAT</p>
+        <p>Član Klastera Ni-CAT</p>
       </div>
     </div>
   </div>
@@ -52,12 +51,11 @@ export default {
 .about {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .paragraf {
   padding: 40px;
-  /* max-width: 100%; */
 }
 
 .slike img {
@@ -82,24 +80,36 @@ export default {
   padding: 20px 50px;
   justify-content: space-around;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .client-item {
-  margin: 30px;
+  margin: 10px;
+  padding: 5px 15px;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 13px;
+  max-width: 280px;
+  background-color: #fafafa;
+  box-shadow: 0px 0px 5px 2px rgba(41, 38, 50, 0.127);
+  transition: 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 
+.client-item:hover {
+  margin-top: 30px;
+  background-color: #f5eeee;
+}
 .clients img {
-  max-width: 200px;
-}
-
-.client-item p {
-  padding: 10px 40px;
+  max-width: 220px;
+  padding: 10px;
+  margin: auto;
 }
 
 
@@ -132,8 +142,8 @@ export default {
   }
 
   .clients {
-    margin-top: 90px;
-
+    margin-top: 50px;
   }
+
 }
 </style>

@@ -2,7 +2,7 @@
   <div>
     <!-- Navbar -->
     <header>
-      <div class="header">
+      <div class="header" v-if="home == true">
         <div class="container-2xl m-auto">
           <div class="titlebox">
             <h1 class="font-xl animate__animated animate__pulse">
@@ -15,10 +15,11 @@
           </div>
         </div>
       </div>
+      <div class="semi-header" v-else></div>
       <nav
         id="navbar"
         class="navbar navbar-expand-lg shadow-5-strong fixed-top navibg"
-        style="transition: 0.4s ease;"
+        style="transition: 0.4s ease"
       >
         <!-- Container wrapper -->
         <div class="container-fluid">
@@ -133,9 +134,10 @@ export default {
       document.documentElement.scrollTop = 0;
     },
   },
-  props: ["footer"],
+  props: { footer: String, home: Boolean },
   mounted() {
     document.querySelector(".topDugme").style.opacity = "0";
+    document.querySelector(".topDugme").style.transition = "none";
   },
 };
 
@@ -149,6 +151,7 @@ window.onresize = function () {
 
 function scrollFunction() {
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    document.querySelector(".topDugme").style.transition = "1s ease";
     document.querySelector(".topDugme").style.opacity = "1";
     document.querySelector(".topDugme").classList.add("active");
     document.querySelector(".topDugme").disabled = false;
@@ -229,6 +232,17 @@ function changeGradientToggle() {
   margin-bottom: 1.8rem;
   line-height: 2.4rem;
 }
+
+.semi-header {
+  background: rgb(44, 62, 80);
+  background-position: center 0px;
+  margin-top: -60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 110px;
+}
 .logo {
   width: 90px;
   margin: 0px 10px 0px 30px;
@@ -273,7 +287,6 @@ function changeGradientToggle() {
   background-size: cover;
   position: relative;
   width: 100%;
-
   height: 100vh;
 }
 

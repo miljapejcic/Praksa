@@ -2,7 +2,7 @@
   <div>
     <Navbar footer="footer" />
     <div>
-      <h2 class="naslov-stripe reveal fade-left">
+      <h2 class="naslov-stripe animate__animated animate__pulse">
         <router-link :to="{ name: 'Home' }" class="routerlink"
           > Početna </router-link
         >
@@ -11,7 +11,7 @@
     </div>
     <div class="container">
       <div class="divic">
-        <div class="paragraf reveal fade-left">
+        <div class="paragraf animate__animated animate__slideInLeft">
           <!-- <img class="par-img" src="../assets/tehnicka.jpg"/> -->
           <div class="font-lg" style="text-align: left; font-size: 38px">
             Tehnička podrška
@@ -27,7 +27,7 @@
             nama predstavlja dodatnu vrednost i bolju zaradu na dugi rok.
           </p>
         </div>
-        <div class="teamviewer reveal fade-right">
+        <div class="teamviewer animate__animated animate__slideInRight">
           <img class="teamviewer-img" src="../assets/teamviewer.png" />
           <input
             type="button"
@@ -37,7 +37,7 @@
           />
         </div>
       </div>
-      <div class="paragraf reveal fade-bottom">
+      <div class="paragraf animate__animated animate__slideInUp">
         <span class="font-lg">
           Preuzmite klijentsku aplikaciju za tehničku podršku klikom na dugme
           iznad. </span

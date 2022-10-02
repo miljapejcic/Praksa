@@ -2,7 +2,7 @@
   <div>
     <Navbar footer="footer" />
     <div>
-      <h2 class="naslov-stripe reveal fade-left">
+      <h2 class="naslov-stripe animate__animated animate__pulse">
         <router-link :to="{ name: 'Home' }" class="routerlink">
           Početna
         </router-link>
@@ -10,7 +10,7 @@
       </h2>
     </div>
     <div class="container">
-      <div class="stavke reveal fade-bottom">
+      <div class="stavke animate__animated animate__slideInRight">
         <div class="col-xl-12 pt-2">
           <h2
             class="font-lg"
@@ -32,13 +32,13 @@
       <div class="stavke">
         <div class="col-xl-12 pt-2">
           <h2
-            class="font-lg reveal fade-left"
+            class="font-lg animate__animated animate__slideInLeft"
             style="font-size: 34px; margin: auto; text-align: left"
           >
             <b-icon icon="lightbulb" /> Potrebna znanja i veštine:
           </h2>
           <br />
-          <div class="skills reveal fade-bottom">
+          <div class="skills animate__animated animate__slideInUp">
             <div class="skill" v-for="v in vestine" :key="v.id">
               <img
                 class="skill-img"
@@ -145,17 +145,16 @@ b {
   max-width: 300px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   padding: 15px;
   margin: 10px;
-  background: radial-gradient(#fff, rgba(209, 209, 209, 0.701));
+  background:  rgba(209, 209, 209, 0.401);
   transition: 0.7s ease;
-  /* border: rgba(0, 9, 45, 0.144) 0.5px solid; */
-  border-radius: 10px;
+  border-radius: 2px;
   filter: none;
 }
 
 .skill:hover {
-  /* box-shadow: 0px 0px 10px 4px rgba(75, 62, 127, 0.404); */
   box-shadow: 0px 5px 5px 2px rgba(89, 89, 89, 0.127);
   margin-top: 0px;
   margin-bottom: 15px;
@@ -164,7 +163,7 @@ b {
 }
 
 .tekst {
-  text-align: justify;
+  text-align: center;
   padding: 15px;
   color: #3a3b4a;
 }
@@ -173,7 +172,7 @@ b {
   max-width: 100%;
   background-color: white;
   border: rgb(0, 9, 45, 0.244) 0.5px solid;
-  border-radius: 10px;
+  border-radius: 2px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -186,6 +185,7 @@ b {
     flex-direction: row;
     padding: 10px;
     align-items: center;
+    justify-content: space-between;
   }
   .skill-img {
     width: 25%;

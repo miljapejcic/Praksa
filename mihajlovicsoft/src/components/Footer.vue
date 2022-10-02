@@ -13,8 +13,14 @@
             <br />18000 Niš <br />Serbia <br /><br /><b
               ><b-icon icon="envelope-open"
             /></b>
-            office@mihajlovicsoft.rs <br /><b><b-icon icon="telephone" /></b>
-            +381 18 513 000 <br /><b><b-icon icon="printer" /> </b>
+            <a
+              href="mailto:office@mihajlovicsoft.rs"
+              style="text-decoration: none !important; color: rgb(93, 93, 93)"
+              >&nbsp;office@mihajlovicsoft.rs</a
+            >
+            <br /><b><b-icon icon="telephone" /></b> +381 18 513 000 <br /><b
+              ><b-icon icon="printer" />
+            </b>
             +381 18 513 308
           </div>
         </div>
@@ -62,6 +68,10 @@ export default {
 
 .info b {
   color: #fd0101;
+}
+
+a:hover {
+  color: #fd0101 !important;
 }
 
 .location {

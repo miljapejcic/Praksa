@@ -32,7 +32,6 @@ reveal();
 
 <style>
 #app {
-  /* background-color: rgb(235, 180, 180); */
   font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -41,8 +40,6 @@ reveal();
   color: #2c3e50;
   margin-top: 60px;
   cursor: default;
-  /* background-color: none; */
-  /* background: radial-gradient(#fff, rgba(255, 228, 217, 0.725)); */
 }
 
 .reveal {
@@ -99,7 +96,8 @@ reveal();
   background: #2c3e50;
   color: whitesmoke;
   font-size: 18px;
-  text-align: left;
+  text-align: center;
+  z-index: 99999999;
 }
 
 h2 .routerlink {

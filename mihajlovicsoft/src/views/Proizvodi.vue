@@ -2,14 +2,14 @@
   <div>
     <Navbar footer="footer" />
     <div>
-      <h2 class="naslov-stripe reveal fade-left">
+      <h2 class="naslov-stripe animate__animated animate__pulse">
         <router-link :to="{ name: 'Home' }" class="routerlink">
           Početna
         </router-link>
         <b-icon icon="chevron-double-right" /><i> Prozvodi i usluge</i>
       </h2>
     </div>
-    <div class="container reveal fade-bottom">
+    <div class="container animate__animated animate__fadeInUp">
       <div class="aplikacije">
         <div class="elementcina" v-for="k in json.kategorije" :key="k.id">
           <h3 class="font-lg">{{ k.ime }}</h3>

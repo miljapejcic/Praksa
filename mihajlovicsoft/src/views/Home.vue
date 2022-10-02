@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar footer="footer" />
+    <Navbar footer="footer" :home = "true"/>
     <div>
       <ProizvodiHome />
     </div>

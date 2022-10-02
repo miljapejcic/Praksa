@@ -2,7 +2,7 @@
   <div>
     <Navbar footer="footer" />
     <div>
-      <h2 class="naslov-stripe reveal fade-left">
+      <h2 class="naslov-stripe animate__animated animate__pulse">
         <router-link :to="{ name: 'Home' }" class="routerlink">
           Početna
         </router-link>
@@ -12,11 +12,18 @@
     <div class="container elements">
       <div class="d-flex bd-highlight divcina">
         <div class="col">
-          <div class="naslov lg-right pitanje reveal fade-left">
+          <div
+            class="
+              naslov
+              lg-right
+              pitanje
+              animate__animated animate__fadeInLeft
+            "
+          >
             Šta predstavlja Mihajlović Soft
           </div>
         </div>
-        <div class="col paragraf reveal fade-right">
+        <div class="col paragraf animate__animated animate__fadeInUp">
           <div class="font-lg subtitle">Ko smo mi?</div>
           Kompanija koja se od 1991. godine bavi izradom softvera u cilju
           omogućavanja bržeg rada i pojednostavljivanja procesa poslovanja
@@ -37,18 +44,8 @@
         </div>
       </div>
     </div>
-    <div class="full-cont reveal fade-bottom" style="margin-bottom: 40px;">
+    <div class="full-cont reveal fade-bottom" style="margin-bottom: 40px">
       <div class="properties">
-        <div class="divic reveal fade-bottom">
-          <div class="paragraf">
-            <h3 class="font-lg" style="text-align: center">
-              <b-icon icon="star" /> Odnos cene i kvaliteta
-            </h3>
-            Fokusirani smo na pružanje najbolje usluge i na stvaranje
-            superiornih proizvoda, uz vođenje računa o budžetu naših klijenata i
-            održavanje cena koje su u skladu sa postojećim tržištem.
-          </div>
-        </div>
         <div class="divic reveal fade-bottom">
           <div class="paragraf">
             <h3 class="font-lg" style="text-align: center">
@@ -83,6 +80,15 @@
             </h3>
             Prioritet našeg poslovanja su zadovoljni klijenti, a tokom 30 godina
             poslovanja, stekli smo preko 300 zadovoljnih partnera.
+          </div>
+        </div>
+        <div class="divic reveal fade-bottom">
+          <div class="paragraf">
+            <h3 class="font-lg" style="text-align: center">
+              <b-icon icon="star" /> Kvalitet usluga
+            </h3>
+            Fokusirani smo na pružanje najbolje usluge uz vođenje računa o budžetu naših klijenata i
+            održavanje cena koje su u skladu sa postojećim tržištem.
           </div>
         </div>
       </div>
@@ -170,7 +176,7 @@
         radnog vremena, u cilju zadovoljenja potreba korisnika.
       </div>
       <div style="margin-top: 50px">
-        <router-link :to="{ name: 'Proizvodi' }"
+        <router-link :to="{ name: 'Podrska' }"
           ><button type="button" class="dugme">
             TEHNIČKA PODRŠKA
           </button></router-link
@@ -278,7 +284,8 @@ export default {
   background-color: #d8d8d8;
 }
 
-.dodatneInfo h3, b {
+.dodatneInfo h3,
+b {
   color: rgb(30, 32, 44);
 }
 
@@ -328,6 +335,7 @@ export default {
   padding: 0px;
   margin: 20px 0px;
 }
+
 
 .elements .divic {
   display: flex;

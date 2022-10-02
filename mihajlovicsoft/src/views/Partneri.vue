@@ -2,21 +2,21 @@
   <div>
     <Navbar footer="footer" />
     <div>
-      <h2 class="naslov-stripe reveal fade-left">
+      <h2 class="naslov-stripe animate__animated animate__pulse">
         <router-link :to="{ name: 'Home' }" class="routerlink">
           Početna
         </router-link>
         <b-icon icon="chevron-double-right" /><i> Partneri</i>
       </h2>
     </div>
-    <div class="header-img reveal fade-bottom">
+    <div class="header-img animate__animated animate__fadeIn">
       <div class="font-xl">
         Poverenje, poštovanje i zajednička saradnja predstavljaju suštinu
         uspešnog partnerstva.
       </div>
     </div>
     <div class="container">
-      <div class="paragraf reveal fade-left">
+      <div class="paragraf animate__animated animate__fadeInUp">
         Kao tim koji se neprekidno razvija i uvećava, pozivamo Vas, da stupite u
         kontakt sa nama i proverite, koje su Vaše prilike za boljim poslovanjem.
         Rešenja koja distribuiramo, su proverena rešenja. Iza nas je veliki broj
@@ -24,13 +24,13 @@
       </div>
       <!-- <img class="header-img" src="../assets/partneri/handshake.jpg"/> -->
       <div
-        class="naslov container reveal fade-right"
+        class="naslov container animate__animated animate__fadeInUp"
         style="text-align: center; font-size: 18px; line-height: 29px"
       >
         Poslujemo sa velikim brojem preduzeća, institucija, organizacija i
         drugim pravnim licima od kojih izdvajamo:
       </div>
-      <div class="gridcina reveal fade-bottom">
+      <div class="gridcina animate__animated animate__fadeInUp">
         <div class="gridce" v-for="p in partneri" :key="p.id">
           <img
             class="img-fluid"

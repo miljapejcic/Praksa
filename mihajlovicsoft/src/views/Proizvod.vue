@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar footer="footer" />
-    <h2 class="naslov-stripe reveal fade-left">
+    <h2 class="naslov-stripe animate__animated animate__pulse">
       <router-link :to="{ name: 'Home' }" class="routerlink"
         >Početna
       </router-link>
@@ -12,8 +12,15 @@
       <b-icon icon="chevron-double-right" /> {{ kategorija.ime }}
       <b-icon icon="chevron-double-right" /> <i>{{ proizvod.naziv }}</i>
     </h2>
+    <div class="full-cont animate__animated animate__fadeIn">
+      <img
+        class="proizvod"
+        :src="require(`@/assets/proizvodi/${proizvod.slika}`)"
+      />
+      <div class="naziv">{{ proizvod.naziv }}</div>
+    </div>
     <div class="container">
-      <div class="col-xl-10 info reveal fade-left">
+      <div class="info animate__animated animate__fadeInUp">
         <img src="../assets/proizvodi/info.png" />
         <div class="paragraf">
           <div class="naslov">{{ proizvod.naziv }}</div>
@@ -25,25 +32,11 @@
         </div>
       </div>
     </div>
-    <div class="full-cont">
-      <img
-        class="proizvod"
-        :src="require(`@/assets/proizvodi/${proizvod.slika}`)"
-      />
-      <div class="naziv">{{ proizvod.naziv }}</div>
-    </div>
 
-    <div class="container reveal fade-bottom">
-      <h3 class="font-lg svojstva"><b-icon icon="inboxes" /> Svojstva:</h3>
-      <div class="properties prop-svoj">
-        <div v-for="p in proizvod.svojstva" :key="p">
-          <div class="paragrafic">
-            <b-icon icon="tag" style="color: #fd0101" /> {{ p }}
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="full-cont properties prop-pred reveal fade-bottom" style="background-color: #fd0101c2; margin-bottom: 0px;">
+    <div
+      class="full-cont properties prop-pred reveal fade-bottom"
+      style="background-color: #fd0101c2; margin-bottom: 0px"
+    >
       <div v-for="p in proizvod.prednosti" :key="p">
         <div class="divic">
           <h3>
@@ -53,10 +46,23 @@
         </div>
       </div>
     </div>
+    <div class="container reveal fade-bottom">
+      <h3 class="font-lg svojstva"><b-icon icon="inboxes" /> Svojstva:</h3>
+      <div class="properties prop-svoj">
+        <div v-for="p in proizvod.svojstva" :key="p">
+          <div class="paragrafic">
+            <b-icon icon="tag" style="color: #fd0101" />
+            {{ p }}
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div
       class="container paragraf reveal fade-right"
       v-if="proizvod.izvestaji != null"
     >
+      <div class="borderbottom"></div>
       <h2 class="font-lg svojstva"><b-icon icon="book" /> Izveštaji:</h2>
       <p class="vestine" v-for="i in proizvod.izvestaji" :key="i">
         <b-icon icon="caret-right-fill" /> {{ i }}
@@ -116,7 +122,7 @@ export default {
   width: 100%;
   box-shadow: 0px 0px 20px 4px rgba(18, 40, 70, 0.288);
   transition: 0.7s ease;
-  margin: 30px 0 50px 0;
+  margin: -10px 0 50px 0;
   /* color: rgb(233, 233, 233); */
 }
 .naziv {
@@ -139,13 +145,19 @@ export default {
   align-items: center;
 }
 
+.borderbottom {
+  width: 100%;
+  margin: 40px 0px;
+  border-bottom: 2px solid #fd0101c2;
+}
+
 .info {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 10px;
-  margin: auto;
+  /* padding: 10px; */
+  margin: auto auto 40px auto;
 }
 
 .info img {
@@ -158,16 +170,16 @@ export default {
 }
 
 .prop-svoj {
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: stretch;
   padding: 10px 50px;
-  margin-bottom: 50px;
 }
 .svojstva {
   color: #fd0101;
   font-size: 28px;
   text-align: left;
   padding-left: 10%;
+  margin-top: 50px;
 }
 
 .divic {
@@ -196,9 +208,10 @@ export default {
 .paragrafic {
   font-size: 18px;
   line-height: 22px;
-  padding: 5px 15px 15px 15px;
+  padding: 10px;
   text-align: left;
-  max-width: 250px;
+  max-width: 270px;
+  margin: 10px;
 }
 
 .vestine {

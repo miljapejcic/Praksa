@@ -147,17 +147,18 @@ b {
   flex-direction: column;
   padding: 15px;
   margin: 10px;
-  background: radial-gradient(#fff, rgba(117, 137, 160, 0.701));
+  background: radial-gradient(#fff, rgba(209, 209, 209, 0.701));
   transition: 0.7s ease;
   /* border: rgba(0, 9, 45, 0.144) 0.5px solid; */
-  box-shadow: 0px 0px 5px 2px rgba(41, 38, 50, 0.127);
-
   border-radius: 10px;
   filter: none;
 }
 
 .skill:hover {
-  box-shadow: 0px 0px 10px 4px rgba(75, 62, 127, 0.404);
+  /* box-shadow: 0px 0px 10px 4px rgba(75, 62, 127, 0.404); */
+  box-shadow: 0px 5px 5px 2px rgba(89, 89, 89, 0.127);
+  margin-top: 0px;
+  margin-bottom: 15px;
   filter: contrast(1.3);
   transition: 0.7s ease;
 }

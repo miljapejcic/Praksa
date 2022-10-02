@@ -6,7 +6,6 @@ import Proizvodi from '../views/Proizvodi.vue'
 import Potkategorije from '../views/Potkategorije.vue'
 import ONama from '../views/ONama.vue'
 import Tim from '../views/Tim.vue'
-import PCKase from '../views/PCKase.vue'
 import Podrska from '../views/Podrska.vue'
 import Proizvod from '../views/Proizvod.vue'
 import Partneri from '../views/Partneri.vue'
@@ -24,11 +23,6 @@ const router = new Router({
             path: '/Proizvodi',
             name: 'Proizvodi',
             component: Proizvodi
-        },
-        {
-            path: '/PCKase',
-            name: 'PCKase',
-            component: PCKase
         },
         {
             path: '/Proizvodi/Potkategorije/:pid',

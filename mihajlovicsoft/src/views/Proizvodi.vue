@@ -12,16 +12,21 @@
     <div class="container reveal fade-bottom">
       <div class="aplikacije">
         <div class="elementcina" v-for="k in json.kategorije" :key="k.id">
+          <h3 class="font-lg">{{ k.ime }}</h3>
           <img
             class="slikastil"
             :src="require(`@/assets/kategorije/${k.slika}`)"
           />
           <div class="paddin">
-            <h3 class="font-lg">{{ k.ime }}</h3>
-            <button class="dugme" id="ponude" @click="toggleClass(k.id)" style="width: 190px;">
+            <!-- <h3 class="font-lg">{{ k.ime }}</h3> -->
+            <button
+              class="dugme"
+              id="ponude"
+              @click="toggleClass(k.id)"
+              style="width: 190px"
+            >
               Prikaz ponuda <b-icon icon="caret-down" />
             </button>
-            <!-- <h3 @click="toggleClass(k.id)">{{k.ime}}</h3> -->
             <div :class="'kat' + k.id" class="noactive" id="ponude">
               <div v-for="proizvod in k.listaProizvoda" :key="proizvod.id">
                 <p
@@ -33,7 +38,6 @@
               </div>
             </div>
           </div>
-          <!-- <button class="dugme" @click="kat(k.id)">{{ k }}</button> -->
         </div>
       </div>
     </div>
@@ -102,10 +106,7 @@ export default {
 
 .paddin {
   background: transparent;
-  /* border-radius: 15px; */
-  padding: 0px 20px;
-  /* margin-left: 10px;
-  margin-top: 35px; */
+  padding: 0 20px 40px 20px;
   transition: 0.7s ease;
   display: flex;
   flex-direction: column;
@@ -117,15 +118,16 @@ export default {
 
 .elementcina {
   display: flex;
-  flex-direction: row;
-  max-width: 520px;
-  justify-content: space-between;
+  flex-direction: column;
+  max-width: 350px;
+  justify-content: flex-start;
   align-items: center;
-  padding: 40px;
-  margin: 10px;
-  box-shadow: 0px 0px 10px 2px rgba(1, 0, 5, 0.204);
-  border-radius: 5px;
-  background: rgba(255, 245, 242, 0.739);
+  /* padding: 40px; */
+  margin: 20px 10px;
+  /* box-shadow: 0px 0px 10px 2px rgba(1, 0, 5, 0.204); */
+  border-radius: 2px;
+  border: 1px solid rgb(224, 224, 224);
+  background: rgba(244, 244, 244, 0.739);
   transition: 0.7s ease;
 }
 
@@ -133,40 +135,47 @@ export default {
   box-shadow: 0px 0px 10px 2px rgba(1, 0, 5, 0.204);
   color: black;
   border-radius: 20px;
-  background: rgba(85, 110, 139, 0.323);
+  background: rgba(56, 70, 86, 0.323);
   filter: contrast(1.2);
   transition: 0.7s ease;
 }
 
+.elementcina h3 {
+  width: 100%;
+  background-color: #2c3e50;
+  color: #ff5757;
+  padding: 10px 20px;
+}
 .elementcina:hover > .slikastil {
   transform: rotate(10deg);
-  max-width: 40%;
+  max-width: 60%;
   border-radius: 100%;
-  box-shadow: 0px 0px 10px 1px rgba(59, 59, 59, 0.802);
+  /* box-shadow: 0px 0px 10px 1px rgba(59, 59, 59, 0.802); */
   transition: 1.2s ease;
-
 }
 .aplikacije {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
   margin-top: 20px;
 }
 
 .slikastil {
-  max-width: 50%;
+  max-width: 80%;
   border-radius: 5%;
   transition: 0.6s ease;
+  margin-bottom: 30px;
+  padding: 10px 40px;
 }
 
 .item {
-  padding: 10px 10px 0x 10px;
+  /* padding: 10px 0px 0px 0px; */
   margin-top: 10px;
-  margin-bottom: 5px;
-  font-size: 14px;
-  font-weight: 600;
+  /* margin-bottom: 5px; */
+  font-size: 15px;
+  color: #2c3e50;
   text-align: left;
   transition: 0.4s ease;
 }
@@ -178,22 +187,20 @@ export default {
 
 @media only screen and (max-width: 1200px) {
   .elementcina {
-    max-width: 100%;
-    width: 100%;
+    max-width: 280px;
   }
 }
 
 @media only screen and (max-width: 770px) {
   .elementcina {
     max-width: 100%;
-    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  .elementcina .font-lg {
-    padding-top: 10px;
+  .slikastil {
+    width: 50%;
   }
 }
 </style>

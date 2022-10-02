@@ -3,40 +3,20 @@
     <Navbar footer="footer" />
     <h2 class="naslov-stripe reveal fade-left">
       <router-link :to="{ name: 'Home' }" class="routerlink"
-        >Početna </router-link
-      >
+        >Početna
+      </router-link>
       <b-icon icon="chevron-double-right" />
-      <router-link class="routerlink" :to="{ name: 'Proizvodi' }"
-        > Proizvodi i usluge </router-link
-      >
+      <router-link class="routerlink" :to="{ name: 'Proizvodi' }">
+        Proizvodi i usluge
+      </router-link>
       <b-icon icon="chevron-double-right" /> {{ kategorija.ime }}
       <b-icon icon="chevron-double-right" /> <i>{{ proizvod.naziv }}</i>
     </h2>
     <div class="container">
-      <div class="row m-auto reveal fade-bottom">
-        <div class="container properties prop-pred">
-          <div v-for="p in proizvod.prednosti" :key="p">
-            <div class="divic">
-              <h3>
-                <b-icon icon="star" /><br />
-                {{ p }}
-              </h3>
-            </div>
-          </div>
-        </div>
-        <!-- <img :src="proizvod.slika"/> -->
-        <div>
-          <img
-            class="proizvod"
-            :src="require(`@/assets/proizvodi/${proizvod.slika}`)"
-          />
-          <div class="naziv">{{ proizvod.naziv }}</div>
-        </div>
-      </div>
-
       <div class="col-xl-10 info reveal fade-left">
         <img src="../assets/proizvodi/info.png" />
         <div class="paragraf">
+          <div class="naslov">{{ proizvod.naziv }}</div>
           {{ proizvod.opis }}
           <div class="ostalo">
             <br />
@@ -44,27 +24,43 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="full-cont">
+      <img
+        class="proizvod"
+        :src="require(`@/assets/proizvodi/${proizvod.slika}`)"
+      />
+      <div class="naziv">{{ proizvod.naziv }}</div>
+    </div>
 
-      <div class="container reveal fade-bottom">
-        <h3 class="font-lg svojstva"><b-icon icon="inboxes" /> Svojstva:</h3>
-        <div class="properties prop-svoj">
-          <div v-for="p in proizvod.svojstva" :key="p">
-            <div class="paragrafic">
-              <b-icon icon="tag" style="color: #fd0101" /> {{ p }}
-            </div>
+    <div class="container reveal fade-bottom">
+      <h3 class="font-lg svojstva"><b-icon icon="inboxes" /> Svojstva:</h3>
+      <div class="properties prop-svoj">
+        <div v-for="p in proizvod.svojstva" :key="p">
+          <div class="paragrafic">
+            <b-icon icon="tag" style="color: #fd0101" /> {{ p }}
           </div>
         </div>
       </div>
-
-      <div
-        class="container paragraf reveal fade-right"
-        v-if="proizvod.izvestaji != null"
-      >
-        <h2 class="font-lg svojstva"><b-icon icon="book" /> Izveštaji:</h2>
-        <p class="vestine" v-for="i in proizvod.izvestaji" :key="i">
-          <b-icon icon="caret-right-fill" /> {{ i }}
-        </p>
+    </div>
+    <div class="full-cont properties prop-pred reveal fade-bottom" style="background-color: #fd0101c2; margin-bottom: 0px;">
+      <div v-for="p in proizvod.prednosti" :key="p">
+        <div class="divic">
+          <h3>
+            <b-icon icon="star" /><br />
+            {{ p }}
+          </h3>
+        </div>
       </div>
+    </div>
+    <div
+      class="container paragraf reveal fade-right"
+      v-if="proizvod.izvestaji != null"
+    >
+      <h2 class="font-lg svojstva"><b-icon icon="book" /> Izveštaji:</h2>
+      <p class="vestine" v-for="i in proizvod.izvestaji" :key="i">
+        <b-icon icon="caret-right-fill" /> {{ i }}
+      </p>
     </div>
     <div id="footer">
       <Footer />
@@ -114,12 +110,15 @@ export default {
 <style scoped>
 .proizvod {
   width: 100%;
-  border-radius: 1rem;
-  box-shadow: 0 0 3rem 1rem rgba(82, 82, 82, 0.15);
-  position: relative;
   z-index: 0;
 }
-
+.full-cont {
+  width: 100%;
+  box-shadow: 0px 0px 20px 4px rgba(18, 40, 70, 0.288);
+  transition: 0.7s ease;
+  margin: 30px 0 50px 0;
+  /* color: rgb(233, 233, 233); */
+}
 .naziv {
   font-size: 2.2rem;
   font-weight: 600;
@@ -155,18 +154,19 @@ export default {
 
 .prop-pred {
   justify-content: space-evenly;
+  color: rgb(22, 23, 61);
 }
 
 .prop-svoj {
-  justify-content: space-between;
-  margin-top: -20px;
-  padding: 20px 50px;
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding: 10px 50px;
+  margin-bottom: 50px;
 }
 .svojstva {
   color: #fd0101;
   font-size: 28px;
   text-align: left;
-  line-height: 20px;
   padding-left: 10%;
 }
 
@@ -194,10 +194,9 @@ export default {
 }
 
 .paragrafic {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 22px;
-  font-weight: 600;
-  padding: 15px;
+  padding: 5px 15px 15px 15px;
   text-align: left;
   max-width: 250px;
 }

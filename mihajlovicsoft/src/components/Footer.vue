@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container kontakt">
+    <div class="container kontakt reveal fade-bottom">
       <div>
         <div class="justify-content-center naslov">Kontakt</div>
         <div class="elements">
@@ -35,13 +35,12 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
 .kontakt {
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10px;
   border-top: 0.6px solid #d8d8d8;
   padding-top: 10px;
 }
